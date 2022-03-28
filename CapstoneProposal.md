@@ -80,6 +80,7 @@ Inspiration, examples, code snippets, etc.
 * [a11y](https://www.a11yproject.com/)
 * [MDN ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
 * [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
+* [Mozilla - On Accessiblity](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
 * [Keyboard-navigable JavaScript widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets)
 * [National Digital Inclusion Alliance](https://www.digitalinclusion.org/definitions/)
 * [Chart.js - Accessiblity](https://www.chartjs.org/docs/latest/general/accessibility.html)
