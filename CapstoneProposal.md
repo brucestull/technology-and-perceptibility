@@ -61,7 +61,7 @@ Graphical Charts - [Chart.js](https://www.chartjs.org/docs/latest/)
 * Data model for external sites' API[^external-site-api]    
 
 [^external-site-api]:
-    These are items in the stretch goal.
+    These are items in the stretch goal. External API to be determined.
 
 ## Schedule
 
