@@ -10,6 +10,20 @@ a11y - Beyond Technology
 
 
 ## Project Overview
+* User can register (create account).
+* User can save a11ys (link to accessibility resource with description).
+* User can access thier previously saved a11ys.
+* User can share their link to a friend's email (or a11y account).
+* User can control full features of application using keyboard or other alternative navigation.
+* User can save examples of accessiblity-related code snippets.
+* a11ys code snippets will be displayed in 'code-like' format.
+
+### Libraries and Frameworks
+CSS - [Materialize](https://materializecss.com/)
+
+Back-end - [Django REST Framework](https://www.django-rest-framework.org/)
+
+Front-end - [Vue.js](https://v2.vuejs.org/)
 
 ### My interests in this project
 * I believe that it is not only important to ensure web applications are accessible but also that literal access to the internet and information is critical.
@@ -78,6 +92,7 @@ Inspiration, examples, code snippets, etc.
 * Testing:
   * [SSA - ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html)
   * [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/)
+* [a11y - Pronunciation](https://www.a11yproject.com/posts/a11y-and-other-numeronyms/)
 * [a11y - Bookmarklets](https://www.a11yproject.com/resources/#bookmarklets)
 * [a11y - Development Tools](https://www.a11yproject.com/resources/#development-tools)
 * [.md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
