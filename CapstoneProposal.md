@@ -1,25 +1,46 @@
-# a11y Beyond Technology
+######################################
+# Requirements
+## Specific and Attainable Goals
+## Major Topics Covered in Course
+###########################################
 
-I believe that it is not only important to ensure web applications are accessible but also that literal access to the internet and information is critical.
+# a11y - Beyond Technology
 
-## Description
+## Name
 
-An in-depth paragraph about your project and overview of use.
+
+## Project Overview
+
+
+### My interests in this project
+* I believe that it is not only important to ensure web applications are accessible but also that literal access to the internet and information is critical.
+### Information Stored in the app
 * Access to high speed internet is not always an option. I'd like to find out resources for access to high speed internet.
 * What have been effective ways to provide internet access to areas with low-bandwidth access?
 * What have been effective ways to provide internet access to homeless individuals?
+### Required traits of this app
+* Alternative navigation of application.
+
+
+## Features
+### User Stories
+1. As an Alternative Navigation user, I want to navigate the application using keyboard only, because this is how I access internet content.
+2. As an Alternative Navigation user, I want to navigate the application using screen-reader and keyboard only, because this is how I access internet content.
+3. As an accessiblity researcher, I want to be able to store data results from my research, because I need to keep raw data available for processing.
+4. As an accessiblity researcher, I want to be able to store processed data results from my research, because I need to have processed data available.
+5. As an external-to-organization user, I want to be able to access the organization's data using a public API, because I want to be able to access their shared data.
+6. As a User, I want to be able to create an account to access appropriate data. because I want to access data necessary for my role.
+
+
+## Data Models
+
 
 ## Schedule
 
-## Features
 
-### User Stories
-1. As a XXX, I want YYY because ZZZ.
-1. As a XXX, I want YYY because ZZZ.
 
-## Models
-* User
-* 
+
+
 
 ## License
 
@@ -43,5 +64,13 @@ Inspiration, examples, code snippets, etc.
 * [SVG animation with SMIL](https://developer.mozilla.org/en-US/docs/Web/SVG/SVG_animation_with_SMIL)
 * [SVG Tutorial](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial)
 * [PennState - Charts & Accessibility](https://accessibility.psu.edu/images/charts/)
-* <a href="https://accessibility.psu.edu/images/charts/" target="_blank">PennState - Charts & Accessibility</a>
+* Glossary - a11y
+  * [Nonvisual Desktop Access](https://makeitfable.com/glossary-term/nvda-nonvisual-desktop-access/)
+  * [Screenreader](https://makeitfable.com/glossary-term/screen-reader/)
+  * [Semantic Markup](https://makeitfable.com/glossary-term/semantic-markup/)
+* Testing:
+  * [SSA - ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html)
+  * [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/)
+* [a11y - Bookmarklets](https://www.a11yproject.com/resources/#bookmarklets)
+* [a11y - Development Tools](https://www.a11yproject.com/resources/#development-tools)
   
