@@ -4,13 +4,12 @@
 ## Major Topics Covered in Course
 ###########################################
 
-# a11y - Beyond Technology
 
 ## Name
+a11y - Beyond Technology
 
 
 ## Project Overview
-
 
 ### My interests in this project
 * I believe that it is not only important to ensure web applications are accessible but also that literal access to the internet and information is critical.
@@ -24,20 +23,21 @@
  * Links to external information sources.
  * Data produced by researchers within the organization.
 * The app will provide a way to display information in table and chart forms.
-### Required traits of this app
 * Alternative navigation of application.
-* Add page for access to one external api.
+* Add page for access to one external api. API to be determined.
+* CSV, pdf, spreadsheet... - How to store these?
+* Show side and/or top nave even when main content is scrolled up/down.
 
 
 ## Features
 ### User Stories
 1. As an Alternative Navigation user, I want to navigate the application using keyboard only, because this is how I access internet content.
 2. As an Alternative Navigation user, I want to navigate the application using screen-reader and keyboard only, because this is how I access internet content.
-3. As an accessiblity researcher, I want to be able to store data results from my research, because I need to keep raw data available for processing. CSV, pdf, spreadsheet...
+3. As an accessiblity researcher, I want to be able to store data results from my research, because I need to keep raw data available for processing.
 4. As an accessiblity researcher, I want to be able to store processed data results from my research, because I need to have processed data available.
 5. As an external-to-organization user, I want to be able to access the organization's data using a public API, because I want to be able to access their shared data.
 6. As a User, I want to be able to create an account to access appropriate data. because I want to access data necessary for my role.
-7. Accessible via mobile!!!
+7. As A mobile phone user, I need to be able to view data and reports.
 
 
 ## Data Models
@@ -61,7 +61,6 @@ Inspiration, examples, code snippets, etc.
 * [MDN ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
 * [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [Keyboard-navigable JavaScript widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets)
-* [.md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [National Digital Inclusion Alliance](https://www.digitalinclusion.org/definitions/)
 * [Chart.js - Accessiblity](https://www.chartjs.org/docs/latest/general/accessibility.html)
 * [\<canvas\> - Accessibility](https://pauljadam.com/demos/canvas.html)
@@ -81,4 +80,5 @@ Inspiration, examples, code snippets, etc.
   * [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/)
 * [a11y - Bookmarklets](https://www.a11yproject.com/resources/#bookmarklets)
 * [a11y - Development Tools](https://www.a11yproject.com/resources/#development-tools)
-  
+* [.md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
