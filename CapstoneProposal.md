@@ -1,61 +1,67 @@
-######################################
-# Requirements
-## Specific and Attainable Goals
-## Major Topics Covered in Course
-###########################################
-
-
 ## Name
-a11y - Beyond Technology
+### TAP
+* Technology and Perceptibility
 
 
 ## Project Overview
 * User can register (create account).
-* User can save a11ys (link to accessibility resource with description).
-* User can access thier previously saved a11ys.
-* User can share their link to a friend's email (or a11y account).
+* User can save NAMEs (link to accessibility resource with description).
+* User can access thier previously saved NAMEs.
+* User can share their link to a friend's email (or NAME account).
 * User can control full features of application using keyboard or other alternative navigation.
-* User can save examples of accessiblity-related code snippets.
-* a11ys code snippets will be displayed in 'code-like' format.
+* User can save examples of accessibility-related code snippets.
+* User can view data and data trends in graphic-chart and table forms.
+
+### Important Concepts
+* Accessibility with Alternative Navigation.
+  * Application must be accessible to users of alternative navigation.
+  * Application can be tested manually or use automated testing.
+* Research needs to be done to understand how best to provide effective access to technology, both physical individual-use devices and a means of high-speed internet access.
+* Research needs to be done to understand how other people perceive the world in order to make sure technology is accessible and technology training is effective.
+* This application can be used to store reference code-snippets of accessible features of web applications, this information would be useful for website developers.
+* This application can be used in the future to store in-house data models, which would be produced by in-house researchers. This information would be used to make decisions on how best to spend resources to provide three things to underserved individuals:
+  * Physical technology devices.
+  * Some form of high speed internet access.
+  * Training in digital literacy.
 
 ### Libraries and Frameworks
-CSS - [Materialize](https://materializecss.com/)
-
-Back-end - [Django REST Framework](https://www.django-rest-framework.org/)
-
-Front-end - [Vue.js](https://v2.vuejs.org/)
-
-### My interests in this project
-* I believe that it is not only important to ensure web applications are accessible but also that literal access to the internet and information is critical.
-### Questions or Goals of Organization
-* Access to high speed internet is not always an option to users. It's important that some of the fundamental operation of this app not require high speed internet.
-* What have been effective ways to provide internet access to areas with low-bandwidth access?
-* What have been effective ways to provide internet access to homeless individuals?
-* Compatability with mobile website.
-* What have been effective training methods for digital literacy?
-* This app will provide a way to store the following:
- * Links to external information sources.
- * Data produced by researchers within the organization.
-* The app will provide a way to display information in table and chart forms.
-* Alternative navigation of application.
-* Add page for access to one external api. API to be determined.
-* CSV, pdf, spreadsheet... - How to store these?
-* Show side and/or top nave even when main content is scrolled up/down.
+CSS - [Materialize](https://materializecss.com/)<br>
+Back-end - [Django REST Framework](https://www.django-rest-framework.org/)<br>
+Front-end - [Vue.js](https://v2.vuejs.org/)<br>
+Graphical Charts - [D3](https://d3js.org/)
+Graphical Charts - [Chart.js](https://www.chartjs.org/docs/latest/) 
 
 
 ## Features
 ### User Stories
 1. As an Alternative Navigation user, I want to navigate the application using keyboard only, because this is how I access internet content.
 2. As an Alternative Navigation user, I want to navigate the application using screen-reader and keyboard only, because this is how I access internet content.
-3. As an accessiblity researcher, I want to be able to store data results from my research, because I need to keep raw data available for processing.
-4. As an accessiblity researcher, I want to be able to store processed data results from my research, because I need to have processed data available.
-5. As an external-to-organization user, I want to be able to access the organization's data using a public API, because I want to be able to access their shared data.
-6. As a User, I want to be able to create an account to access appropriate data. because I want to access data necessary for my role.
-7. As A mobile phone user, I need to be able to view data and reports.
+3. As a User, I want to be able to create a login account, because I want to use the app in the future and have access to previous actions.
+4. As a User, I want to be able to save a set of three fields (url, url title, url description), because I want to refer to them in the future.
+5. As a User, I want to access my previously saved field sets, because I want to review and have access to the saved links' url and information.
+6. As a User, I want to share my field sets with other users in the form of common access field sets or shared via email or message system, because I want to share my knowledge and interests with other users.
+7. As a User, I want to be able to save a fourth element of the above field sets in the form of a code snippet, because I want to be able to include a snippet of code in addition to the existing three fields.
+8. As A mobile phone user, I need to be able to view the field sets.
+
+### Stretch Goals
+1. As a User, I want to be able to view the data of an external site's API provided for consumption in a format I can read, because I want to be able to review data from outside organizations.[^external-site-api]
+2. As a User, I want to be able to view the data of the external site in both graphical-chart and table forms, because I want to be able to know the value trends in the data presented.[^external-site-api]
 
 
 ## Data Models
 * User
+  * First Name
+  * Last Name
+  * Email
+* Three/Four Element Field Set
+  * URL
+  * URL Title
+  * URL Description
+  * Code Snippet
+* Data model for external sites' API[^external-site-api]    
+
+[^external-site-api]:
+    These are items in the stretch goal.
 
 ## Schedule
 
@@ -96,4 +102,4 @@ Inspiration, examples, code snippets, etc.
 * [a11y - Bookmarklets](https://www.a11yproject.com/resources/#bookmarklets)
 * [a11y - Development Tools](https://www.a11yproject.com/resources/#development-tools)
 * [.md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-
+* [Accessibility APIs: A Key To Web Accessibility](https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/)
