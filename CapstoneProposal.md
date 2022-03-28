@@ -3,50 +3,50 @@
 
 
 ## Project Overview
-* User can register (create account).
-* User can save TAPs (link to accessibility resource with description).
-* User can access thier previously saved TAPs.
-* User can share their link to a friend's email (or TAP account).
-* User can control full features of application using keyboard or other alternative navigation.
-* User can save examples of accessibility-related code snippets.
-* User can view data and data trends in graphic-chart and table forms.
 
 ### Important Concepts
-#### Accessibility with Alternative Navigation.
-  * Application must be accessible to users of alternative navigation.
-  * Application can be tested manually or use automated testing.
-#### Future Features
- * Research needs to be done to understand how best to provide effective access to technology, both physical individual-use devices and a means of high-speed internet access.
- * Research needs to be done to understand how other people perceive the world in order to make sure technology is accessible and technology training is effective.
- * This application can be used to store reference code-snippets of accessible features of web applications, this information would be useful for website developers.
+
+#### Ultimate Goals of The Project
+ * Research and/or literature reviews need to be done to understand how best to provide effective access to technology, both physical individual-use devices and a means of high-speed internet access.
+ * Research and/or literature reviews need to be done to understand how other people perceive the world in order to make sure technology is accessible and technology training is effective.
  * This application can be used in the future to store in-house data models, which would be produced by in-house researchers. This information would be used to make decisions on how best to spend resources to provide three things to underserved individuals:
    * Physical technology devices.
    * Some form of high speed internet access.
    * Training in digital literacy.
+ * This application can be used to store reference code-snippets of accessible features of web applications, this information would be useful for website developers.
+
+#### Accessibility with Alternative Navigation.
+  * Application must be accessible to users of alternative navigation.
+  * Application can be tested manually[^firefox-accessibility-tester] or use automated testing.
+
 
 ### Libraries and Frameworks
 CSS - [Materialize](https://materializecss.com/)<br>
+CSS - [Bootstrap](https://getbootstrap.com/)<br>
 Back-end - [Django REST Framework](https://www.django-rest-framework.org/)<br>
 Front-end - [Vue.js](https://v2.vuejs.org/)<br>
 Graphical Charts - [D3](https://d3js.org/)<br>
-Graphical Charts - [Chart.js](https://www.chartjs.org/docs/latest/) 
+Graphical Charts - [Chart.js](https://www.chartjs.org/docs/latest/)<br>
 
 
 ## Features
+
 ### User Stories
 1. As an Alternative Navigation user, I want to navigate the application using keyboard only, because this is how I access internet content.
 2. As an Alternative Navigation user, I want to navigate the application using screen-reader and keyboard only, because this is how I access internet content.
-3. As a User, I want to be able to create a login account, because I want to use the app in the future and have access to previous actions.
-4. As a User, I want to be able to save a set of three fields (url, url title, url description), because I want to refer to them in the future.
-5. As a User, I want to access my previously saved field sets, because I want to review and have access to the saved links' url and information.
-6. As a User, I want to share my field sets with other users in the form of common access field sets or shared via email or message system, because I want to share my knowledge and interests with other users.
-7. As a User, I want to be able to save a fourth element of the above field sets in the form of a code snippet, because I want to be able to include a snippet of code in addition to the existing three fields.
-8. As A mobile phone user, I need to be able to view the field sets.
+3. As a Color Blind user, I want to the application to have adequate contrast, because adequate contrast is important for reading and understanding application content.
+4. As a User, I want to be able to create a login account, because I want to use the app in the future and have access to previous actions.
+5. As a User, I want to be able to save a set of three fields (url, url title, url description), because I want to refer to them in the future.
+6. As a User, I want to access my previously saved field sets, because I want to review and have access to the saved links' url and information.
+7. As a User, I want to share my field sets with other users in the form of common access field sets or shared via email or message system, because I want to share my knowledge and interests with other users.
+8. As a User, I want to be able to save a fourth element of the above field sets in the form of a code snippet, because I want to be able to include a snippet of code in addition to the existing three fields.
+9. As A mobile phone user, I need to be able to view the field sets.
 
 ### Stretch Goals
-1. As a User, I want to be able to view the data of an external site's API provided for consumption in a format I can read, because I want to be able to review data from outside organizations.[^external-site-api]
-2. As a User, I want to be able to view the data of the external site in both graphical-chart and table forms, because I want to be able to know the value trends in the data presented.[^external-site-api]
-
+1. As a User, I want to be able to view the data of an external site's API provided for consumption in a format I can read, because I want to be able to review data from outside organizations.[^external-site-api][^stretch-goal]
+2. As a User, I want to be able to view the data of the external site in both graphical-chart and table forms, because I want to be able to know the value trends in the data presented.[^external-site-api][^stretch-goal]
+[^stretch-goal]:
+    Stretch Goals
 
 ## Data Models
 * User
@@ -58,14 +58,23 @@ Graphical Charts - [Chart.js](https://www.chartjs.org/docs/latest/)
   * URL Title
   * URL Description
   * Code Snippet
-* Data model for external sites' API[^external-site-api]    
+* Data model for external sites' API[^external-site-api][^stretch-goal]    
 
 [^external-site-api]:
-    These are items in the stretch goal. External API to be determined.
+    Stretch goal. External API to be determined.
 
 ## Schedule
+- [ ] Learn FireFox Accessiblity Tester[^firefox-accessibility-tester]
+- [ ] User Model and API
+- [ ] TAP Model and API
+- [ ] Learn Chart.js or 3D
+- [ ] Learn Bootstrap since it seems to have better 'button' integration than Materialize
+- [ ] Learn Django testing
+- [ ] Learn Django REST Framework testing
+- [ ] Write Django (REST) tests
 
 
+[^firefox-accessibility-tester]: [FireFox Accessiblity Tester](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/index.html)
 
 
 
@@ -81,6 +90,7 @@ Inspiration, examples, code snippets, etc.
 * [MDN ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
 * [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [Mozilla - On Accessiblity](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+* [FireFox - Accessibility Inspector](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/index.html)
 * [Keyboard-navigable JavaScript widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets)
 * [National Digital Inclusion Alliance](https://www.digitalinclusion.org/definitions/)
 * [Chart.js - Accessiblity](https://www.chartjs.org/docs/latest/general/accessibility.html)
@@ -99,6 +109,9 @@ Inspiration, examples, code snippets, etc.
 * Testing:
   * [SSA - ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html)
   * [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/)
+  * [Django Test Framework](https://docs.djangoproject.com/en/4.0/topics/testing/)
+  * [Django Test Framework @ Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing)
+  * [Django APIRequestFactory](https://www.django-rest-framework.org/api-guide/testing/)
 * [a11y - Pronunciation](https://www.a11yproject.com/posts/a11y-and-other-numeronyms/)
 * [a11y - Bookmarklets](https://www.a11yproject.com/resources/#bookmarklets)
 * [a11y - Development Tools](https://www.a11yproject.com/resources/#development-tools)
