@@ -28,7 +28,7 @@
 CSS - [Materialize](https://materializecss.com/)<br>
 Back-end - [Django REST Framework](https://www.django-rest-framework.org/)<br>
 Front-end - [Vue.js](https://v2.vuejs.org/)<br>
-Graphical Charts - [D3](https://d3js.org/)
+Graphical Charts - [D3](https://d3js.org/)<br>
 Graphical Charts - [Chart.js](https://www.chartjs.org/docs/latest/) 
 
 
