@@ -1,28 +1,28 @@
 ## Name
-### TAP
-* Technology and Perceptibility
+### TAP - Technology and Perceptibility
 
 
 ## Project Overview
 * User can register (create account).
-* User can save NAMEs (link to accessibility resource with description).
-* User can access thier previously saved NAMEs.
-* User can share their link to a friend's email (or NAME account).
+* User can save TAPs (link to accessibility resource with description).
+* User can access thier previously saved TAPs.
+* User can share their link to a friend's email (or TAP account).
 * User can control full features of application using keyboard or other alternative navigation.
 * User can save examples of accessibility-related code snippets.
 * User can view data and data trends in graphic-chart and table forms.
 
 ### Important Concepts
-* Accessibility with Alternative Navigation.
+#### Accessibility with Alternative Navigation.
   * Application must be accessible to users of alternative navigation.
   * Application can be tested manually or use automated testing.
-* Research needs to be done to understand how best to provide effective access to technology, both physical individual-use devices and a means of high-speed internet access.
-* Research needs to be done to understand how other people perceive the world in order to make sure technology is accessible and technology training is effective.
-* This application can be used to store reference code-snippets of accessible features of web applications, this information would be useful for website developers.
-* This application can be used in the future to store in-house data models, which would be produced by in-house researchers. This information would be used to make decisions on how best to spend resources to provide three things to underserved individuals:
-  * Physical technology devices.
-  * Some form of high speed internet access.
-  * Training in digital literacy.
+#### Future Features
+ * Research needs to be done to understand how best to provide effective access to technology, both physical individual-use devices and a means of high-speed internet access.
+ * Research needs to be done to understand how other people perceive the world in order to make sure technology is accessible and technology training is effective.
+ * This application can be used to store reference code-snippets of accessible features of web applications, this information would be useful for website developers.
+ * This application can be used in the future to store in-house data models, which would be produced by in-house researchers. This information would be used to make decisions on how best to spend resources to provide three things to underserved individuals:
+   * Physical technology devices.
+   * Some form of high speed internet access.
+   * Training in digital literacy.
 
 ### Libraries and Frameworks
 CSS - [Materialize](https://materializecss.com/)<br>
