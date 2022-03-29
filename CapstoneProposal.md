@@ -19,32 +19,47 @@
   * Application must be accessible to users of alternative navigation.
   * Application can be tested manually[^firefox-accessibility-tester] or use automated testing.
 
-
 ### Libraries and Frameworks
-CSS - [Materialize](https://materializecss.com/)<br>
+<!-- CSS - [Materialize](https://materializecss.com/)<br> -->
 CSS - [Bootstrap](https://getbootstrap.com/)<br>
 Back-end - [Django REST Framework](https://www.django-rest-framework.org/)<br>
 Front-end - [Vue.js](https://v2.vuejs.org/)<br>
 Graphical Charts - [D3](https://d3js.org/)<br>
-Graphical Charts - [Chart.js](https://www.chartjs.org/docs/latest/)<br>
+<!-- Graphical Charts - [Chart.js](https://www.chartjs.org/docs/latest/)<br> -->
 
 
 ## Features
 
 ### User Stories
 1. As an Alternative Navigation user, I want to navigate the application using keyboard only, because this is how I access internet content.
-2. As an Alternative Navigation user, I want to navigate the application using screen-reader and keyboard only, because this is how I access internet content.
-3. As a Color Blind user, I want to the application to have adequate contrast, because adequate contrast is important for reading and understanding application content.
-4. As a User, I want to be able to create a login account, because I want to use the app in the future and have access to previous actions.
-5. As a User, I want to be able to save a set of three fields (url, url title, url description), because I want to refer to them in the future.
-6. As a User, I want to access my previously saved field sets, because I want to review and have access to the saved links' url and information.
-7. As a User, I want to share my field sets with other users in the form of common access field sets or shared via email or message system, because I want to share my knowledge and interests with other users.
-8. As a User, I want to be able to save a fourth element of the above field sets in the form of a code snippet, because I want to be able to include a snippet of code in addition to the existing three fields.
-9. As A mobile phone user, I need to be able to view the field sets.
+    - [ ] Learn how to make important content waypoints navigable.
+3. As an Alternative Navigation user, I want to navigate the application using screen-reader and keyboard only, because this is how I access internet content.
+    - [ ] Learn how to make important content waypoints navigable.
+5. As a Color Blind user, I want to the application to have adequate contrast, because adequate contrast is important for reading and understanding application content.
+    - [ ] Use Color Contrast Analyser as project is built.
+7. As a User, I want to be able to create a login account, because I want to use the app in the future and have access to previous actions.
+    - [ ] Create User Model.
+    - [ ] Create API for User Model.
+    - [ ] Create input fields (using Vue) for User creation component.
+    - [ ] Create button to submit User creation action.
+    - [ ] Have page display name of signed-in User.
+9. As a User, I want to be able to save a set of three fields (url, url title, url description), because I want to refer to them in the future.
+    - [ ] Create TAP (data) Model.
+    - [ ] Create API for TAP Model.
+    - [ ] Create input fields (using Vue) for TAP creation component.
+    - [ ] Create button to submit TAP creation action.
+11. As a User, I want to access my previously saved field sets, because I want to review and have access to the saved links' url and information.
+    - [ ] Create Django REST view for TAPs.
+    - [ ] Create  for TAPs.
+13. As A mobile phone user, I need to be able to view the field sets.
+    - [ ] Ensure site displays appropriately on small screens.
 
 ### Stretch Goals
 1. As a User, I want to be able to view the data of an external site's API provided for consumption in a format I can read, because I want to be able to review data from outside organizations.[^external-site-api][^stretch-goal]
 2. As a User, I want to be able to view the data of the external site in both graphical-chart and table forms, because I want to be able to know the value trends in the data presented.[^external-site-api][^stretch-goal]
+3. As a User, I want to be able to save a fourth element of the above field sets in the form of a code snippet, because I want to be able to include a snippet of code in addition to the existing three fields. This field can be useful to developers who want to share notes.[^stretch-goal]
+4. As a User, I want to share my field sets with other users in the form of common access field sets or shared via email or message system, because I want to share my knowledge and interests with other users.[^stretch-goal]
+
 [^stretch-goal]:
     Stretch Goals
 
@@ -57,31 +72,38 @@ Graphical Charts - [Chart.js](https://www.chartjs.org/docs/latest/)<br>
   * URL
   * URL Title
   * URL Description
-  * Code Snippet
+  * Code Snippet[^stretch-goal]
 * Data model for external sites' API[^external-site-api][^stretch-goal]    
 
 [^external-site-api]:
-    Stretch goal. External API to be determined.
+    External API to be determined.
+
 
 ## Schedule
-- [ ] Learn FireFox Accessiblity Tester[^firefox-accessibility-tester]
-- [ ] User Model and API
-- [ ] TAP Model and API
-- [ ] Learn Chart.js or 3D
-- [ ] Learn Bootstrap since it seems to have better 'button' integration than Materialize
-- [ ] Learn Django testing
-- [ ] Learn Django REST Framework testing
-- [ ] Write Django (REST) tests
-
+### Mar 30 - Mar 30:
+- [ ] 0.5 Days - Learn FireFox Accessibility Tester[^firefox-accessibility-tester]<br>
+### Mar 30 - Mar 30:
+- [ ] 0.5 Days - Learn Bootstrap since it seems to have better 'button' integration than Materialize
+### Apr 31 - Apr 31:
+- [ ] 0.5 Days - Learn proper accessible ARIA and HTML tags
+### Apr 31 - Apr 04:
+- [ ] 1.5 Days - Learn Django REST Framework testing
+### Apr 04 - Apr 05:
+- [ ] 1.5 Days - Write Django (REST) tests
+### Apr 05 - Apr 06:
+- [ ] 1.5 Days - User Model - API and Front End
+### Apr 07 - Apr 08:
+- [ ] 1.5 Days - TAP Model - API and Front End
+### Apr 11 - Apr 12:
+- [ ] 1.0 Days - Learn Chart.js or 3D[^stretch-goal]
 
 [^firefox-accessibility-tester]: [FireFox Accessiblity Tester](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/index.html)
-
-
 
 
 ## License
 
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+
 
 ## Resources
 
