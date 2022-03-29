@@ -115,6 +115,10 @@ Graphical Charts - [D3](https://d3js.org/)<br>
 [^firefox-accessibility-tester]: [FireFox Accessiblity Tester](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/index.html)
 
 
+## Project Setup
+- [ ] Create GitHub repository for TAP project
+
+
 ## License
 
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
