@@ -33,25 +33,40 @@ Graphical Charts - [D3](https://d3js.org/)<br>
 ### User Stories
 1. As an Alternative Navigation user, I want to navigate the application using keyboard only, because this is how I access internet content.
     - [ ] Learn how to make important content waypoints navigable.
-3. As an Alternative Navigation user, I want to navigate the application using screen-reader and keyboard only, because this is how I access internet content.
+2. As an Alternative Navigation user, I want to navigate the application using screen-reader and keyboard only, because this is how I access internet content.
     - [ ] Learn how to make important content waypoints navigable.
-5. As a Color Blind user, I want to the application to have adequate contrast, because adequate contrast is important for reading and understanding application content.
+3. As a Color Blind user, I want to the application to have adequate contrast, because adequate contrast is important for reading and understanding application content.
     - [ ] Use Color Contrast Analyser as project is built.
-7. As a User, I want to be able to create a login account, because I want to use the app in the future and have access to previous actions.
+4. As a User, I want to be able to create a login account, because I want to use the app in the future to view and edit TAPs.
     - [ ] Create User Model.
+      - [ ] Create CustomUser model in case additional User model fields might be needed in future.
     - [ ] Create API for User Model.
+      - [ ] Create Django REST API views.py for Users.
+      - [ ] Create Django REST API urls.py for Users.
+      - [ ] Create Django REST API serializers.py for Users.
+      - [ ] Create Django REST API permissions.py for Users.
     - [ ] Create input fields (using Vue) for User creation component.
+      - [ ] Bind the input fields to the Vue model.
     - [ ] Create button to submit User creation action.
+      - [ ] Use 'v-on:click' or '@click'
     - [ ] Have page display name of signed-in User.
-9. As a User, I want to be able to save a set of three fields (url, url title, url description), because I want to refer to them in the future.
+      - [ ] Create an HTML block with 'v-if' to control when User's username is displayed and tie that to a 'checkedIn' flag.
+5. As a User, I want to be able to save a set of three fields (url, url title, url description), because I want to refer to them in the future.
     - [ ] Create TAP (data) Model.
     - [ ] Create API for TAP Model.
+      - [ ] Create Django REST API views.py for TAPs.
+      - [ ] Create Django REST API urls.py for TAPs.
+      - [ ] Create Django REST API serializers.py for TAPs.
+      - [ ] Create Django REST API permissions.py for TAPs.
+      - [ ] Create permission in permissions.py to allow editing of TAPs by User who owns the TAP.
+      - [ ] Incorporate permissions in views.py.
     - [ ] Create input fields (using Vue) for TAP creation component.
+      - [ ] Bind the input fields to the Vue model.
     - [ ] Create button to submit TAP creation action.
-11. As a User, I want to access my previously saved field sets, because I want to review and have access to the saved links' url and information.
-    - [ ] Create Django REST view for TAPs.
-    - [ ] Create  for TAPs.
-13. As A mobile phone user, I need to be able to view the field sets.
+      - [ ] Use 'v-on:click' or '@click'
+6. As a User, I want to access my previously saved field sets, because I want to review and have access to the saved links' url and information.
+    NOTE: These features may be completed in User story above.
+7. As A mobile phone user, I need to be able to view the field sets.
     - [ ] Ensure site displays appropriately on small screens.
 
 ### Stretch Goals
@@ -83,7 +98,7 @@ Graphical Charts - [D3](https://d3js.org/)<br>
 ### Mar 30 - Mar 30:
 - [ ] 0.5 Days - Learn FireFox Accessibility Tester[^firefox-accessibility-tester]<br>
 ### Mar 30 - Mar 30:
-- [ ] 0.5 Days - Learn Bootstrap since it seems to have better 'button' integration than Materialize
+- [ ] 0.5 Days - Learn Bootstrap
 ### Apr 31 - Apr 31:
 - [ ] 0.5 Days - Learn proper accessible ARIA and HTML tags
 ### Apr 31 - Apr 04:
@@ -111,15 +126,22 @@ Inspiration, examples, code snippets, etc.
 * [a11y](https://www.a11yproject.com/)
 * [MDN ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
 * [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
+* Frameworks and Libraries
+  * [Vue.js 3](https://vuejs.org/guide/introduction.html)
+  * [Vue.js 2](https://v2.vuejs.org/v2/guide/)
+  * [Django REST Framework](https://www.django-rest-framework.org/)
+  * [Django 3.2](https://docs.djangoproject.com/en/3.2/)
+  * [Bootstrap](https://getbootstrap.com/)
+  * [D3 - SVG compatible](https://d3js.org/)
+  * [Chart.js - Accessiblity](https://www.chartjs.org/docs/latest/general/accessibility.html)
+  * [Materialize](https://materializecss.com/)
 * [Mozilla - On Accessiblity](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
 * [FireFox - Accessibility Inspector](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/index.html)
 * [Keyboard-navigable JavaScript widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets)
 * [National Digital Inclusion Alliance](https://www.digitalinclusion.org/definitions/)
-* [Chart.js - Accessiblity](https://www.chartjs.org/docs/latest/general/accessibility.html)
 * [\<canvas\> - Accessibility](https://pauljadam.com/demos/canvas.html)
 * [Paul J. Adam - Demos](https://pauljadam.com/demos/)
 * [SVG: Scalable Vector Graphics](https://developer.mozilla.org/en-US/docs/Web/SVG)
-* [D3 - SVG compatible](https://d3js.org/)
 * [SVG In HTML Introduction](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_In_HTML_Introduction)
 * [SVG animation with SMIL](https://developer.mozilla.org/en-US/docs/Web/SVG/SVG_animation_with_SMIL)
 * [SVG Tutorial](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial)
@@ -137,5 +159,6 @@ Inspiration, examples, code snippets, etc.
 * [a11y - Pronunciation](https://www.a11yproject.com/posts/a11y-and-other-numeronyms/)
 * [a11y - Bookmarklets](https://www.a11yproject.com/resources/#bookmarklets)
 * [a11y - Development Tools](https://www.a11yproject.com/resources/#development-tools)
+* [The Bootcampers Guide to Web Accessibility](https://a11y-with-lindsey.ck.page/products/pre-order-the-bootcampers-guide-to-web)
 * [.md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Accessibility APIs: A Key To Web Accessibility](https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/)
