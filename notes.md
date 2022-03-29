@@ -10,5 +10,8 @@ Show markdown preview: `ctrl-shift-v`
 
 
 ## Project Setup
-### Virtual environment setup
+### Create 'setup' branch:
+* `git checkout -b setup`
+  * [git checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout)<br>
+### Virtual environment setup:
 * `pipenv install django==3.2 docutils==0.18.1 djangorestframework==3.13.1`
