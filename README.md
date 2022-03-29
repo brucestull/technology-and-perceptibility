@@ -116,7 +116,14 @@ Graphical Charts - [D3](https://d3js.org/)<br>
 
 
 ## Project Setup
-- [ ] Create GitHub repository for TAP project
+- [X] Create GitHub repository for TAP project
+- [ ] Create pipenv
+  - [ ] Use django==3.2<br>
+  - [ ] Use docutils==0.18.1<br>
+    [docutils at Django](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/admindocs/#module-django.contrib.admindocs)<br>
+    [docutils at PyPI](https://pypi.org/project/docutils/)<br>
+  - [ ] Use djangorestframework==V.v<br>
+- [ ] Create Django project
 
 
 ## License
