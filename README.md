@@ -122,7 +122,7 @@ Graphical Charts - [D3](https://d3js.org/)<br>
   - [ ] Use docutils==0.18.1<br>
     [docutils at Django](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/admindocs/#module-django.contrib.admindocs)<br>
     [docutils at PyPI](https://pypi.org/project/docutils/)<br>
-  - [ ] Use djangorestframework==V.v<br>
+  - [ ] Use djangorestframework==3.13.1<br>
 - [ ] Create Django project
 
 
