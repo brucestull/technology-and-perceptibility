@@ -128,7 +128,7 @@ Graphical Charts - [D3](https://d3js.org/)<br>
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the [GNU General Public License v3.0] License - see the [LICENSE.md](https://github.com/brucestull/technology-and-perceptibility/blob/main/LICENSE) file for details
 
 
 ## Resources
