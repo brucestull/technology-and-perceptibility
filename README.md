@@ -116,7 +116,7 @@ Graphical Charts - [D3](https://d3js.org/)<br>
 
 
 ## Project Setup
-- [X] Create GitHub repository for TAP project
+- [X] Create GitHub repository for [TAP project](https://github.com/brucestull/technology-and-perceptibility)
 - [ ] Create pipenv
   - [ ] Use django==3.2<br>
   - [ ] Use docutils==0.18.1<br>
