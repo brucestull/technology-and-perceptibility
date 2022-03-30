@@ -126,6 +126,14 @@
 - [X] Create Django project
 
 
+## Extras and Reminders
+- [ ] Favicon.
+- [ ] Normalize the css.
+  * [index.html with normalize](https://github.com/PdxCodeGuild/class_otter/blob/main/code/bruce/Module_02/lab03_Blog/templates/index.html)
+  * \<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+- [ ] Check order of \<script\> tags to ensure proper script execution.
+- [ ] Check some of the links in Vue console when there are errors/warnings. Sometimes the link will show the actual location of bug even though line numbers may be different than in IDE.
+
 ## License
 
 This project is licensed under the [GNU General Public License v3.0] License - see the [LICENSE.md](https://github.com/brucestull/technology-and-perceptibility/blob/main/LICENSE) file for details
@@ -173,3 +181,4 @@ Inspiration, examples, code snippets, etc.
 * [The Bootcampers Guide to Web Accessibility](https://a11y-with-lindsey.ck.page/products/pre-order-the-bootcampers-guide-to-web)
 * [.md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Accessibility APIs: A Key To Web Accessibility](https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/)
+* [Create GitHub Wiki](https://docs.github.com/en/communities/documenting-your-project-with-wikis)
