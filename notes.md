@@ -240,5 +240,6 @@
   ```
 
 
-- [ ] Set up Docutils
+- [ ] Set up Docutils.
+- [ ] Create branch for next user story.
 ### 4. Start next user story:
