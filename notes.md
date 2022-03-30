@@ -10,12 +10,16 @@
 * [Django Tutorial](https://docs.djangoproject.com/en/3.2/intro/tutorial01/)<br>
 * [Django Customizing](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/)<br>
 * [Django Custom User Model](https://learndjango.com/tutorials/django-custom-user-model)<br>
+* [Example CSS Project](https://github.com/PdxCodeGuild/class_otter/tree/main/code/bruce/Module_03/lab03_chirp)
+* [Example Django and Jinja base.html](https://github.com/PdxCodeGuild/class_otter/blob/main/code/bruce/Module_03/lab03_chirp/templates/base.html)
+* [Example Django and Jinja templates](https://github.com/PdxCodeGuild/class_otter/tree/main/code/bruce/Module_03/lab03_chirp/templates)
 
 
 ## Commands, keybindings, and dev server info
 * Show markdown preview: `ctrl-shift-v`
 * Run server: `python manage.py runserver`
-* Server address: ``
+* App address: `http://localhost:8000/`
+* Admin address: `http://localhost:8000/admin/`
 
 ## Project Setup
 * [Custom User Model](https://learndjango.com/tutorials/django-custom-user-model)
@@ -240,6 +244,8 @@
   ```
 
 
-- [ ] Set up Docutils.
-- [ ] Create branch for next user story.
+- [X] Set up Docutils.
+    * [docutils](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/admindocs/#module-django.contrib.admindocs)
+- [X] Create branch for next user story.
+    * `add-bootstrap-to-templates`
 ### 4. Start next user story:
