@@ -20,12 +20,12 @@
   * Application can be tested manually[^firefox-accessibility-tester] or use automated testing.
 
 ### Libraries and Frameworks
-<!-- CSS - [Materialize](https://materializecss.com/)<br> -->
-* CSS - [Bootstrap](https://getbootstrap.com/)
+* CSS - [Materialize](https://materializecss.com/)
+<!-- * CSS - [Bootstrap](https://getbootstrap.com/) -->
 * Back-end - [Django REST Framework](https://www.django-rest-framework.org/)
 * Front-end - [Vue.js](https://v2.vuejs.org/)
 * Graphical Charts - [D3](https://d3js.org/)
-<!-- Graphical Charts - [Chart.js](https://www.chartjs.org/docs/latest/)<br> -->
+<!-- * Graphical Charts - [Chart.js](https://www.chartjs.org/docs/latest/) -->
 
 
 ## Features
@@ -98,7 +98,7 @@
 ### Mar 30 - Mar 30:
 - [ ] 0.5 Days - Learn FireFox Accessibility Tester[^firefox-accessibility-tester]
 ### Mar 30 - Mar 30:
-- [ ] 0.5 Days - Learn Bootstrap
+- [ ] 0.5 Days - Learn Materialize
 ### Apr 31 - Apr 31:
 - [ ] 0.5 Days - Learn proper accessible ARIA and HTML tags
 ### Apr 31 - Apr 04:
@@ -116,10 +116,10 @@
 
 
 ## Project Setup
-- [X] Create GitHub repository for [TAP project](https://github.com/brucestull/technology-and-perceptibility)
+- [X] Create GitHub repository for [TAP project](https://github.com/brucestull/technology-and-perceptibility)S
 - [X] Create pipenv
   - [X] Use django==3.2
-  - [ ] Use docutils==0.18.1 
+  - [X] Use docutils==0.18.1 
     [docutils at Django](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/admindocs/#module-django.contrib.admindocs) 
     [docutils at PyPI](https://pypi.org/project/docutils/) 
   - [X] Use djangorestframework==3.13.1 
@@ -151,9 +151,9 @@ Inspiration, examples, code snippets, etc.
   * [Django REST Framework](https://www.django-rest-framework.org/)
   * [Django 3.2](https://docs.djangoproject.com/en/3.2/)
   * [Bootstrap](https://getbootstrap.com/)
+  * [Materialize](https://materializecss.com/)
   * [D3 - SVG compatible](https://d3js.org/)
   * [Chart.js - Accessiblity](https://www.chartjs.org/docs/latest/general/accessibility.html)
-  * [Materialize](https://materializecss.com/)
 * [Mozilla - On Accessiblity](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
 * [FireFox - Accessibility Inspector](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/index.html)
 * [Keyboard-navigable JavaScript widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets)
