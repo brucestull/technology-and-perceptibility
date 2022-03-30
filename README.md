@@ -21,10 +21,10 @@
 
 ### Libraries and Frameworks
 <!-- CSS - [Materialize](https://materializecss.com/)<br> -->
-CSS - [Bootstrap](https://getbootstrap.com/)<br>
-Back-end - [Django REST Framework](https://www.django-rest-framework.org/)<br>
-Front-end - [Vue.js](https://v2.vuejs.org/)<br>
-Graphical Charts - [D3](https://d3js.org/)<br>
+* CSS - [Bootstrap](https://getbootstrap.com/)
+* Back-end - [Django REST Framework](https://www.django-rest-framework.org/)
+* Front-end - [Vue.js](https://v2.vuejs.org/)
+* Graphical Charts - [D3](https://d3js.org/)
 <!-- Graphical Charts - [Chart.js](https://www.chartjs.org/docs/latest/)<br> -->
 
 
@@ -39,12 +39,12 @@ Graphical Charts - [D3](https://d3js.org/)<br>
     - [ ] Use Color Contrast Analyser as project is built.
 4. As a User, I want to be able to create a login account, because I want to use the app in the future to view and edit TAPs.
     - [ ] Create User Model.
-      - [ ] Create CustomUser model in case additional User model fields might be needed in future.
+      - [X] Create CustomUser model in case additional User model fields might be needed in future.
     - [ ] Create API for User Model.
-      - [ ] Create Django REST API views.py for Users.
-      - [ ] Create Django REST API urls.py for Users.
-      - [ ] Create Django REST API serializers.py for Users.
-      - [ ] Create Django REST API permissions.py for Users.
+      - [ ] Create Django REST API `views.py` for Users.
+      - [ ] Create Django REST API `urls.py` for Users.
+      - [ ] Create Django REST API `serializers.py` for Users.
+      - [ ] Create Django REST API `permissions.py` for Users.
     - [ ] Create input fields (using Vue) for User creation component.
       - [ ] Bind the input fields to the Vue model.
     - [ ] Create button to submit User creation action.
@@ -54,12 +54,12 @@ Graphical Charts - [D3](https://d3js.org/)<br>
 5. As a User, I want to be able to save a set of three fields (url, url title, url description), because I want to refer to them in the future.
     - [ ] Create TAP (data) Model.
     - [ ] Create API for TAP Model.
-      - [ ] Create Django REST API views.py for TAPs.
-      - [ ] Create Django REST API urls.py for TAPs.
-      - [ ] Create Django REST API serializers.py for TAPs.
-      - [ ] Create Django REST API permissions.py for TAPs.
-      - [ ] Create permission in permissions.py to allow editing of TAPs by User who owns the TAP.
-      - [ ] Incorporate permissions in views.py.
+      - [ ] Create Django REST API `views.py` for TAPs.
+      - [ ] Create Django REST API `urls.py` for TAPs.
+      - [ ] Create Django REST API `serializers.py` for TAPs.
+      - [ ] Create Django REST API `permissions.py` for TAPs.
+      - [ ] Create permission in `permissions.py` to allow editing of TAPs by User who owns the TAP.
+      - [ ] Incorporate permissions in `views.py`.
     - [ ] Create input fields (using Vue) for TAP creation component.
       - [ ] Bind the input fields to the Vue model.
     - [ ] Create button to submit TAP creation action.
@@ -96,7 +96,7 @@ Graphical Charts - [D3](https://d3js.org/)<br>
 
 ## Schedule
 ### Mar 30 - Mar 30:
-- [ ] 0.5 Days - Learn FireFox Accessibility Tester[^firefox-accessibility-tester]<br>
+- [ ] 0.5 Days - Learn FireFox Accessibility Tester[^firefox-accessibility-tester]
 ### Mar 30 - Mar 30:
 - [ ] 0.5 Days - Learn Bootstrap
 ### Apr 31 - Apr 31:
@@ -117,13 +117,13 @@ Graphical Charts - [D3](https://d3js.org/)<br>
 
 ## Project Setup
 - [X] Create GitHub repository for [TAP project](https://github.com/brucestull/technology-and-perceptibility)
-- [ ] Create pipenv
-  - [ ] Use django==3.2<br>
-  - [ ] Use docutils==0.18.1<br>
-    [docutils at Django](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/admindocs/#module-django.contrib.admindocs)<br>
-    [docutils at PyPI](https://pypi.org/project/docutils/)<br>
-  - [ ] Use djangorestframework==3.13.1<br>
-- [ ] Create Django project
+- [X] Create pipenv
+  - [X] Use django==3.2
+  - [ ] Use docutils==0.18.1 
+    [docutils at Django](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/admindocs/#module-django.contrib.admindocs) 
+    [docutils at PyPI](https://pypi.org/project/docutils/) 
+  - [X] Use djangorestframework==3.13.1 
+- [X] Create Django project
 
 
 ## License
