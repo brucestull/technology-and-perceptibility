@@ -18,8 +18,8 @@
 ## Commands, keybindings, and dev server info
 * Show markdown preview: `ctrl-shift-v`
 * Run server: `python manage.py runserver`
-* App address: `http://localhost:8000/`
-* Admin address: `http://localhost:8000/admin/`
+* App address: [http://localhost:8000/](http://localhost:8000/)
+* Admin address: [http://localhost:8000/admin/](http://localhost:8000/admin/)
 * Virtual Environment activation:
   * Powershell: `C:\Users\Bruce\.virtualenvs\technology-and-perceptibility-MoNxetid\Scripts\activate.ps1`
   * BASH: `source C:/Users/Bruce/.virtualenvs/technology-and-perceptibility-MoNxetid/Scripts/activate`
@@ -27,12 +27,15 @@
 ## Project Setup
 * [Custom User Model](https://learndjango.com/tutorials/django-custom-user-model)
 * [How to start a Django project  (PDXCG Style)](https://github.com/PdxCodeGuild/class_otter/blob/main/3%20Django/docs/Django%20Project%20Setup.md)
+
 ### 1. Create and checkout 'setup' branch:
 * Use [checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout) to create new git branch.<br>
   * `git checkout -b setup`
+
 ### 2. Virtual environment setup:
 * Create virtual environment
   * `pipenv install django==3.2 docutils==0.18.1 djangorestframework==3.13.1`
+
 ### 3. Django Project Creation:
 * Create Django Project:
   * `django-admin startproject tap_project .`
@@ -248,7 +251,9 @@
     * [docutils](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/admindocs/#module-django.contrib.admindocs)
 - [X] Create branch for next user story.
     * `add-bootstrap-to-templates`
+
 ### 4. Start next user story:
+
 #### NOTE: Encountered CSS issues
 * Encountered issues with form field labels having font too small while using Materialize. Decided to try my own CSS.
 - [X] Create branch for CSS practice and adding to project.
@@ -257,6 +262,7 @@
   * `practice_and_learning_directory\practice_css`
 * Remember to have patience:
   * It takes time to learn, we will do stuff poorly until we learn how to do it non-poorly.
+
 #### CSS Concepts explored:
   * [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
   * [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
@@ -271,5 +277,20 @@
   * [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
   * [Sticky Footer](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers)
   * [@media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
-#### Create branch: `add-css-header-footer`
-* `git checkout -b add-css-header-footer main`
+
+#### Create branch [git checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout): `add-css-header-footer`
+* Remember to use [git fetch](https://www.atlassian.com/git/tutorials/syncing/git-fetch):
+  * `git fetch --dry-run` a super safe way to see what fetch will do.
+  * It downloads current versions of remote branchs.
+  * It doesn't automatically `merge` any of these versions.
+  * `git pull` will merge remote changes into current branch.
+- [X] `git checkout -b add-css-header-footer main`
+- [X] Add the css to branch `add-css-header-footer`.
+- [X] Only change `README.md`, `notes.md`, and project css on this branch.
+* Create `static/css/style.css`.
+  * [Django static files](https://docs.djangoproject.com/en/4.0/howto/static-files/)
+* Commit the existing CSS version.
+  - [ ] Verify CSS finishing touches later.
+
+#### Create branch [git checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout): `add-css-header-footer`
+
