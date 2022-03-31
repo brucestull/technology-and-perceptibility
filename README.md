@@ -69,6 +69,17 @@
 7. As A mobile phone user, I need to be able to view the field sets.
     - [ ] Ensure site displays appropriately on small screens.
 
+### Miscellaneous Tasks:
+- [ ] Apply CSS:
+  - [ ] Apply sticky footer to `base.html`.
+  - [ ] Apply `flex` and [`@media`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media) to a top nav/header. As screen width grows, move from stacked title/nav to side-by-side with one on right and one on left.
+  - [ ] Compare my own 'cards' in Stuff project to [Card](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card) - [Download the code](https://github.com/mdn/css-examples/blob/main/css-cookbook/card--download.html).[^cards-and-accessibility]
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+[^cards-and-accessibility]:[Cards Accessibility Issues](https://inclusive-components.design/cards/)
+
 ### Stretch Goals
 1. As a User, I want to be able to view the data of an external site's API provided for consumption in a format I can read, because I want to be able to review data from outside organizations.[^external-site-api][^stretch-goal]
 2. As a User, I want to be able to view the data of the external site in both graphical-chart and table forms, because I want to be able to know the value trends in the data presented.[^external-site-api][^stretch-goal]
@@ -100,7 +111,7 @@
 ### Mar 30 - Mar 30:
 - [X] 0.5 Days - Learn Materialize - Decided to try my own CSS due to font-size issues
 ### Mar 31 - Mar 31:
-- [ ] 0.5 Days - Practice my own custom CSS [We Got Stuff!](https://github.com/PdxCodeGuild/class_otter/tree/main/code/bruce/Module_02/lab02_Company_Home)
+- [ ] 0.5 Days - Practice my own custom CSS - [We Got Stuff!](https://github.com/PdxCodeGuild/class_otter/tree/main/code/bruce/Module_02/lab02_Company_Home)
 ### Mar 31 - Mar 31:
 - [ ] 0.5 Days - Learn proper accessible ARIA and HTML tags
 ### Apr 01 - Apr 04:
@@ -118,7 +129,7 @@
 
 
 ## Project Setup
-- [X] Create GitHub repository for [TAP project](https://github.com/brucestull/technology-and-perceptibility)S
+- [X] Create GitHub repository for [TAP project](https://github.com/brucestull/technology-and-perceptibility)
 - [X] Create pipenv
   - [X] Use django==3.2
   - [X] Use docutils==0.18.1 
@@ -147,6 +158,7 @@ Inspiration, examples, code snippets, etc.
 * [a11y](https://www.a11yproject.com/)
 * [MDN ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
 * [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
+* [Cards and Accessibility](https://inclusive-components.design/cards/)
 * Frameworks and Libraries
   * [Vue.js 3](https://vuejs.org/guide/introduction.html)
   * [Vue.js 2](https://v2.vuejs.org/v2/guide/)
