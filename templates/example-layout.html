@@ -1,0 +1,66 @@
+<body>
+    <div class="full-width-header">
+        <header>
+            <div class="title-and-subtitle">
+                <h1>TAP - Accesibility in Action</h1>
+            </div>
+            <nav>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Our Values</a></p>
+                <address>
+                    <a href="mailto:Bruce.Stull@gmail.com">Bruce.Stull@gmail.com</a><br>
+                    <a href="https://brucestull.com/" target="_blank">brucestull.com</a>
+                </address>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        {% block content %}
+
+        {% comment %} home.html {% endcomment %}
+        {% block content %}
+
+            {% if user.is_authenticated %}
+            Hi {{ user.username }}!
+            <p><a href="{% url 'logout' %}">Log Out</a></p>
+            {% else %}
+            <p>You are not logged in</p>
+            <a href="{% url 'login' %}">Log In</a> |
+            <a href="{% url 'signup' %}">Sign Up</a>
+            {% endif %}
+
+        {% endblock %}
+
+        {% comment %} login.html {% endcomment %}
+        {% block content %}
+
+            <h2>Log In</h2>
+            <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Log In</button>
+            </form>
+
+        {% endblock %}
+
+        {% comment %} signup.html {% endcomment %}
+        {% block content %}
+
+            <h2>Sign Up</h2>
+            <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Sign Up</button>
+            </form>
+
+        {% endblock %}
+
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>Butterscotch Pi 2022</p>
+        <p><a href="#">Link to Top of Home</a>
+    </footer>    
+</body>

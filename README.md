@@ -71,13 +71,10 @@
 
 ### Miscellaneous Tasks:
 - [ ] Apply CSS:
-  - [ ] Apply sticky footer to `base.html`.
+  - [X] Apply sticky footer to `base.html`.
   - [ ] Apply `flex` and [`@media`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media) to a top nav/header. As screen width grows, move from stacked title/nav to side-by-side with one on right and one on left.
-  - [ ] Compare my own 'cards' in Stuff project to [Card](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card) - [Download the code](https://github.com/mdn/css-examples/blob/main/css-cookbook/card--download.html).[^cards-and-accessibility]
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+  - [X] Compare my own 'cards' in Stuff project to [Card](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card) - [Download the code](https://github.com/mdn/css-examples/blob/main/css-cookbook/card--download.html).[^cards-and-accessibility]
+
 [^cards-and-accessibility]:[Cards Accessibility Issues](https://inclusive-components.design/cards/)
 
 ### Stretch Goals
@@ -111,9 +108,9 @@
 ### Mar 30 - Mar 30:
 - [X] 0.5 Days - Learn Materialize - Decided to try my own CSS due to font-size issues
 ### Mar 31 - Mar 31:
-- [ ] 0.5 Days - Practice my own custom CSS - [We Got Stuff!](https://github.com/PdxCodeGuild/class_otter/tree/main/code/bruce/Module_02/lab02_Company_Home)
+- [X] 0.5 Days - Practice my own custom CSS - [We Got Stuff!](https://github.com/PdxCodeGuild/class_otter/tree/main/code/bruce/Module_02/lab02_Company_Home)
 ### Mar 31 - Mar 31:
-- [ ] 0.5 Days - Learn proper accessible ARIA and HTML tags
+- [ ] 0.5 Days - Learn proper accessible ARIA and HTML tags - [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning)
 ### Apr 01 - Apr 04:
 - [ ] 1.5 Days - Learn Django REST Framework testing
 ### Apr 04 - Apr 05:
@@ -146,6 +143,7 @@
   * \<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
 - [ ] Check order of \<script\> tags to ensure proper script execution.
 - [ ] Check some of the links in Vue console when there are errors/warnings. Sometimes the link will show the actual location of bug even though line numbers may be different than in IDE.
+- [ ] CSS is almost done. Add card for CSS finishing touches to the backlog. Finish it some other day.
 
 ## License
 
