@@ -20,6 +20,9 @@
 * Run server: `python manage.py runserver`
 * App address: `http://localhost:8000/`
 * Admin address: `http://localhost:8000/admin/`
+* Virtual Environment activation:
+  * Powershell: `C:\Users\Bruce\.virtualenvs\technology-and-perceptibility-MoNxetid\Scripts\activate.ps1`
+  * BASH: `source C:/Users/Bruce/.virtualenvs/technology-and-perceptibility-MoNxetid/Scripts/activate`
 
 ## Project Setup
 * [Custom User Model](https://learndjango.com/tutorials/django-custom-user-model)
@@ -30,9 +33,6 @@
 ### 2. Virtual environment setup:
 * Create virtual environment
   * `pipenv install django==3.2 docutils==0.18.1 djangorestframework==3.13.1`
-* Virtual Environment activation:
-  * Powershell: `C:\Users\Bruce\.virtualenvs\technology-and-perceptibility-MoNxetid\Scripts\activate.ps1`
-  * BASH: `source C:/Users/Bruce/.virtualenvs/technology-and-perceptibility-MoNxetid/Scripts/activate`
 ### 3. Django Project Creation:
 * Create Django Project:
   * `django-admin startproject tap_project .`
@@ -249,3 +249,25 @@
 - [X] Create branch for next user story.
     * `add-bootstrap-to-templates`
 ### 4. Start next user story:
+#### NOTE: Encountered CSS issues
+* Encountered issues with form field labels having font too small while using Materialize. Decided to try my own CSS.
+- [X] Create branch for CSS practice and adding to project.
+  * `my-css-branch`
+* CSS practice directory:
+  * `practice_and_learning_directory\practice_css`
+* Remember to have patience:
+  * It takes time to learn, we will do stuff poorly until we learn how to do it non-poorly.
+#### CSS Concepts explored:
+  * [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+  * [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+  * [CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
+  * [margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
+  * [padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
+  * [card](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card)
+  * [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
+  * [em, px](https://www.w3.org/Style/Examples/007/units.en.html)
+  * [Flexible Box](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+  * [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
+  * [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
+  * [Sticky Footer](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers)
+  * [@media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
