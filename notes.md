@@ -20,6 +20,9 @@
 * Run server: `python manage.py runserver`
 * App address: `http://localhost:8000/`
 * Admin address: `http://localhost:8000/admin/`
+* Virtual Environment activation:
+  * Powershell: `C:\Users\Bruce\.virtualenvs\technology-and-perceptibility-MoNxetid\Scripts\activate.ps1`
+  * BASH: `source C:/Users/Bruce/.virtualenvs/technology-and-perceptibility-MoNxetid/Scripts/activate`
 
 ## Project Setup
 * [Custom User Model](https://learndjango.com/tutorials/django-custom-user-model)
@@ -30,9 +33,6 @@
 ### 2. Virtual environment setup:
 * Create virtual environment
   * `pipenv install django==3.2 docutils==0.18.1 djangorestframework==3.13.1`
-* Virtual Environment activation:
-  * Powershell: `C:\Users\Bruce\.virtualenvs\technology-and-perceptibility-MoNxetid\Scripts\activate.ps1`
-  * BASH: `source C:/Users/Bruce/.virtualenvs/technology-and-perceptibility-MoNxetid/Scripts/activate`
 ### 3. Django Project Creation:
 * Create Django Project:
   * `django-admin startproject tap_project .`
@@ -249,3 +249,8 @@
 - [X] Create branch for next user story.
     * `add-bootstrap-to-templates`
 ### 4. Start next user story:
+* Encountered issues with form field labels having font too small while using Materialize. Decided to try my own CSS.
+- [X] Create branch for CSS practice and adding to project.
+  * `my-css-branch`
+* CSS practice directory:
+  * `practice_and_learning_directory\practice_css`

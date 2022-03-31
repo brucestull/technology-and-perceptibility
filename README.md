@@ -96,16 +96,18 @@
 
 ## Schedule
 ### Mar 30 - Mar 30:
-- [ ] 0.5 Days - Learn FireFox Accessibility Tester[^firefox-accessibility-tester]
+- [X] 0.5 Days - Learn FireFox Accessibility Tester[^firefox-accessibility-tester]
 ### Mar 30 - Mar 30:
-- [ ] 0.5 Days - Learn Materialize
-### Apr 31 - Apr 31:
+- [X] 0.5 Days - Learn Materialize - Decided to try my own CSS due to font-size issues
+### Mar 31 - Mar 31:
+- [ ] 0.5 Days - Practice my own custom CSS [We Got Stuff!](https://github.com/PdxCodeGuild/class_otter/tree/main/code/bruce/Module_02/lab02_Company_Home)
+### Mar 31 - Mar 31:
 - [ ] 0.5 Days - Learn proper accessible ARIA and HTML tags
-### Apr 31 - Apr 04:
+### Apr 01 - Apr 04:
 - [ ] 1.5 Days - Learn Django REST Framework testing
 ### Apr 04 - Apr 05:
 - [ ] 1.5 Days - Write Django (REST) tests
-### Apr 05 - Apr 06:
+### Apr 06 - Apr 07:
 - [ ] 1.5 Days - User Model - API and Front End
 ### Apr 07 - Apr 08:
 - [ ] 1.5 Days - TAP Model - API and Front End

@@ -27,7 +27,7 @@
 
 :root {
     --header_border_brown: #944E4E;
-  }
+}
 
 html {
     /* If you want to create the gap by shrinking the content, set the box-sizing property to border-box (i.e. box-sizing: border-box). */
@@ -70,7 +70,7 @@ nav > p > a {
     /* color: #D9AB82; */
 }
 
-/* NOTE: We now have the images staying withing the width of the diesplay. There is a little bit of a margin around the primary elements. Since the 'items' are within 'main', the 'margin' of 'main' provides the 'margin' on the sides of '<div class="all-the-stuff">'. The 'margin' is the 'main's margin, so the sub-items may not need 'margin'.*/
+/* NOTE: We now have the images staying withing the width of the display. There is a little bit of a margin around the primary elements. Since the 'items' are within 'main', the 'margin' of 'main' provides the 'margin' on the sides of '<div class="all-the-stuff">'. The 'margin' is the 'main's margin, so the sub-items may not need 'margin'.*/
 
 /* Let's align the text of the header to 'center'. This will affect a <div> and a <nav>, which are in the <header>. */
 header {
