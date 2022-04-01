@@ -312,4 +312,4 @@
     * `git fetch` is probably a better way to get the remote changes onto our local repo.
 
 #### Create branch [git checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout): `create-tap-model-and-api`
-
+* `git checkout -b create-tap-model-and-api main`
