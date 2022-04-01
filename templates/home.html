@@ -23,7 +23,8 @@
 
   <article v-for="tap in taps" class="a-single-tap">
     <h3>[[ tap.title ]]</h3>
-    <p><a :href="tap.localBrowsableApiUrl" v-bind:title="tap.url_label" target="_blank">[[ tap.url_label ]]</a></p>
+    <a :href="tap.localBrowsableApiUrl" v-bind:title="tap.url_label" target="_blank">API: [[ tap.title ]]</a><br>
+    <a :href="tap.url" v-bind:title="tap.url_label" target="_blank">[[ tap.url_label ]]<a>
     <p>[[ tap.id ]] : [[ tap.description ]]</p>
   </article>
 
