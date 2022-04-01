@@ -309,4 +309,6 @@
   * Pulled [changes](https://github.com/brucestull/technology-and-perceptibility/commit/ebf322a06a09a016685d636b0de8a4ecc5e09b57) and [more changes](https://github.com/brucestull/technology-and-perceptibility/commit/bf23fd362a261b5c384dc3e8b45951946486f336) into main.
   * Learned that weird things happen when trying to take notes while on the branch being committed.
   * There is no need to `git pull origin main` (while on `edit-readme-and-notes`) since we don't need to `pull` all the changes to `main` into our feature branch.
+    * `git fetch` is probably a better way to get the remote changes onto our local repo.
+
 
