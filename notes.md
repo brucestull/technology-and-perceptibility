@@ -28,15 +28,15 @@
 * [Custom User Model](https://learndjango.com/tutorials/django-custom-user-model)
 * [How to start a Django project  (PDXCG Style)](https://github.com/PdxCodeGuild/class_otter/blob/main/3%20Django/docs/Django%20Project%20Setup.md)
 
-### 1. Create and checkout 'setup' branch:
+### Create and checkout 'setup' branch:
 * Use [checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout) to create new git branch.<br>
   * `git checkout -b setup`
 
-### 2. Virtual environment setup:
+### Virtual environment setup:
 * Create virtual environment
   * `pipenv install django==3.2 docutils==0.18.1 djangorestframework==3.13.1`
 
-### 3. Django Project Creation:
+### Django Project Creation:
 * Create Django Project:
   * `django-admin startproject tap_project .`
 * Test server for green rocket:
@@ -252,7 +252,7 @@
 - [X] Create branch for next user story.
     * `add-bootstrap-to-templates`
 
-### 4. Start next user story:
+### Start next user story:
 
 #### NOTE: Encountered CSS issues
 * Encountered issues with form field labels having font too small while using Materialize. Decided to try my own CSS.
@@ -311,4 +311,5 @@
   * There is no need to `git pull origin main` (while on `edit-readme-and-notes`) since we don't need to `pull` all the changes to `main` into our feature branch.
     * `git fetch` is probably a better way to get the remote changes onto our local repo.
 
+#### Create branch [git checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout): `create-tap-model-and-api`
 
