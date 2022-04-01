@@ -394,3 +394,7 @@
 * 'It’s most important for link text to make sense without the surrounding sentences or content.' - [Yale](https://usability.yale.edu/web-accessibility/articles/links)
 
 #### ARIA concepts I've learned:
+
+- [ ] Make TAPs model `url` so it doesn't require input.[TAP Issue:18](https://github.com/brucestull/technology-and-perceptibility/issues/18)
+  * `default=''`
+  * `blank=True`

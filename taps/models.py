@@ -1,4 +1,3 @@
-from operator import mod
 from django.db import models
 
 
@@ -7,8 +6,10 @@ class Tap(models.Model):
     Python class for TAPs, the objects which will hold the url,
     url title, and url description.
     """
+    # `default='http://localhost:8000/'`
     url = models.URLField(
-        help_text='url of page which has content of interest for accessiblity', default='http://localhost:8000/'
+        help_text='url of page which has content of interest for accessiblity',
+        blank=True
         )
     title = models.CharField(
         max_length=200,
@@ -27,6 +28,9 @@ class Tap(models.Model):
             the link
         '''
         )
+
+    class Meta:
+        ordering = ['-id']
 
     # created_date = models.DateTimeField('date created', auto_now_add=True, help_text='date the TAP was created')
     # deleted = models.BooleanField(default=False, help_text='designates whether the TAP should be shown in list view')

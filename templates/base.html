@@ -102,22 +102,23 @@
                     })
                 },
 
-                // deleteEditedPokemon: function(payload) {
-                //     console.log(`We're really tired, but we're trying to delete: `, payload)
-                //     axios({
-                //         method: 'delete',
-                //         url: `/api/v1/pokemons/${payload.id}/`,
-                //         headers: {
-                //             "X-CSRFToken": this.csrf_token
-                //         },
-                //     }).then(response => {
-                //         this.editMode = false
-                //         this.loadPokemons()
-                //         // this.clearPokemonsAndTypes()
-                //     }).catch(error => {
-                //         console.log(error.response.data)                        
-                //     })
-                // },
+                loadSingleTap: function() {
+                    console.log("Attempting to load a single TAP")
+                    axios({
+                        method: 'get',
+                        url: `/api/v1/taps/`,
+                    }).then(response => {
+                        console.log(`response: `, response)
+                        console.log(`response.data: `, response.data)
+                        for (let i = 0; i < response.data.length; i++) {
+                            this.taps.push(response.data[i])
+                            this.taps[i].localBrowsableApiUrl = `/api/v1/taps/${this.taps[i].id}/`
+                        }
+                        console.log(`this.taps`, this.taps)
+                    }).catch(error => {
+                        console.log(`error.response.data`, error.response.data)
+                    })
+                },
 
             },
 

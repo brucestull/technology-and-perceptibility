@@ -61,7 +61,7 @@
         - [ ] URL Description
         - [ ] Other fields:
           - [ ] Code Snippet
-
+    - [ ] Add foreign key to link multiple TAPs to a single user. Will this be in both 'Tap' and 'CustomUser'? [posts.models.py](https://github.com/PdxCodeGuild/class_otter/blob/main/code/merritt/22-jan/drf-blog-22jan/posts/models.py) - It seems there is no need to add to a `users.models.py`.
     - [ ] Create API for TAP Model.
       - [X] Create or use existing `api` app:
         - [X] Create Django REST API `views.py` for TAPs.
