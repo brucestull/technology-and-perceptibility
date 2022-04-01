@@ -30,10 +30,14 @@
 
 </head>
 <body class="wrapper">
+    {% csrf_token %}
+    
     <div class="full-width-header">
         <header>
+            <a href="#app">Skip to main content</a>
             <div class="page-title">
                 <h1>TAP - Accessibility in Action</h1>
+                
             </div>
             <nav>
                 <p><a href="{% url 'home' %}">Home</a></p>
@@ -53,6 +57,80 @@
         <p>Flynnt Knapp 2022</p>
         <p><a href="{% url 'home' %}">Home</a></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            delimiters: ['[[',']]'],
+            data: {
+
+                testTaps: [
+                    {
+                        id: 1,
+                        title: 'An, 1, unoriginal title?',
+                        description: 'An, 1, unoriginal description!'
+                    },
+                    {
+                        id: 2,
+                        title: 'An, 2, unoriginal title?',
+                        description: 'An, 2, unoriginal description!'
+                    },
+                ],
+
+                taps: [],
+
+                csrf_token: "",
+            },
+
+            methods: {
+                loadTaps: function() {
+                    console.log("Attempting to load TAPs")
+                    axios({
+                        method: 'get',
+                        url: `/api/v1/taps/`,
+                    }).then(response => {
+                        console.log(`response: `, response)
+                        console.log(`response.data: `, response.data)
+                        for (let i = 0; i < response.data.length; i++) {
+                            this.taps.push(response.data[i])
+                            this.taps[i].localBrowsableApiUrl = `/api/v1/taps/${this.taps[i].id}/`
+                        }
+                        console.log(`this.taps`, this.taps)
+                    }).catch(error => {
+                        console.log(`error.response.data`, error.response.data)
+                    })
+                },
+
+                // deleteEditedPokemon: function(payload) {
+                //     console.log(`We're really tired, but we're trying to delete: `, payload)
+                //     axios({
+                //         method: 'delete',
+                //         url: `/api/v1/pokemons/${payload.id}/`,
+                //         headers: {
+                //             "X-CSRFToken": this.csrf_token
+                //         },
+                //     }).then(response => {
+                //         this.editMode = false
+                //         this.loadPokemons()
+                //         // this.clearPokemonsAndTypes()
+                //     }).catch(error => {
+                //         console.log(error.response.data)                        
+                //     })
+                // },
+
+            },
+
+            created: function() {
+
+            },
+
+            mounted: function() {
+                this.csrf_token = document.querySelector("input[name=csrfmiddlewaretoken]").value
+                this.loadTaps()
+            }
+        })
+    </script>
 </body>
 </html>
 

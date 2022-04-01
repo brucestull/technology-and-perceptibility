@@ -5,4 +5,4 @@ from taps.models import Tap
 class TapSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tap
-        fields = ('id', 'title', 'description')
+        fields = ('id', 'title', 'url_label', 'description')
