@@ -303,6 +303,9 @@
 * Git branch experiment:
   * I've made some changes to `README.md` and `notes.md` and want to see what happens if I create new branch and add those changes to that branch rather than current branch.
   * `git checkout -b edit-readme-and-notes main`
-  * 
+  * `git add -A`
+  * `git commit -m "Edited README.md and notes.md"`
+  * `git push origin edit-readme-and-notes main`
+  * Pulled changes into main.
 
 
