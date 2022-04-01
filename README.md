@@ -113,6 +113,9 @@
 - [ ] 0.5 Days - Learn proper accessible ARIA and HTML tags - [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning)
 ### Apr 01 - Apr 04:
 - [ ] 1.5 Days - Learn Django REST Framework testing
+  - [ ] [Example Test](https://www.django-rest-framework.org/api-guide/testing/#example)
+  - [ ] [Another Example Test](https://www.django-rest-framework.org/api-guide/testing/#example_1)
+  - [ ] [Rendering Responses](https://www.django-rest-framework.org/api-guide/testing/#rendering-responses)
 ### Apr 04 - Apr 05:
 - [ ] 1.5 Days - Write Django (REST) tests
 ### Apr 06 - Apr 07:
@@ -186,7 +189,7 @@ Inspiration, examples, code snippets, etc.
   * [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/)
   * [Django Test Framework](https://docs.djangoproject.com/en/4.0/topics/testing/)
   * [Django Test Framework @ Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing)
-  * [Django APIRequestFactory](https://www.django-rest-framework.org/api-guide/testing/)
+  * [Django REST Testing - APIRequestFactory](https://www.django-rest-framework.org/api-guide/testing/)
 * [a11y - Pronunciation](https://www.a11yproject.com/posts/a11y-and-other-numeronyms/)
 * [a11y - Bookmarklets](https://www.a11yproject.com/resources/#bookmarklets)
 * [a11y - Development Tools](https://www.a11yproject.com/resources/#development-tools)

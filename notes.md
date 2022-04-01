@@ -290,7 +290,8 @@
 * Create `static/css/style.css`.
   * [Django static files](https://docs.djangoproject.com/en/4.0/howto/static-files/)
 * Commit the existing CSS version.
-  - [ ] Verify CSS finishing touches later.
 
-#### Create branch [git checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout): `add-css-header-footer`
+#### Create branch [git checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout): `???????`
+* What is branch name?
+* We are going to be writing Django REST tests.
 
