@@ -20,6 +20,8 @@
 * Run server: `python manage.py runserver`
 * App address: [http://localhost:8000/](http://localhost:8000/)
 * Admin address: [http://localhost:8000/admin/](http://localhost:8000/admin/)
+* API address: [http://localhost:8000/api/v1/](http://localhost:8000/api/v1/)
+* API - TAPs Address: [http://localhost:8000/api/v1/taps/](http://localhost:8000/api/v1/taps/)
 * Virtual Environment activation:
   * Powershell: `C:\Users\Bruce\.virtualenvs\technology-and-perceptibility-MoNxetid\Scripts\activate.ps1`
   * BASH: `source C:/Users/Bruce/.virtualenvs/technology-and-perceptibility-MoNxetid/Scripts/activate`
@@ -313,3 +315,65 @@
 
 #### Create branch [git checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout): `create-tap-model-and-api`
 * `git checkout -b create-tap-model-and-api main`
+* Create simple TAP model. This model will be expanded later.
+* Register the model `Tap` in `taps.admin.py`.
+* Migrations:
+  * `python manage.py makemigrations taps`
+  * `python .\manage.py sqlmigrate taps 0001`
+    * View what migrations will occur.
+  * `python manage.py migrate`
+* Check admin panel for new TAPs model.
+  * `python manage.py runserver`
+- [X] Add some TAPs to the db in admin panel.
+- [X] Create `api` app:
+  * `python manage.py startapp api`
+* Look at Pokedex to see what stuff I need to do with `api` app.
+  * It seems we don't need to add `api` to `tap_project.settings.py.INSTALLED_APPS`.
+##### File Creation/Modifications:
+
+* Modify `tap_project.urls.py`:
+  ```
+  urlpatterns = [
+    ...
+    path('api/v1/', include('api.urls')),
+    ...
+  ]
+  ```
+* Create `api.urls.py`:
+  ```
+  from rest_framework.routers import DefaultRouter
+
+  from api.views import TapViewSet
+
+  router = DefaultRouter()
+  router.register('taps', TapViewSet, basename='taps')
+
+  urlpatterns = router.urls + [
+
+  ]
+  ```
+
+* Modify `api.views.py`:
+  ```
+  from rest_framework import viewsets
+
+  from taps.models import Tap
+  from api.serializers import TapSerializer
+
+  class TapViewSet(viewsets.ModelViewSet):
+      queryset = Tap.objects.all()
+      serializer_class = TapSerializer
+  ```
+
+* Create `api.serializers.py`:
+  ```
+  from rest_framework import serializers
+
+  from taps.models import Tap
+
+  class TapSerializer(serializers.ModelSerializer):
+      class Meta:
+          model = Tap
+          fields = ('id', 'title', 'description')
+  ```
+

@@ -53,12 +53,22 @@
     - [ ] Have page display name of signed-in User.
       - [ ] Create an HTML block with 'v-if' to control when User's username is displayed and tie that to a 'checkedIn' flag.
 5. As a User, I want to be able to save a set of three fields (url, url title, url description), because I want to refer to them in the future.
-    - [ ] Create TAP (data) Model.
+    - [X] Create TAP (data) Model.
+      - [X] Create basic TAP Model:
+      - [ ] Modify TAP Model to include (or verify it includes) all required fields:
+        - [ ] URL
+        - [ ] URL Title
+        - [ ] URL Description
+        - [ ] Other fields:
+          - [ ] Code Snippet
+
     - [ ] Create API for TAP Model.
-      - [ ] Create or use existing `api` app:
-        - [ ] Create Django REST API `views.py` for TAPs.
-        - [ ] Create Django REST API `urls.py` for TAPs.
-        - [ ] Create Django REST API `serializers.py` for TAPs.
+      - [X] Create or use existing `api` app:
+        - [X] Create Django REST API `views.py` for TAPs.
+        - [X] Create Django REST API `urls.py` for TAPs.
+        - [X] Create Django REST API `serializers.py` for TAPs.
+        - [ ] Modify (or verify) TAP API to include all required fields:
+          - [ ] ???
         - [ ] Create Django REST API `permissions.py` for TAPs.
         - [ ] Create permission in `permissions.py` to allow editing of TAPs by User who owns the TAP.
         - [ ] Incorporate permissions in `views.py`.
