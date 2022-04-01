@@ -306,6 +306,6 @@
   * `git add -A`
   * `git commit -m "Edited README.md and notes.md"`
   * `git push origin edit-readme-and-notes main`
-  * Pulled changes into main.
+  * Pulled [changes](https://github.com/brucestull/technology-and-perceptibility/commit/ebf322a06a09a016685d636b0de8a4ecc5e09b57) and [more changes](https://github.com/brucestull/technology-and-perceptibility/commit/bf23fd362a261b5c384dc3e8b45951946486f336) into main.
 
 
