@@ -294,4 +294,15 @@
 #### Create branch [git checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout): `???????`
 * What is branch name?
 * We are going to be writing Django REST tests.
+* How about we take a short segue and work on TAP model and API?
+* Current branches:
+  * `main`
+  * `add-css-header-footer` - Functionality mostly complete. Will create new branch for styling the Vue elements on `home.html`.
+  * `my-css-branch` - Used to practice CSS. Not necessary to keep.
+  * `setup` - Used to set up project. Not necessary to keep.
+* Git branch experiment:
+  * I've made some changes to `README.md` and `notes.md` and want to see what happens if I create new branch and add those changes to that branch rather than current branch.
+  * `git checkout -b edit-readme-and-notes main`
+  * 
+
 

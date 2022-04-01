@@ -41,10 +41,11 @@
     - [ ] Create User Model.
       - [X] Create CustomUser model in case additional User model fields might be needed in future.
     - [ ] Create API for User Model.
-      - [ ] Create Django REST API `views.py` for Users.
-      - [ ] Create Django REST API `urls.py` for Users.
-      - [ ] Create Django REST API `serializers.py` for Users.
-      - [ ] Create Django REST API `permissions.py` for Users.
+      - [ ] Create or use existing `api` app:
+        - [ ] Create Django REST API `views.py` for Users.
+        - [ ] Create Django REST API `urls.py` for Users.
+        - [ ] Create Django REST API `serializers.py` for Users.
+        - [ ] Create Django REST API `permissions.py` for Users.
     - [ ] Create input fields (using Vue) for User creation component.
       - [ ] Bind the input fields to the Vue model.
     - [ ] Create button to submit User creation action.
@@ -54,12 +55,13 @@
 5. As a User, I want to be able to save a set of three fields (url, url title, url description), because I want to refer to them in the future.
     - [ ] Create TAP (data) Model.
     - [ ] Create API for TAP Model.
-      - [ ] Create Django REST API `views.py` for TAPs.
-      - [ ] Create Django REST API `urls.py` for TAPs.
-      - [ ] Create Django REST API `serializers.py` for TAPs.
-      - [ ] Create Django REST API `permissions.py` for TAPs.
-      - [ ] Create permission in `permissions.py` to allow editing of TAPs by User who owns the TAP.
-      - [ ] Incorporate permissions in `views.py`.
+      - [ ] Create or use existing `api` app:
+        - [ ] Create Django REST API `views.py` for TAPs.
+        - [ ] Create Django REST API `urls.py` for TAPs.
+        - [ ] Create Django REST API `serializers.py` for TAPs.
+        - [ ] Create Django REST API `permissions.py` for TAPs.
+        - [ ] Create permission in `permissions.py` to allow editing of TAPs by User who owns the TAP.
+        - [ ] Incorporate permissions in `views.py`.
     - [ ] Create input fields (using Vue) for TAP creation component.
       - [ ] Bind the input fields to the Vue model.
     - [ ] Create button to submit TAP creation action.
