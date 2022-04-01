@@ -84,7 +84,7 @@
 ### Miscellaneous Tasks:
 - [ ] Apply CSS:
   - [X] Apply sticky footer to `base.html`.
-  - [ ] Apply `flex` and [`@media`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media) to a top nav/header. As screen width grows, move from stacked title/nav to side-by-side with one on right and one on left.
+  - [X] Apply `flex` and [`@media`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media) to a top nav/header. As screen width grows, move from stacked title/nav to side-by-side with one on right and one on left.
   - [X] Compare my own 'cards' in Stuff project to [Card](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card) - [Download the code](https://github.com/mdn/css-examples/blob/main/css-cookbook/card--download.html).[^cards-and-accessibility]
 
 [^cards-and-accessibility]:[Cards Accessibility Issues](https://inclusive-components.design/cards/)
@@ -172,6 +172,12 @@ Inspiration, examples, code snippets, etc.
 * [MDN ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
 * [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [Cards and Accessibility](https://inclusive-components.design/cards/)
+* [Anchor links and accessibility](https://amberwilson.co.uk/blog/are-your-anchor-links-accessible/)
+* [Yale University - Usability and Web Accessibility](https://usability.yale.edu/web-accessibility/articles/links)
+* [htmldog](https://htmldog.com/guides/html/advanced/links/)
+* [WabAIM - Skip Navigation Links](https://webaim.org/techniques/skipnav/)
+* [Windows 11 - Screen Reader](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1#WindowsVersion=Windows_11)
+  * WindowsKey+Ctrl+Enter
 * Frameworks and Libraries
   * [Vue.js 3](https://vuejs.org/guide/introduction.html)
   * [Vue.js 2](https://v2.vuejs.org/v2/guide/)

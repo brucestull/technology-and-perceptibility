@@ -19,56 +19,14 @@
 </div>
 
 <h2>The list of TAPs</h2>
-<div class="all-the-taps">
-  <article class="a-single-tap">
-    <h3>Brick</h3>
-    <p><a href="#">A link to something</a></p>
-    <p>
-        Scenester dolor reprehenderit try-hard pitchfork jianbing synth food truck dolore. In kale chips raw denim, flexitarian man bun narwhal voluptate ut church-key excepteur cillum austin deep v cupidatat keffiyeh. Culpa austin gentrify bicycle rights mollit tempor brooklyn ennui. Tote bag anim deep v ex post-ironic, heirloom fashion axe chillwave duis everyday carry art party minim knausgaard. Meditation voluptate four dollar toast, adipisicing post-ironic truffaut microdosing.
-    </p>
+<div id="app" class="all-the-taps">
+
+  <article v-for="tap in taps" class="a-single-tap">
+    <h3>[[ tap.title ]]</h3>
+    <p><a :href="tap.localBrowsableApiUrl" v-bind:title="tap.url_label" target="_blank">[[ tap.url_label ]]</a></p>
+    <p>[[ tap.id ]] : [[ tap.description ]]</p>
   </article>
-  <article class="a-single-tap">
-    <h3>Brick</h3>
-    <p><a href="#">A link to something</a></p>
-    <p>
-        Scenester dolor reprehenderit try-hard pitchfork jianbing synth food truck dolore. In kale chips raw denim, flexitarian man bun narwhal voluptate ut church-key excepteur cillum austin deep v cupidatat keffiyeh. Culpa austin gentrify bicycle rights mollit tempor brooklyn ennui. Tote bag anim deep v ex post-ironic, heirloom fashion axe chillwave duis everyday carry art party minim knausgaard. Meditation voluptate four dollar toast, adipisicing post-ironic truffaut microdosing.
-    </p>
-  </article>
-  <article class="a-single-tap">
-    <h3>Brick</h3>
-    <p><a href="#">A link to something</a></p>
-    <p>
-        Scenester dolor reprehenderit try-hard pitchfork jianbing synth food truck dolore. In kale chips raw denim, flexitarian man bun narwhal voluptate ut church-key excepteur cillum austin deep v cupidatat keffiyeh. Culpa austin gentrify bicycle rights mollit tempor brooklyn ennui. Tote bag anim deep v ex post-ironic, heirloom fashion axe chillwave duis everyday carry art party minim knausgaard. Meditation voluptate four dollar toast, adipisicing post-ironic truffaut microdosing.
-    </p>
-  </article>
-  <article class="a-single-tap">
-    <h3>Brick</h3>
-    <p><a href="#">A link to something</a></p>
-    <p>
-        Scenester dolor reprehenderit try-hard pitchfork jianbing synth food truck dolore. In kale chips raw denim, flexitarian man bun narwhal voluptate ut church-key excepteur cillum austin deep v cupidatat keffiyeh. Culpa austin gentrify bicycle rights mollit tempor brooklyn ennui. Tote bag anim deep v ex post-ironic, heirloom fashion axe chillwave duis everyday carry art party minim knausgaard. Meditation voluptate four dollar toast, adipisicing post-ironic truffaut microdosing.
-    </p>
-  </article>
-  <article class="a-single-tap">
-    <h3>Brick</h3>
-    <p><a href="#">A link to something</a></p>
-    <p>
-        Scenester dolor reprehenderit try-hard pitchfork jianbing synth food truck dolore. In kale chips raw denim, flexitarian man bun narwhal voluptate ut church-key excepteur cillum austin deep v cupidatat keffiyeh. Culpa austin gentrify bicycle rights mollit tempor brooklyn ennui. Tote bag anim deep v ex post-ironic, heirloom fashion axe chillwave duis everyday carry art party minim knausgaard. Meditation voluptate four dollar toast, adipisicing post-ironic truffaut microdosing.
-    </p>
-  </article>
-  <article class="a-single-tap">
-    <h3>Brick</h3>
-    <p><a href="#">A link to something</a></p>
-    <p>
-        Scenester dolor reprehenderit try-hard pitchfork jianbing synth food truck dolore. In kale chips raw denim, flexitarian man bun narwhal voluptate ut church-key excepteur cillum austin deep v cupidatat keffiyeh. Culpa austin gentrify bicycle rights mollit tempor brooklyn ennui. Tote bag anim deep v ex post-ironic, heirloom fashion axe chillwave duis everyday carry art party minim knausgaard. Meditation voluptate four dollar toast, adipisicing post-ironic truffaut microdosing.
-    </p>
-  </article>
-  <article class="a-single-tap">
-    <h3>Brick</h3>
-    <p><a href="#">A link to something</a></p>
-    <p>
-        Scenester dolor reprehenderit try-hard pitchfork jianbing synth food truck dolore. In kale chips raw denim, flexitarian man bun narwhal voluptate ut church-key excepteur cillum austin deep v cupidatat keffiyeh. Culpa austin gentrify bicycle rights mollit tempor brooklyn ennui. Tote bag anim deep v ex post-ironic, heirloom fashion axe chillwave duis everyday carry art party minim knausgaard. Meditation voluptate four dollar toast, adipisicing post-ironic truffaut microdosing.
-    </p>
-  </article>
+
 </div>
 
 

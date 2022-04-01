@@ -377,3 +377,20 @@
           fields = ('id', 'title', 'description')
   ```
 
+#### Git things I've learned:
+* Git update local repo to reflect current remote branches:
+`git remote update origin --prune`
+* Create and checkout branch from existing branch:
+`git checkout -b <my new branch> <existing branch>`
+* `git checkout`: [git checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout)
+* `git pull`: [git pull](https://www.atlassian.com/git/tutorials/syncing/git-pull)
+* `git fetch`: [git fetch](https://www.atlassian.com/git/tutorials/syncing/git-fetch)
+* `git merge`: [git merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
+
+#### Create branch for Vue to list TAPs: `list-taps-on-home`
+`git checkout -b list-taps-on-home main`
+
+#### Accessiblity concepts I've learned:
+* 'It’s most important for link text to make sense without the surrounding sentences or content.' - [Yale](https://usability.yale.edu/web-accessibility/articles/links)
+
+#### ARIA concepts I've learned:
