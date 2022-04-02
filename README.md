@@ -20,8 +20,10 @@
   * Application can be tested manually[^firefox-accessibility-tester] or use automated testing.
 
 ### Libraries and Frameworks
-* CSS - [Materialize](https://materializecss.com/)
+<!-- * CSS - [Materialize](https://materializecss.com/) -->
 <!-- * CSS - [Bootstrap](https://getbootstrap.com/) -->
+<!-- * Full-Stack - [Django](https://docs.djangoproject.com/en/4.0/) -->
+<!-- * Templating - Engine [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) -->
 * Back-end - [Django REST Framework](https://www.django-rest-framework.org/)
 * Front-end - [Vue.js](https://v2.vuejs.org/)
 * Graphical Charts - [D3](https://d3js.org/)
