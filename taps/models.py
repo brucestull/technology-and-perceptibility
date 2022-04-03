@@ -1,4 +1,5 @@
 from django.db import models
+from tap_project.settings import AUTH_USER_MODEL
 
 
 class Tap(models.Model):
@@ -27,6 +28,13 @@ class Tap(models.Model):
             of information is found at url, or what is the importance of
             the link
         '''
+        )
+    author = models.ForeignKey(
+        AUTH_USER_MODEL,
+        # 'tap_project.settings.AUTH_USER_MODEL',   # This didn't work
+        # 'users.CustomUser',                       # This didn't work
+        related_name='taps',
+        on_delete=models.CASCADE
         )
 
     class Meta:
