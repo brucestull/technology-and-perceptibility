@@ -28,6 +28,13 @@ class Tap(models.Model):
             the link
         '''
         )
+    author = models.ForeignKey(
+        'settings.AUTH_USER_MODEL',
+        # 'tap_project.settings.AUTH_USER_MODEL',
+        # 'users.CustomUser',
+        related_name="taps",
+        on_delete=models.CASCADE
+        )
 
     class Meta:
         ordering = ['-id']
