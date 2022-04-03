@@ -1,5 +1,8 @@
 ## Name
 ### TAP - Technology and Perceptibility
+#### Project Management Pages:
+* [TAP - Minimum Viable Product](https://github.com/brucestull/technology-and-perceptibility/projects/2)
+* [TAP - Technology and Perceptibility](https://github.com/brucestull/technology-and-perceptibility/projects/1)
 
 
 ## Project Overview
