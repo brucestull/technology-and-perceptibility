@@ -18,29 +18,64 @@
 
 </div>
 
-<h2>The list of TAPs</h2>
+<h2>The List of TAPs</h2>
 <div id="app" class="all-the-taps">
-
-  <article v-for="tap in taps" class="a-single-tap">
-    <h3>[[ tap.title ]]</h3>
-    <a
-      :href="tap.url"
-      v-bind:title="tap.url_label"
-      target="_blank"
-    >
-      [[ tap.url_label ]]
-    </a>
-    <br>
-    <p>[[ tap.id ]] : [[ tap.description ]]</p>
-    <a
-      :href="tap.localBrowsableApiUrl"
-      v-bind:title="tap.localBrowsableApiUrlDescription"
-      target="_blank"
-    >
-      [[ tap.localBrowsableApiUrlDescription ]]
-    </a>
-  </article>
-
+  <template v-if="Object.keys(taps).length">
+    <article v-for="tap in taps" class="a-single-tap">
+      <h3>[[ tap.title ]]</h3>
+      <a
+        href="#"
+        @click="loadSingleTap(tap)"
+      >
+        View details for this TAP
+      </a>
+      <br>
+      <a
+        :href="tap.url"
+        v-bind:title="tap.url_label"
+        target="_blank"
+      >
+        [[ tap.url_label ]]
+      </a>
+      <br>
+      <p>[[ tap.id ]] : [[ tap.description ]]</p>
+      <a
+        :href="tap.localBrowsableApiUrl"
+        v-bind:title="tap.localBrowsableApiUrlDescription"
+        target="_blank"
+      >
+        [[ tap.localBrowsableApiUrlDescription ]]
+      </a>
+    </article>
+  </template>
+  <template v-if="Object.keys(currentTap).length">
+    <article :model="currentTap" class="a-single-tap">
+      <h3>[[ currentTap.title ]]</h3>
+      <!-- <a
+        href="#"
+        @click="loadSingleTap(currentTap)"
+      >
+        View details for this TAP
+      </a>
+      <br> -->
+      <a
+        :href="currentTap.url"
+        v-bind:title="currentTap.url_label"
+        target="_blank"
+      >
+        [[ currentTap.url_label ]]
+      </a>
+      <br>
+      <p>[[ currentTap.id ]] : [[ currentTap.description ]]</p>
+      <a
+        :href="currentTap.localBrowsableApiUrl"
+        v-bind:title="currentTap.localBrowsableApiUrlDescription"
+        target="_blank"
+      >
+        [[ currentTap.localBrowsableApiUrlDescription ]]
+      </a>
+    </article>
+  </template>
 </div>
 
 
