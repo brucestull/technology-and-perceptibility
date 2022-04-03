@@ -14,6 +14,27 @@
 * [Example Django and Jinja base.html](https://github.com/PdxCodeGuild/class_otter/blob/main/code/bruce/Module_03/lab03_chirp/templates/base.html)
 * [Example Django and Jinja templates](https://github.com/PdxCodeGuild/class_otter/tree/main/code/bruce/Module_03/lab03_chirp/templates)
 
+## Growth Areas
+### Accessiblity
+#### Accessiblity concepts I've learned:
+* 'It’s most important for link text to make sense without the surrounding sentences or content.' - [Yale](https://usability.yale.edu/web-accessibility/articles/links)
+- [X] Make TAPs model `url` so it doesn't require input.[TAP Issue:18](https://github.com/brucestull/technology-and-perceptibility/issues/18)
+  * `blank=True`
+
+#### Accessibility questions I have:
+- [ ] Which element is better for accessiblity, for calling a Vue method: 'button' or 'anchor'
+
+#### ARIA concepts I've learned:
+
+### Django
+
+### Vue
+
+### Python
+
+### CSS
+
+### HTML
 
 ## Commands, keybindings, and dev server info
 * Show markdown preview: `ctrl-shift-v`
@@ -390,13 +411,16 @@
 #### Create branch for Vue to list TAPs: `list-taps-on-home`
 `git checkout -b list-taps-on-home main`
 
-#### Accessiblity concepts I've learned:
-* 'It’s most important for link text to make sense without the surrounding sentences or content.' - [Yale](https://usability.yale.edu/web-accessibility/articles/links)
+#### Create branch: `24-add-foreign-key-to-link-user-to-tap`
+[TAP MVP Issue: 24](https://github.com/brucestull/technology-and-perceptibility/issues/24)
 
-#### ARIA concepts I've learned:
+* Strange errors:
+  * `taps.Tap.author: (fields.E300) Field defines a relation with model 'settings.AUTH_USER_MODEL', which is either not installed, or is abstract.`
+  * `taps.Tap.author: (fields.E307) The field taps.Tap.author was declared with a lazy reference to 'settings.auth_user_model', but app 'settings' isn't installed.`
+  * Needed non-literal form:
+    * `AUTH_USER_MODEL` instead of string literal `'AUTH_USER_MODEL'` in `taps.models.Tap.author`.
 
 - [ ] Make TAPs model `url` so it doesn't require input.[TAP Issue:18](https://github.com/brucestull/technology-and-perceptibility/issues/18)
-  * `default=''`
   * `blank=True`
 
 #### Create branch: `24-add-foreign-key-to-link-user-to-tap`
@@ -405,3 +429,70 @@
   * `taps.Tap.author: (fields.E300) Field defines a relation with model 'settings.AUTH_USER_MODEL', which is either not installed, or is abstract.`
   * `taps.Tap.author: (fields.E307) The field taps.Tap.author was declared with a lazy reference to 'settings.auth_user_model', but app 'settings' isn't installed.`
 
+* Migrations:
+  * `python manage.py makemigrations taps`
+    * Needed to provide author id to allow migration since 'author' field did not exist previously.
+  * `python .\manage.py sqlmigrate taps 0006`
+  * `python manage.py migrate`
+
+* Modify `api.serializers.py`:
+  ```
+  from rest_framework import serializers
+  from django.contrib.auth import get_user_model
+
+  from taps.models import Tap
+
+  class NestedTapSerializer(serializers.ModelSerializer):
+      class Meta:
+          model = Tap
+          fields = ('id', 'title', 'url', 'url_label', 'description')
+
+  class NestedUserSerializer(serializers.ModelSerializer):
+      class Meta: 
+          model = get_user_model()
+          fields = ('id', 'username')
+
+  class TapSerializer(serializers.ModelSerializer):
+      author_detail = NestedUserSerializer(read_only=True, source='author')
+      class Meta:
+          model = Tap
+          fields = ('id', 'title', 'author', 'author_detail', 'url', 'url_label', 'description')
+
+  class UserSerializer(serializers.ModelSerializer):
+      taps_detail = NestedTapSerializer(many=True, read_only=True, source='taps')
+      class Meta: 
+          model = get_user_model()
+          fields = ('id', 'username', 'taps_detail')
+  ```
+
+* Modify `api.views.py`:
+  ```
+  class UserViewSet(viewsets.ModelViewSet):
+      queryset = get_user_model().objects.all()
+      serializer_class = UserSerializer
+  ```
+
+* Modify `taps.models.Tap`:
+  ```
+  from tap_project.settings import AUTH_USER_MODEL
+
+  class Tap(models.Model):
+    ...
+    author = models.ForeignKey(
+      AUTH_USER_MODEL,
+      # 'tap_project.settings.AUTH_USER_MODEL',   # This didn't work
+      # 'users.CustomUser',                       # This didn't work
+      related_name='taps',
+      on_delete=models.CASCADE
+      )
+    ...
+  ```
+
+* Modify `api.urls.py`:
+  ```
+  from api.views import TapViewSet, UserViewSet
+
+  ...
+  router.register('users', UserViewSet, basename='users')
+  ...
+  ```
