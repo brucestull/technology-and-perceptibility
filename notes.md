@@ -398,3 +398,10 @@
 - [ ] Make TAPs model `url` so it doesn't require input.[TAP Issue:18](https://github.com/brucestull/technology-and-perceptibility/issues/18)
   * `default=''`
   * `blank=True`
+
+#### Create branch: `24-add-foreign-key-to-link-user-to-tap`
+[TAP MVP Issue: 24](https://github.com/brucestull/technology-and-perceptibility/issues/24)
+* Strange errors:
+  * `taps.Tap.author: (fields.E300) Field defines a relation with model 'settings.AUTH_USER_MODEL', which is either not installed, or is abstract.`
+  * `taps.Tap.author: (fields.E307) The field taps.Tap.author was declared with a lazy reference to 'settings.auth_user_model', but app 'settings' isn't installed.`
+
