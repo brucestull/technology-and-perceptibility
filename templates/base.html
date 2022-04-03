@@ -95,6 +95,7 @@
                         for (let i = 0; i < response.data.length; i++) {
                             this.taps.push(response.data[i])
                             this.taps[i].localBrowsableApiUrl = `/api/v1/taps/${this.taps[i].id}/`
+                            this.taps[i].localBrowsableApiUrlDescription = `Browsable API link to this TAP with id of ${this.taps[i].id}.`
                         }
                         console.log(`this.taps`, this.taps)
                     }).catch(error => {
