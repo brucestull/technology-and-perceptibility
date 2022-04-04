@@ -18,7 +18,7 @@
 
 </div>
 
-<h2>The List of TAPs</h2>
+<h2>The List of Links</h2>
 <div id="app" class="all-the-taps">
   
   <template v-if="Object.keys(taps).length">
@@ -27,7 +27,7 @@
       <button
         @click="loadSingleTap(tap)"
       >
-        View details for this TAP
+        View details for this Item
       </button>
       <br>
       <a
@@ -50,7 +50,7 @@
   </template>
 
   <template v-if="Object.keys(currentTap).length">
-    <article :model="currentTap" class="a-tap-in-the-list">
+    <article :model="currentTap" class="a-current-tap">
       <h3>[[ currentTap.title ]]</h3>
       <a
         :href="currentTap.url"
@@ -69,12 +69,12 @@
         [[ currentTap.localBrowsableApiUrlDescription ]]
       </a>
       <br>
-      <button @click="editTap()">Edit this TAP</button>
+      <button @click="editTap()">Edit this Item</button>
     </article>
   </template>
 
   <template v-if="Object.keys(editingCurrentTap).length">
-    <article class="a-tap-in-the-list">
+    <article class="an-editing-tap">
       <h3>[[ temporaryTapTitle ]]</h3>
       <!-- <h3>[[ editingCurrentTap.title ]]</h3>This will be removed in production. Used here for debugging. -->
 
@@ -113,7 +113,7 @@
       <br>
 
       <br>
-      <button @click="saveTap()">Save Changes to TAP</button>
+      <button @click="saveTap()">Save Changes to Item</button>
       <button @click="loadSingleTap(editingCurrentTap)">Exit without saving changes</button>
     </article>
   </template>

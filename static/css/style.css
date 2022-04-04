@@ -107,6 +107,11 @@ address > a {
     margin: .3em 0;
 }
 
+.a-current-tap, .an-editing-tap {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (min-width: 700px) {
     .all-the-taps {
         display: flex;
@@ -125,6 +130,9 @@ address > a {
     .a-tap-in-the-list {
         width: 33.33%;
     }
+
+    /* For single TAPs. */
+    /* 100% or 100vw */
 
     header {
         display: flex;
