@@ -29,12 +29,19 @@
 ### Django
 
 ### Vue
+- [ ] 'textarea' binding:
+  \<textarea v-model="editingCurrentTap.url_label" rows="6" cols="75">\</textarea>
 
 ### Python
 
 ### CSS
 
 ### HTML
+
+### Project Management:
+#### GitHub:
+* Learned how to use Projects.
+* Learned how to use Issues.
 
 ## Commands, keybindings, and dev server info
 * Show markdown preview: `ctrl-shift-v`
@@ -350,6 +357,7 @@
   * `python manage.py startapp api`
 * Look at Pokedex to see what stuff I need to do with `api` app.
   * It seems we don't need to add `api` to `tap_project.settings.py.INSTALLED_APPS`.
+
 ##### File Creation/Modifications:
 
 * Modify `tap_project.urls.py`:
@@ -360,6 +368,7 @@
     ...
   ]
   ```
+
 * Create `api.urls.py`:
   ```
   from rest_framework.routers import DefaultRouter
@@ -422,12 +431,6 @@
 
 - [ ] Make TAPs model `url` so it doesn't require input.[TAP Issue:18](https://github.com/brucestull/technology-and-perceptibility/issues/18)
   * `blank=True`
-
-#### Create branch: `24-add-foreign-key-to-link-user-to-tap`
-[TAP MVP Issue: 24](https://github.com/brucestull/technology-and-perceptibility/issues/24)
-* Strange errors:
-  * `taps.Tap.author: (fields.E300) Field defines a relation with model 'settings.AUTH_USER_MODEL', which is either not installed, or is abstract.`
-  * `taps.Tap.author: (fields.E307) The field taps.Tap.author was declared with a lazy reference to 'settings.auth_user_model', but app 'settings' isn't installed.`
 
 * Migrations:
   * `python manage.py makemigrations taps`
@@ -496,3 +499,7 @@
   router.register('users', UserViewSet, basename='users')
   ...
   ```
+
+#### Create branch: `29-users-can-edit-their-taps`
+[TAP MVP Issue: 29](https://github.com/brucestull/technology-and-perceptibility/issues/29)
+

@@ -20,15 +20,15 @@
 
 <h2>The List of TAPs</h2>
 <div id="app" class="all-the-taps">
+  
   <template v-if="Object.keys(taps).length">
-    <article v-for="tap in taps" class="a-single-tap">
+    <article v-for="tap in taps" class="a-tap-in-the-list">
       <h3>[[ tap.title ]]</h3>
-      <a
-        href="#"
+      <button
         @click="loadSingleTap(tap)"
       >
         View details for this TAP
-      </a>
+      </button>
       <br>
       <a
         :href="tap.url"
@@ -48,16 +48,10 @@
       </a>
     </article>
   </template>
+
   <template v-if="Object.keys(currentTap).length">
-    <article :model="currentTap" class="a-single-tap">
+    <article :model="currentTap" class="a-tap-in-the-list">
       <h3>[[ currentTap.title ]]</h3>
-      <!-- <a
-        href="#"
-        @click="loadSingleTap(currentTap)"
-      >
-        View details for this TAP
-      </a>
-      <br> -->
       <a
         :href="currentTap.url"
         v-bind:title="currentTap.url_label"
@@ -74,8 +68,56 @@
       >
         [[ currentTap.localBrowsableApiUrlDescription ]]
       </a>
+      <br>
+      <button @click="editTap()">Edit this TAP</button>
     </article>
   </template>
+
+  <template v-if="Object.keys(editingCurrentTap).length">
+    <article class="a-tap-in-the-list">
+      <h3>[[ temporaryTapTitle ]]</h3>
+      <!-- <h3>[[ editingCurrentTap.title ]]</h3>This will be removed in production. Used here for debugging. -->
+
+      <br>
+      <button @click="editTitle = !editTitle">[[ editTitle ? "Done editing Title" : "Edit Title" ]]</button>
+      <br>
+      <template v-if="editTitle">
+        <input v-model="editingCurrentTap.title" type="text" size="75">
+      </template>
+      <template v-else>
+        <span>[[ editingCurrentTap.title ]]</span>
+      </template>
+      <br>
+
+      <br>
+      <button @click="editUrlLabel = !editUrlLabel">[[ editUrlLabel ? "Done editing URL Label" : "Edit URL Label" ]]</button>
+      <br>
+      <template v-if="editUrlLabel">
+        <textarea v-model="editingCurrentTap.url_label" rows="6" cols="75"></textarea>
+      </template>
+      <template v-else>
+        <span>[[ editingCurrentTap.url_label ]]</span>
+      </template>
+      <br>
+
+
+      <br>
+      <button @click="editDescription = !editDescription">[[ editDescription ? "Done editing Description" : "Edit Description" ]]</button>
+      <br>
+      <template v-if="editDescription">
+        <textarea v-model="editingCurrentTap.description" rows="6" cols="75"></textarea>
+      </template>
+      <template v-else>
+        <span>[[ editingCurrentTap.description ]]</span>
+      </template>
+      <br>
+
+      <br>
+      <button @click="saveTap()">Save Changes to TAP</button>
+      <button @click="loadSingleTap(editingCurrentTap)">Exit without saving changes</button>
+    </article>
+  </template>
+
 </div>
 
 

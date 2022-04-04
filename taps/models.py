@@ -7,7 +7,6 @@ class Tap(models.Model):
     Python class for TAPs, the objects which will hold the url,
     url title, and url description.
     """
-    # `default='http://localhost:8000/'`
     url = models.URLField(
         help_text='url of page which has content of interest for accessiblity',
         blank=True
