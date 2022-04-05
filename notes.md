@@ -536,3 +536,7 @@
 
 #### Create branch: `35-user-can-add-tap-via-gui`
 [TAP MVP Issue: 35](https://github.com/brucestull/technology-and-perceptibility/issues/35)
+
+#### Create branch: `37-user-can-delete-a-tap`
+[TAP MVP Issue: 37](https://github.com/brucestull/technology-and-perceptibility/tree/37-user-can-delete-a-tap)
+
