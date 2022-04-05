@@ -23,4 +23,4 @@ class UserSerializer(serializers.ModelSerializer):
     taps_detail = NestedTapSerializer(many=True, read_only=True, source='taps')
     class Meta: 
         model = get_user_model()
-        fields = ('id', 'username', 'taps_detail')
+        fields = ('id', 'username', 'email', 'taps_detail')
