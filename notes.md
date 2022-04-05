@@ -530,3 +530,6 @@
   * `python .\manage.py test`
   * `python .\manage.py test api`
   * `python .\manage.py test <the app name>`
+
+#### Create branch: `33-add-rest-framework-tests`
+[TAP MVP Issue: 33](https://github.com/brucestull/technology-and-perceptibility/issues/33)
