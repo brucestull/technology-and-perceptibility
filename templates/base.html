@@ -206,7 +206,20 @@
                 },
 
                 createNewTap: function() {
-                    console.log(`Creating the new TAP!?!?: `, this.newTitle, this.newUrlLabel, this.newDescription)
+                    
+                    /////////////////////////////////////////////////////////
+                    // This part here for testing only, using it to quickly create TAPs. Will remove in production.
+                    this.newAuthor = 1
+                    this.newTitle = 'A Possibly New Title'
+                    this.newUrl = 'https://brucestull.com/'
+                    this.newUrlLabel = 'Well, Why not another URL Label, TOO!'
+                    this.newDescription = "And we can't forget the description"
+                    /////////////////////////////////////////////////////////
+
+                    console.log(`Creating the new TAP!`)
+                    console.log(`New TAP Title: `, this.newTitle)
+                    console.log(`New TAP URL: `, this.newUrl)
+                    console.log(`New TAP Descr: `, this.newDescription)
 
                     axios({
                         method: 'post',
@@ -233,6 +246,22 @@
                     this.newUrlLabel = ''
                     this.newDescription = ''
 
+                    }).catch(error => {
+                        console.log(error.response)
+                    })
+                },
+
+                deleteTap: function(payload) {
+                    console.log(`Deleting Tap #${payload.id}`, payload)
+                    axios({
+                        method: 'delete',
+                        url: `/api/v1/taps/${ payload.id }/`,
+                        headers: {
+                            "X-CSRFToken": this.csrf_token
+                        }
+                    }).then(response => {
+                        console.log(`Did we delete something???`, response)
+                        this.loadTaps()
                     }).catch(error => {
                         console.log(error.response)
                     })
