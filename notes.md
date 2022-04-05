@@ -533,3 +533,6 @@
 
 #### Create branch: `33-add-rest-framework-tests`
 [TAP MVP Issue: 33](https://github.com/brucestull/technology-and-perceptibility/issues/33)
+
+#### Create branch: `35-user-can-add-tap-via-gui`
+[TAP MVP Issue: 35](https://github.com/brucestull/technology-and-perceptibility/issues/35)

@@ -47,7 +47,7 @@ html {
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/padding#syntax */
 /* Set margin to 0 */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/margin#syntax */
-header, main, footer {
+header, .div-replacing-main, footer {
     /* vertical | horizontal */
     margin: 0 0;
     /* vertical | horizontal */
@@ -97,6 +97,11 @@ header {
     margin: 30px 0 0 0;
 }
 
+article.a-tap-in-the-list {
+    border: #465B8C solid 2px;
+}
+
+
 footer {
     text-align: right;
 }
@@ -110,6 +115,19 @@ address > a {
 .a-current-tap, .an-editing-tap {
     margin-left: auto;
     margin-right: auto;
+}
+
+div.thing-at-top-of-main {
+    display: flex;
+    flex-direction: row;
+}
+
+div.login-logout-block {
+    padding: 1em;
+}
+
+div.new-link-creation {
+    padding: 1em;
 }
 
 @media (min-width: 700px) {
@@ -161,7 +179,7 @@ address > a {
 
 /* We should set a max width. If user uses a really large display width, we want the site to stay within reason. If the site had a design where the items could keep accumulating and the header would look good, we could still allow display width to grow. */
 @media (min-width: 1400px) {
-    header, main {
+    header, .div-replacing-main {
         max-width: 1350px;
         margin-left: auto;
         margin-right: auto;
