@@ -27,6 +27,7 @@
 #### ARIA concepts I've learned:
 
 ### Django
+- [ ] [APITestCase](https://www.django-rest-framework.org/api-guide/testing/#example)
 
 ### Vue
 - [ ] 'textarea' binding:
@@ -503,3 +504,29 @@
 #### Create branch: `29-users-can-edit-their-taps`
 [TAP MVP Issue: 29](https://github.com/brucestull/technology-and-perceptibility/issues/29)
 
+#### Create branch: `20-practice-django-rest-testing`
+[TAP MVP Issue: 20](https://github.com/brucestull/technology-and-perceptibility/issues/20)
+* A test sample:
+  ```
+  user_list_url = '/api/v1/users/'
+
+  a_test_user = {
+      "username": 'Dezzi',
+      "email": 'dezzi@thekitten.edu',
+      "password": '1234fuzzy',
+  }
+
+  class TestUsersAPI(APITestCase):
+      def test_retrieve_user(self):
+          self.assertEqual(CustomUser.objects.count(), 0)
+          response = self.client.post(user_list_url, a_test_user, format='json')
+          self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+          self.assertEqual(CustomUser.objects.count(), 1)
+          self.assertEqual(CustomUser.objects.get().username, 'Dezzi')
+          self.assertEqual(CustomUser.objects.get().email, 'dezzi@thekitten.edu')
+  ```
+
+* Django run tests:
+  * `python .\manage.py test`
+  * `python .\manage.py test api`
+  * `python .\manage.py test <the app name>`
