@@ -34,7 +34,7 @@
     
     <div class="full-width-header">
         <header>
-            <a href="#app" title="Skip to main content">Skip to main content</a>
+            <a href="#all-the-taps" title="Skip to main content">Skip to main content</a>
             <div class="page-title">
                 <h1>TAP - Accessibility in Action</h1>
                 
@@ -50,8 +50,10 @@
         </header>
     </div>
     <main class="page-body">
+        <div id="app" class="div-replacing-main">
         {% block content %}
         {% endblock %}
+        </div>
     </main>
     <footer class="page-footer">
         <p>Flynnt Knapp 2022</p>
@@ -64,6 +66,16 @@
             el: '#app',
             delimiters: ['[[',']]'],
             data: {
+
+                newAuthor: 1,
+                newTitle: '',
+                newUrl: '',
+                newUrlLabel: '',
+                newDescription: '',
+
+                tempTap: {
+                    id: '',
+                },
 
                 taps: [],
 
@@ -159,7 +171,6 @@
                     console.log(`Cleared this.currentTap - #${this.currentTap}: `, this.currentTap)
                     console.log(`Editing this.editingCurrentTap - #${this.editingCurrentTap}: `, this.editingCurrentTap)
 
-
                 },
 
                 // editTap: function(tap) {
@@ -173,8 +184,6 @@
                     this.editingCurrentTap = {}
                 },
 
-                
-
                 saveTap: function() {
                     console.log(`Saving tap #${ this.editingCurrentTap.id}: `, this.editingCurrentTap)
                     axios({
@@ -184,13 +193,46 @@
                             "X-CSRFToken": this.csrf_token
                         },
                         data: {
+                            "title": this.editingCurrentTap.title,
                             "url_label" : this.editingCurrentTap.url_label,
                             "description": this.editingCurrentTap.description,
-                            "title": this.editingCurrentTap.title,
                         }
                     }).then(response => {
                         console.log(response)
                         this.loadSingleTap(this.editingCurrentTap)
+                    }).catch(error => {
+                        console.log(error.response)
+                    })
+                },
+
+                createNewTap: function() {
+                    console.log(`Creating the new TAP!?!?: `, this.newTitle, this.newUrlLabel, this.newDescription)
+
+                    axios({
+                        method: 'post',
+                        url: `/api/v1/taps/`,
+                        headers: {
+                            "X-CSRFToken": this.csrf_token
+                        },
+                        data: {
+                            "author": 1,
+                            "title": this.newTitle,
+                            "url": this.newUrl,
+                            "url_label" : this.newUrlLabel,
+                            "description": this.newDescription,
+                        }
+                    }).then(response => {
+                        console.log(response)
+                        console.log(`response.data.id: `, response.data.id)
+                        this.tempTap.id = response.data.id
+                        this.loadSingleTap(this.tempTap)
+                        
+                    this.newAuthor = ''
+                    this.newTitle = ''
+                    this.newUrl = ''
+                    this.newUrlLabel = ''
+                    this.newDescription = ''
+
                     }).catch(error => {
                         console.log(error.response)
                     })
