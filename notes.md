@@ -26,6 +26,7 @@
 - [ ] Which element is better for accessiblity, for calling a Vue method: 'button' or 'anchor'
 
 #### ARIA concepts I've learned:
+- [ ] [WAI-ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
 
 ### Django
 - [ ] [APITestCase](https://www.django-rest-framework.org/api-guide/testing/#example)
@@ -585,4 +586,58 @@
         serializer_class = PostSerializer
         permission_classes = [IsAuthorOrReadOnly]
     ```
+
+#### Create branch: `61-learn-proper-accessible-aria-and-html-tags`
+[TAP MVP Issue: 61](https://github.com/brucestull/technology-and-perceptibility/issues/61)
+
+##### Notes:
+* Links:
+  * http://www.caitlingeier.com/work/
+  * https://www.deque.com/blog/author/caitlin-geier/
+  * [ARIA: switch role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/switch_role)
+  * [ally-101.com](https://a11y-101.com/)
+    * [Link texts](https://a11y-101.com/design/links-text)
+    * [Link visual](https://a11y-101.com/design/link-visual)
+* [Accessibility - Yale](https://usability.yale.edu/web-accessibility/articles/links#image-links)
+  * Underline link text when it is focussed, icons also can help.
+* focus:
+  ```
+  a:focus {
+    outline: 3px solid orange;
+  }
+  ```
+
+* Remove underlines:
+  ```
+  a:active {
+    text-decoration: none;
+  }
+  ```
+
+* Apple iPhone switches:
+  * 'tap' the screen or 'press and hold':
+    * [iPhone switches](https://support.apple.com/en-us/HT201370)
+
+* It's probably not a good idea for me to use the "Edit" toggles I currently have implemented. These cause abrupt changes to the screen. The buttons and content can move when used like this.
+
+* Focus Styles
+  * [Having a Little Fun With Custom Focus Styles - css-tricks.com](https://css-tricks.com/having-a-little-fun-with-custom-focus-styles/)
+  * Button style:
+    ```
+    button:focus {
+      outline: 3px dashed orange;
+    }
+    ```
+    ```
+    button:focus {
+      outline: 3px dashed orange;
+      outline-offset: 10px;
+    }
+    ```
+* [User Facing State - css-tricks.com](https://css-tricks.com/user-facing-state/)
+* [Focusing on Focus Styles - css-tricks.com](https://css-tricks.com/focusing-on-focus-styles/)
+* [Toggle Buttons](https://inclusive-components.design/toggle-button/)
+* [2. Using WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/#usage)
+
+
 

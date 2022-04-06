@@ -20,7 +20,7 @@
 
   </div>
 
-  <template v-if="true === true">
+  <template v-if="createBlockIsDisplayed">
     <div class="new-link-creation">
       <h2>Create a new Link</h2>
       <label for="new-title-input">Link Title</label><br>
@@ -38,7 +38,9 @@
 
 
 <div>
-  <h2>The List We Have</h2>
+  <h2 v-if="Object.keys(taps).length">The List of Links</h2>
+  <h2 v-if="Object.keys(currentTap).length">Viewing a Single Link</h2>
+  <h2 v-if="Object.keys(editingCurrentTap).length">Editng a Single Link</h2>
 
   <div class="all-the-taps" id="all-the-taps">
     
