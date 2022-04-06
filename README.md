@@ -128,7 +128,7 @@
 ### Mar 31 - Mar 31:
 - [X] 0.5 Days - Practice my own custom CSS - [We Got Stuff!](https://github.com/PdxCodeGuild/class_otter/tree/main/code/bruce/Module_02/lab02_Company_Home)
 ### Mar 31 - Mar 31:
-- [ ] 0.5 Days - Learn proper accessible ARIA and HTML tags - [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning)
+- [X] 0.5 Days - Learn proper accessible ARIA and HTML tags - [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning)
 ### Apr 01 - Apr 04:
 - [X] 1.5 Days - Learn Django REST Framework testing
   - [X] [Example Test](https://www.django-rest-framework.org/api-guide/testing/#example)
