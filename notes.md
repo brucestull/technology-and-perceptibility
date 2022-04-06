@@ -32,12 +32,21 @@
 ### Vue
 - [ ] 'textarea' binding:
   \<textarea v-model="editingCurrentTap.url_label" rows="6" cols="75">\</textarea>
+- [ ] 'name' attribute isn't needed on 'input's with Vue since we're not sending it as an HTTPRequest.
 
 ### Python
 
 ### CSS
 
 ### HTML
+- [ ] Requirements to link label element to input element.
+  * [label - Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
+  * [input - Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+  * [label - w3schools](https://www.w3schools.com/tags/tag_label.asp)
+  ```
+  <label for="the-input"></label>
+  <input id="the-input">
+  ```
 
 ### Project Management:
 #### GitHub:
@@ -539,4 +548,7 @@
 
 #### Create branch: `37-user-can-delete-a-tap`
 [TAP MVP Issue: 37](https://github.com/brucestull/technology-and-perceptibility/tree/37-user-can-delete-a-tap)
+
+#### Create branch: `30-add-input-labels-for-edit-tap-page`
+[TAP MVP Issue: 30](https://github.com/brucestull/technology-and-perceptibility/tree/30-add-input-labels-for-edit-tap-page)
 
