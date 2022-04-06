@@ -20,19 +20,20 @@
 
   </div>
 
-  <div class="new-link-creation">
-    <h2>Create a new Link</h2>
-    <label for="new-title-input">Link Title</label><br>
-    <input v-model="newTitle" id="new-title-input" type="text" size="45"><span>[[ newTitle ]]</span><br>
-    <label for="new-url-input">Link URL</label><br>
-    <input v-model="newUrl" id="new-url-input" type="text" size="45"><span>[[ newUrl ]]</span><br>
-    <label for="new-url-description-input">Link URL Description</label><br>
-    <input v-model="newUrlLabel" id="new-url-description-input" type="text" size="45"><span>[[ newUrlLabel ]]</span><br>
-    <label for="new-description-input">Link Extended Description</label><br>
-    <input v-model="newDescription" id="new-description-input" type="text" size="45"><span>[[ newDescription ]]</span><br>
-    <button @click="createNewTap()">Submit new Link</button>
-  </div>
-
+  <template v-if="true === true">
+    <div class="new-link-creation">
+      <h2>Create a new Link</h2>
+      <label for="new-title-input">Link Title</label><br>
+      <input v-model="newTitle" id="new-title-input" type="text" size="45"><span>[[ newTitle ]]</span><br>
+      <label for="new-url-input">Link URL</label><br>
+      <input v-model="newUrl" id="new-url-input" type="text" size="45"><span>[[ newUrl ]]</span><br>
+      <label for="new-url-description-input">Link URL Description</label><br>
+      <input v-model="newUrlLabel" id="new-url-description-input" type="text" size="45"><span>[[ newUrlLabel ]]</span><br>
+      <label for="new-description-input">Link Extended Description</label><br>
+      <input v-model="newDescription" id="new-description-input" type="text" size="45"><span>[[ newDescription ]]</span><br>
+      <button @click="createNewTap()">Submit new Link</button>
+    </div>
+  </template>
 </div>
 
 
@@ -43,7 +44,7 @@
     
     <template v-if="Object.keys(taps).length">
       <article v-for="tap in taps" class="a-tap-in-the-list">
-        <h3>[[ tap.title ]]</h3>
+        <h3>[[ tap.title ]] - [[ tap.author_detail.username ]]</h3>
         <button
           @click="loadSingleTap(tap)"
         >
@@ -71,7 +72,7 @@
 
     <template v-if="Object.keys(currentTap).length">
       <article :model="currentTap" class="a-current-tap">
-        <h3>[[ currentTap.title ]]</h3>
+        <h3>[[ currentTap.title ]] - [[ currentTap.author_detail.username ]]</h3>
         <a
           :href="currentTap.url"
           v-bind:title="currentTap.url_label"

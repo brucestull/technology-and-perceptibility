@@ -18,8 +18,9 @@
 ### Accessiblity
 #### Accessiblity concepts I've learned:
 * 'It’s most important for link text to make sense without the surrounding sentences or content.' - [Yale](https://usability.yale.edu/web-accessibility/articles/links)
-- [X] Make TAPs model `url` so it doesn't require input.[TAP Issue:18](https://github.com/brucestull/technology-and-perceptibility/issues/18)
+- [X] Make TAPs model `url` so it isn't required to be provided when creating the TAP.[TAP Issue:18](https://github.com/brucestull/technology-and-perceptibility/issues/18)
   * `blank=True`
+* To underline text within an anchor on focus, use `a:focus p {text-decoration: underline;}`
 
 #### Accessibility questions I have:
 - [ ] Which element is better for accessiblity, for calling a Vue method: 'button' or 'anchor'
@@ -565,4 +566,23 @@
 #### Create branch: `40-all-input-boxes-have-labels`
 [TAP MVP Issue: 40](https://github.com/brucestull/technology-and-perceptibility/issues/40)
 
+
+#### Create branch: `45-add-permissions-to-tap-model-api`
+[TAP MVP Issue: 45](https://github.com/brucestull/technology-and-perceptibility/issues/45)
+* Example:
+  * `api.permissions.py`:
+    ```
+    class IsAuthorOrReadOnly(permissions.BasePermission):
+        def has_object_permission(self, request, view, obj):
+            if request.method in permissions.SAFE_METHODS:
+                return True
+            return obj.author == request.user
+    ```
+  * `api.views.py`:
+    ```
+    class PostViewSet(viewsets.ModelViewSet):
+        queryset = Post.objects.all()
+        serializer_class = PostSerializer
+        permission_classes = [IsAuthorOrReadOnly]
+    ```
 
