@@ -34,6 +34,9 @@
   \<textarea v-model="editingCurrentTap.url_label" rows="6" cols="75">\</textarea>
 - [ ] 'name' attribute isn't needed on 'input's with Vue since we're not sending it as an HTTPRequest.
 
+### JavaScript
+- [ ] AXIOS - [Error handling](https://axios-http.com/docs/handling_errors)
+
 ### Python
 
 ### CSS
@@ -558,4 +561,8 @@
   * [Django Login and Logout Tutorial - learndjango.com](https://learndjango.com/tutorials/django-login-and-logout-tutorial)
   * [django.contrib.auth - GitHub](https://github.com/django/django/tree/main/django/contrib/auth)
   * [django.contrib.auth - djangoproject](https://docs.djangoproject.com/en/4.0/ref/contrib/auth/)
+
+#### Create branch: `40-all-input-boxes-have-labels`
+[TAP MVP Issue: 40](https://github.com/brucestull/technology-and-perceptibility/issues/40)
+
 
