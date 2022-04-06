@@ -96,16 +96,16 @@
     <template v-if="Object.keys(editingCurrentTap).length">
       <article class="an-editing-tap">
         <h3>[[ temporaryTapTitle ]]</h3>
-        <!-- <h3>[[ editingCurrentTap.title ]]</h3>This will be removed in production. Used here for debugging. -->
 
         <br>
         <button @click="editTitle = !editTitle">[[ editTitle ? "Done editing Title" : "Edit Title" ]]</button>
         <br>
         <template v-if="editTitle">
-          <input v-model="editingCurrentTap.title" type="text" size="75">
+          <label for="title-being-edited">Title</label>
+          <input v-model="editingCurrentTap.title" id="title-being-edited" type="text" size="75">
         </template>
         <template v-else>
-          <span>[[ editingCurrentTap.title ]]</span>
+          <span>Title: [[ editingCurrentTap.title ]]</span>
         </template>
         <br>
 
@@ -113,10 +113,11 @@
         <button @click="editUrlLabel = !editUrlLabel">[[ editUrlLabel ? "Done editing URL Label" : "Edit URL Label" ]]</button>
         <br>
         <template v-if="editUrlLabel">
-          <textarea v-model="editingCurrentTap.url_label" rows="6" cols="75"></textarea>
+          <label for="url-label-being-edited">URL Label</label>
+          <textarea v-model="editingCurrentTap.url_label" id="url-label-being-edited" rows="6" cols="75"></textarea>
         </template>
         <template v-else>
-          <span>[[ editingCurrentTap.url_label ]]</span>
+          <span>URL Label: [[ editingCurrentTap.url_label ]]</span>
         </template>
         <br>
 
@@ -125,10 +126,11 @@
         <button @click="editDescription = !editDescription">[[ editDescription ? "Done editing Description" : "Edit Description" ]]</button>
         <br>
         <template v-if="editDescription">
-          <textarea v-model="editingCurrentTap.description" rows="6" cols="75"></textarea>
+          <label for="description-being-edited">Description</label>
+          <textarea v-model="editingCurrentTap.description" id="description-being-edited" rows="6" cols="75"></textarea>
         </template>
         <template v-else>
-          <span>[[ editingCurrentTap.description ]]</span>
+          <span>Description: [[ editingCurrentTap.description ]]</span>
         </template>
         <br>
 
