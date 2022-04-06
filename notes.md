@@ -552,3 +552,10 @@
 #### Create branch: `30-add-input-labels-for-edit-tap-page`
 [TAP MVP Issue: 30](https://github.com/brucestull/technology-and-perceptibility/tree/30-add-input-labels-for-edit-tap-page)
 
+#### Create branch: `42-add-input-labels-for-user-login-signup-etc`
+[TAP MVP Issue: 42](https://github.com/brucestull/technology-and-perceptibility/issues/42)
+* Django forms already impliments this. Not further action needed.
+  * [Django Login and Logout Tutorial - learndjango.com](https://learndjango.com/tutorials/django-login-and-logout-tutorial)
+  * [django.contrib.auth - GitHub](https://github.com/django/django/tree/main/django/contrib/auth)
+  * [django.contrib.auth - djangoproject](https://docs.djangoproject.com/en/4.0/ref/contrib/auth/)
+
