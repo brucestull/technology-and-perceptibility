@@ -205,11 +205,16 @@
                     })
                 },
 
+                loadCreateNewTapView: function() {
+                    console.log(`Entering Create TAP View!`)
+                    clearAllTaps()
+                },
+
                 createNewTap: function() {
                     
                     /////////////////////////////////////////////////////////
                     // This part here for testing only, using it to quickly create TAPs. Will remove in production.
-                    this.newAuthor = 1
+                    this.newAuthor = 2
                     this.newTitle = 'A Possibly New Title'
                     this.newUrl = 'https://brucestull.com/'
                     this.newUrlLabel = 'Well, Why not another URL Label, TOO!'
@@ -228,7 +233,7 @@
                             "X-CSRFToken": this.csrf_token
                         },
                         data: {
-                            "author": 1,
+                            "author": this.newAuthor,
                             "title": this.newTitle,
                             "url": this.newUrl,
                             "url_label" : this.newUrlLabel,
