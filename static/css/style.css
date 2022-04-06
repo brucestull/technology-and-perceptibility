@@ -24,6 +24,18 @@
     --header_border_brown: #944E4E;
 }
 
+button:focus {
+    /* outline: 3px dashed orange; */
+    outline: 3px dashed #465B8C;
+    outline-offset: 1px;
+}
+
+input:focus {
+    /* outline: 3px dashed orange; */
+    outline: 3px dashed #465B8C;
+    outline-offset: 1px;
+}
+
 html {
     /* If you want to create the gap by shrinking the content, set the box-sizing property to border-box (i.e. box-sizing: border-box). */
     /* https://blog.hubspot.com/website/css-margin-vs-padding */

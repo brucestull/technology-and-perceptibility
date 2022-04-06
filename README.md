@@ -135,9 +135,9 @@
   - [X] [Another Example Test](https://www.django-rest-framework.org/api-guide/testing/#example_1)
   - [X] [Rendering Responses](https://www.django-rest-framework.org/api-guide/testing/#rendering-responses)
 ### Apr 04 - Apr 05:
-- [ ] 1.5 Days - Write Django (REST) tests
+- [X] 1.5 Days - Write Django (REST) tests
 ### Apr 06 - Apr 07:
-- [ ] 1.5 Days - TAP Model - API and Front End
+- [X] 1.5 Days - TAP Model - API and Front End
 ### Apr 07 - Apr 08:
 - [ ] 1.5 Days - User Model - API and Front End
 ### Apr 11 - Apr 12:

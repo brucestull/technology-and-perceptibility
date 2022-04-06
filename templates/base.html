@@ -36,7 +36,7 @@
         <header>
             <a href="#all-the-taps" title="Skip to main content">Skip to main content</a>
             <div class="page-title">
-                <h1>TAP - Accessibility in Action</h1>
+                <h1>Library of Links with Descriptions</h1>
                 
             </div>
             <nav>
@@ -80,6 +80,8 @@
                 taps: [],
 
                 currentTap: {},
+
+                createBlockIsDisplayed: true,
 
                 editingCurrentTap: {},
                 temporaryTapTitle: '',
@@ -204,10 +206,16 @@
                         console.log(error.response)
                     })
                 },
-
-                loadCreateNewTapView: function() {
+                
+                showCreateNewTapInterface: function() {
                     console.log(`Entering Create TAP View!`)
-                    clearAllTaps()
+                    this.clearAllTaps()
+                    this.createBlockIsDisplayed = true
+                },
+
+                hideCreateNewTapInterface: function() {
+                    this.createBlockIsDisplayed = false
+                    this.loadTaps()
                 },
 
                 createNewTap: function() {
