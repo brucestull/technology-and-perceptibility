@@ -1,6 +1,7 @@
 ## Name
 ### TAP - Technology and Perceptibility
 #### Project Management Pages:
+* [Milestones](https://github.com/brucestull/technology-and-perceptibility/milestones)
 * [TAP - Minimum Viable Product](https://github.com/brucestull/technology-and-perceptibility/projects/2)
 * [TAP - Technology and Perceptibility](https://github.com/brucestull/technology-and-perceptibility/projects/1)
 
@@ -213,9 +214,12 @@ Inspiration, examples, code snippets, etc.
   * [Django Test Framework](https://docs.djangoproject.com/en/4.0/topics/testing/)
   * [Django Test Framework @ Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing)
   * [Django REST Testing - APIRequestFactory](https://www.django-rest-framework.org/api-guide/testing/)
+  * [Django and Django REST testing - rootstrap.com](https://www.rootstrap.com/blog/testing-in-django-django-rest-basics-useful-tools-good-practices/)
 * [a11y - Pronunciation](https://www.a11yproject.com/posts/a11y-and-other-numeronyms/)
 * [a11y - Bookmarklets](https://www.a11yproject.com/resources/#bookmarklets)
 * [a11y - Development Tools](https://www.a11yproject.com/resources/#development-tools)
+* [Inclusive Components](https://inclusive-components.design/)
+* [Tooltips & Toggletips](https://inclusive-components.design/tooltips-toggletips/)
 * [The Bootcampers Guide to Web Accessibility](https://a11y-with-lindsey.ck.page/products/pre-order-the-bootcampers-guide-to-web)
 * [.md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Accessibility APIs: A Key To Web Accessibility](https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/)
