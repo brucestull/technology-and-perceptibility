@@ -98,7 +98,7 @@
 
     <template v-if="Object.keys(editingCurrentTap).length">
       <article class="an-editing-tap">
-        <h3>[[ temporaryTapTitle ]]</h3>
+        <h3>[[ temporaryTapTitle ]] - [[ editingCurrentTap.author_detail.username ]]</h3>
 
         <br>
         <button @click="editTitle = !editTitle">[[ editTitle ? "Done editing Title" : "Edit Title" ]]</button>
