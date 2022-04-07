@@ -24,15 +24,14 @@
     --header_border_brown: #944E4E;
 }
 
-button:focus {
+button:focus, input:focus, a:focus {
     /* outline: 3px dashed orange; */
-    outline: 3px dashed #465B8C;
+    outline: 4px dashed #465B8C;
     outline-offset: 1px;
 }
 
-input:focus {
-    /* outline: 3px dashed orange; */
-    outline: 3px dashed #465B8C;
+header a:focus {
+    outline: 4px dashed #D9AB82;
     outline-offset: 1px;
 }
 

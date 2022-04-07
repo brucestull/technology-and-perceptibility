@@ -27,6 +27,9 @@
 
 #### ARIA concepts I've learned:
 - [ ] [WAI-ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
+- [ ] [Are your Anchor Links Accessible? - amberwilson.co.uk](https://amberwilson.co.uk/blog/are-your-anchor-links-accessible/)
+  - [ ] [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
+  - [ ] [aria-describedby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby)
 
 ### Django
 - [ ] [APITestCase](https://www.django-rest-framework.org/api-guide/testing/#example)
