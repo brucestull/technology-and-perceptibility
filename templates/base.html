@@ -29,36 +29,39 @@
     <style></style>
 
 </head>
-<body class="wrapper">
-    {% csrf_token %}
-    
-    <div class="full-width-header">
-        <header>
-            <a href="#all-the-taps" title="Skip to main content">Skip to main content</a>
-            <div class="page-title">
-                <h1>Library of Links with Descriptions</h1>
-                
-            </div>
-            <nav>
-                <p><a href="{% url 'home' %}">Home</a></p>
-                <p><a href="#">Our Values</a></p>
-                <address>
-                    <a href="mailto:Bruce.Stull@gmail.com">Bruce.Stull@gmail.com</a><br>
-                    <a href="https://brucestull.com/" target="_blank">brucestull.com</a>
-                </address>
-            </nav>
-        </header>
-    </div>
-    <main class="page-body">
-        <div id="app" class="div-replacing-main">
-        {% block content %}
-        {% endblock %}
+<body>
+    <div id="app" class="wrapper the-new-body">
+        {% csrf_token %}
+        
+        <div class="full-width-header">
+            <header>
+                <a href="#all-the-taps" title="Skip to main content">Skip to main content</a>
+                <div class="page-title">
+                    <h1>Library of Links with Descriptions</h1>
+                    
+                </div>
+                <nav>
+                    <!-- <p><a href="{% url 'home' %}">Show List of Records</a></p> -->
+                    <p><a href="#" @click="loadTaps()">Show List of Records</a></p>
+                    <p><a href="#" @click="showCreateNewTapInterface()">Create a New Record</a></p>
+                    <address>
+                        <a href="mailto:Bruce.Stull@gmail.com">Bruce.Stull@gmail.com</a><br>
+                        <a href="https://brucestull.com/" target="_blank">brucestull.com</a>
+                    </address>
+                </nav>
+            </header>
         </div>
-    </main>
-    <footer class="page-footer">
-        <p>Flynnt Knapp 2022</p>
-        <p><a href="{% url 'home' %}">Home</a></p>
-    </footer>
+        <main class="page-body">
+            <div class="div-replacing-main">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </main>
+        <footer class="page-footer">
+            <p>Flynnt Knapp 2022</p>
+            <p><a href="{% url 'home' %}">Home</a></p>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script>
