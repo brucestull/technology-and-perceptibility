@@ -40,9 +40,10 @@
 <div>
   <h2 v-if="Object.keys(taps).length">The List of Links</h2>
   <h2 v-if="Object.keys(currentTap).length">Viewing a Single Link</h2>
-  <h2 v-if="Object.keys(editingCurrentTap).length">Editng a Single Link</h2>
+  <h2 v-if="Object.keys(editingCurrentTap).length">Editing a Single Link</h2>
 
   <div class="all-the-taps" id="all-the-taps">
+
     
     <template v-if="Object.keys(taps).length">
       <article v-for="tap in taps" class="a-tap-in-the-list">

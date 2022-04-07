@@ -86,7 +86,7 @@
 
                 currentTap: {},
 
-                createBlockIsDisplayed: true,
+                createBlockIsDisplayed: false,
 
                 editingCurrentTap: {},
                 temporaryTapTitle: '',
@@ -114,6 +114,7 @@
 
             methods: {
                 loadTaps: function() {
+                    this.hideCreateNewTapInterface()
                     console.log("Attempting to load TAPs")
                     axios({
                         method: 'get',
@@ -133,12 +134,18 @@
                     })
                 },
 
+                clearUserTaps: function() {
+                    this.userTaps = []
+                },
+
                 clearTaps: function() {
                     this.taps = []
                 },
 
                 loadSingleTap: function(tap) {
+                    this.hideCreateNewTapInterface()
                     this.clearAllTaps()
+                    this.clearUserTaps()
                     this.setEditFlagsFalse()
                     console.log(`Attempting to load a single TAP: ${ tap.id }`)
                     axios({
@@ -167,6 +174,7 @@
                 },
 
                 editTap: function() {
+                    this.hideCreateNewTapInterface()
 
                     console.log(`Editing this.currentTap - #${this.currentTap}: `, this.currentTap)
                     console.log(`Editing this.editingCurrentTap - #${this.editingCurrentTap}: `, this.editingCurrentTap)
@@ -179,13 +187,6 @@
                     console.log(`Editing this.editingCurrentTap - #${this.editingCurrentTap}: `, this.editingCurrentTap)
 
                 },
-
-                // editTap: function(tap) {
-                //     this.editingCurrentTap = tap
-                //     this.temporaryTapTitle = tap.title
-                //     console.log(`Editing tap #${ tap.id }: `, tap)
-                //     this.clearCurrentTap()
-                // },
 
                 clearEditingCurrentTap: function() {
                     this.editingCurrentTap = {}
@@ -217,10 +218,10 @@
                     this.clearAllTaps()
                     this.createBlockIsDisplayed = true
                 },
-
+                
                 hideCreateNewTapInterface: function() {
+                    console.log(`Exiting Create TAP View!`)
                     this.createBlockIsDisplayed = false
-                    this.loadTaps()
                 },
 
                 loadCurrentUser: function() {
