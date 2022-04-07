@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, generics
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from django.contrib.auth import get_user_model
@@ -15,3 +15,9 @@ class TapViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = get_user_model().objects.all()
     serializer_class = UserSerializer
+
+class CurrentUserView(generics.RetrieveAPIView):
+    serializer_class = UserSerializer
+    def get_object(self):
+        # return super().get_object()
+        return self.request.user

@@ -70,6 +70,8 @@
             delimiters: ['[[',']]'],
             data: {
 
+                currentUser: {},
+
                 newAuthor: 1,
                 newTitle: '',
                 newUrl: '',
@@ -221,18 +223,43 @@
                     this.loadTaps()
                 },
 
+                loadCurrentUser: function() {
+                    console.log(`Loading Current User!`)
+                    axios({
+                        method: 'get',
+                        url: `/api/v1/currentuser/`,
+                    }).then(response => {
+                        console.log(`response: `, response)
+                        this.currentUser = response.data
+                        console.log(`User logged in: `, this.currentUser.username)
+                    }).catch(error => {
+                        console.log(`error.response: `, error.response)
+                    })
+                },
+
                 createNewTap: function() {
                     
                     /////////////////////////////////////////////////////////
                     // This part here for testing only, using it to quickly create TAPs. Will remove in production.
-                    this.newAuthor = 2
-                    this.newTitle = 'A Possibly New Title'
-                    this.newUrl = 'https://brucestull.com/'
-                    this.newUrlLabel = 'Well, Why not another URL Label, TOO!'
-                    this.newDescription = "And we can't forget the description"
+                    // this.newAuthor = 1
+                    if (this.newTitle === '') {
+                        this.newTitle = 'A Possibly New Title'
+                    }
+                    if (this.newUrl === '') {
+                        this.newUrl = 'https://brucestull.com/'
+                    }
+                    if (this.newUrlLabel === '') {
+                        this.newUrlLabel = 'Well, Why not another URL Label, TOO!'
+                    }
+                    if (this.newDescription === '') {
+                        this.newDescription = "And we can't forget the description"
+                    }
                     /////////////////////////////////////////////////////////
 
+                    this.newAuthor = this.currentUser.id
+
                     console.log(`Creating the new TAP!`)
+                    console.log(`New TAP Author: `, this.newAuthor)
                     console.log(`New TAP Title: `, this.newTitle)
                     console.log(`New TAP URL: `, this.newUrl)
                     console.log(`New TAP Descr: `, this.newDescription)
@@ -303,6 +330,7 @@
 
             mounted: function() {
                 this.csrf_token = document.querySelector("input[name=csrfmiddlewaretoken]").value
+                this.loadCurrentUser()
                 this.loadTaps()
             }
         })
