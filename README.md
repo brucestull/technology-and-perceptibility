@@ -1,9 +1,9 @@
 ## Name
 ### TAP - Technology and Perceptibility
 #### Project Management Pages:
-* [Milestones](https://github.com/brucestull/technology-and-perceptibility/milestones)
-* [1. Minimum Viable Product](https://github.com/brucestull/technology-and-perceptibility/projects/1)
-* [2. Accessibility Enhancements](https://github.com/brucestull/technology-and-perceptibility/projects/2)
+* [Project: TAP - Technology and Perceptibility](https://github.com/brucestull/technology-and-perceptibility/projects/2)
+* [1. Minimum Viable Product](https://github.com/brucestull/technology-and-perceptibility/milestone/1)
+* [2. Accessibility Enhancements](https://github.com/brucestull/technology-and-perceptibility/milestone/2)
 * [3. Usability Stretch Goals](https://github.com/brucestull/technology-and-perceptibility/milestone/3)
 
 
