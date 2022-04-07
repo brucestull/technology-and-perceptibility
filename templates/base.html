@@ -324,10 +324,13 @@
 
             },
 
+            // When Vue component is created and code is created, but before data get created.
             created: function() {
 
             },
 
+            // What is the actual 'status' of stuff at this point?
+            // Wait until all HTML elements loaded.
             mounted: function() {
                 this.csrf_token = document.querySelector("input[name=csrfmiddlewaretoken]").value
                 this.loadCurrentUser()

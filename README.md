@@ -44,30 +44,25 @@
 3. As a Color Blind user, I want to the application to have adequate contrast, because adequate contrast is important for reading and understanding application content.
     - [ ] Use Color Contrast Analyser as project is built.
 4. As a User, I want to be able to create a login account, because I want to use the app in the future to view and edit TAPs.
-    - [ ] Create User Model.
+    - [X] Create User Model.
       - [X] Create CustomUser model in case additional User model fields might be needed in future.
     - [ ] Create API for User Model.
-      - [ ] Create or use existing `api` app:
-        - [ ] Create Django REST API `views.py` for Users.
-        - [ ] Create Django REST API `urls.py` for Users.
-        - [ ] Create Django REST API `serializers.py` for Users.
+      - [X] Create or use existing `api` app:
+        - [X] Create Django REST API `urls.py` for Users.
+        - [X] Create Django REST API `serializers.py` for Users.
         - [ ] Create Django REST API `permissions.py` for Users.
-    - [ ] Create input fields (using Vue) for User creation component.
-      - [ ] Bind the input fields to the Vue model.
-    - [ ] Create button to submit User creation action.
-      - [ ] Use 'v-on:click' or '@click'
-    - [ ] Have page display name of signed-in User.
-      - [ ] Create an HTML block with 'v-if' to control when User's username is displayed and tie that to a 'checkedIn' flag.
+        - [ ] Create Django REST API `views.py` for Users.
 5. As a User, I want to be able to save a set of three fields (url, url title, url description), because I want to refer to them in the future.
     - [X] Create TAP (data) Model.
       - [X] Create basic TAP Model:
       - [ ] Modify TAP Model to include (or verify it includes) all required fields:
-        - [ ] URL
-        - [ ] URL Title
-        - [ ] URL Description
+        - [X] URL
+        - [X] URL Title
+        - [X] URL Label
+        - [X] URL Description
         - [ ] Other fields:
           - [ ] Code Snippet
-    - [ ] Add foreign key to link multiple TAPs to a single user. Will this be in both 'Tap' and 'CustomUser'? [posts.models.py](https://github.com/PdxCodeGuild/class_otter/blob/main/code/merritt/22-jan/drf-blog-22jan/posts/models.py) - It seems there is no need to add to a `users.models.py`.
+    - [X] Add foreign key to link multiple TAPs to a single user. Will this be in both 'Tap' and 'CustomUser'? [posts.models.py](https://github.com/PdxCodeGuild/class_otter/blob/main/code/merritt/22-jan/drf-blog-22jan/posts/models.py) - It seems there is no need to add to a `users.models.py`.
     - [ ] Create API for TAP Model.
       - [X] Create or use existing `api` app:
         - [X] Create Django REST API `views.py` for TAPs.
@@ -75,20 +70,20 @@
         - [X] Create Django REST API `serializers.py` for TAPs.
         - [ ] Modify (or verify) TAP API to include all required fields:
           - [ ] ???
-        - [ ] Create Django REST API `permissions.py` for TAPs.
+        - [X] Create Django REST API `permissions.py` for TAPs.
         - [ ] Create permission in `permissions.py` to allow editing of TAPs by User who owns the TAP.
         - [ ] Incorporate permissions in `views.py`.
-    - [ ] Create input fields (using Vue) for TAP creation component.
-      - [ ] Bind the input fields to the Vue model.
-    - [ ] Create button to submit TAP creation action.
-      - [ ] Use 'v-on:click' or '@click'
+    - [X] Create input fields (using Vue) for TAP creation component.
+      - [X] Bind the input fields to the Vue model.
+    - [X] Create button to submit TAP creation action.
+      - [X] Use 'v-on:click' or '@click'
 6. As a User, I want to access my previously saved field sets, because I want to review and have access to the saved links' url and information.
     NOTE: These features may be completed in User story above.
 7. As A mobile phone user, I need to be able to view the field sets.
     - [ ] Ensure site displays appropriately on small screens.
 
 ### Miscellaneous Tasks:
-- [ ] Apply CSS:
+- [X] Apply CSS:
   - [X] Apply sticky footer to `base.html`.
   - [X] Apply `flex` and [`@media`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media) to a top nav/header. As screen width grows, move from stacked title/nav to side-by-side with one on right and one on left.
   - [X] Compare my own 'cards' in Stuff project to [Card](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card) - [Download the code](https://github.com/mdn/css-examples/blob/main/css-cookbook/card--download.html).[^cards-and-accessibility]
@@ -138,9 +133,13 @@
 - [X] 1.5 Days - Write Django (REST) tests
 ### Apr 06 - Apr 07:
 - [X] 1.5 Days - TAP Model - API and Front End
-### Apr 07 - Apr 08:
-- [ ] 1.5 Days - User Model - API and Front End
+### Apr 07 - Apr 10:
+- [ ] 1.5 Days - Finish [1. Minimum Viable Product](https://github.com/brucestull/technology-and-perceptibility/milestone/1)
+<!-- Not needed, Django provides all the user fuctionality we need. -->
+<!-- - [ ] 1.5 Days - User Model - API and Front End -->
 ### Apr 11 - Apr 12:
+- [ ] 2 Days - Finish [2. Accessibility Enhancements](https://github.com/brucestull/technology-and-perceptibility/milestone/2)
+### Apr 13 - Apr 14:
 - [ ] 1.0 Days - Learn Chart.js or 3D[^stretch-goal]
 
 [^firefox-accessibility-tester]: [FireFox Accessiblity Tester](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/index.html)
