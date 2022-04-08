@@ -42,7 +42,7 @@
                 </div>
                 <nav>
                     <!-- <p><a href="{% url 'home' %}">Show List of Records</a></p> -->
-                    <p><a href="#" @click="loadTaps()">Show List of Records</a></p>
+                    <p><a href="#" @click="loadCurrentUser()">Show My List of Records</a></p>
                     <p><a href="#" @click="showCreateNewTapInterface()">Create a New Record</a></p>
                     <address>
                         <a href="mailto:Bruce.Stull@gmail.com">Bruce.Stull@gmail.com</a><br>
@@ -86,7 +86,9 @@
 
                 currentTap: {},
 
-                createBlockIsDisplayed: true,
+                createBlockIsDisplayed: false,
+
+                hideBigList: false,
 
                 editingCurrentTap: {},
                 temporaryTapTitle: '',
@@ -106,6 +108,8 @@
 
                 csrf_token: '',
 
+                editFlag: false,
+
                 editTitle: false,
                 editDescription: false,
                 editUrlLabel: false,
@@ -113,50 +117,60 @@
             },
 
             methods: {
-                loadTaps: function() {
-                    console.log("Attempting to load TAPs")
+                // loadTaps: function() {
+                //     this.hideCreateNewTapInterface()
+                //     console.log("Attempting to load TAPs")
+                //     axios({
+                //         method: 'get',
+                //         url: `/api/v1/taps/`,
+                //     }).then(response => {
+                //         console.log(`response: `, response)
+                //         console.log(`response.data: `, response.data)
+                //         for (let i = 0; i < response.data.length; i++) {
+                //             this.taps.push(response.data[i])
+                //             this.taps[i].localBrowsableApiUrl = `/api/v1/taps/${this.taps[i].id}/`
+                //             this.taps[i].localBrowsableApiUrlDescription = `Browsable API link to this TAP with id of ${this.taps[i].id}.`
+                //         }
+                //         console.log(`this.taps`, this.taps)
+                //         this.clearCurrentTap()
+                //     }).catch(error => {
+                //         console.log(`error.response.data`, error.response.data)
+                //     })
+                // },
+
+                // clearTaps: function() {
+                //     this.taps = []
+                // },
+
+                loadCurrentUser: function() {
+                    this.hideBigList = false
+                    this.createBlockIsDisplayed = false
+                    this.clearEditingCurrentTap()
+                    this.clearCurrentTap()
+                    console.log(`Loading Current User!`)
                     axios({
                         method: 'get',
-                        url: `/api/v1/taps/`,
+                        url: `/api/v1/currentuser/`,
                     }).then(response => {
                         console.log(`response: `, response)
-                        console.log(`response.data: `, response.data)
-                        for (let i = 0; i < response.data.length; i++) {
-                            this.taps.push(response.data[i])
-                            this.taps[i].localBrowsableApiUrl = `/api/v1/taps/${this.taps[i].id}/`
-                            this.taps[i].localBrowsableApiUrlDescription = `Browsable API link to this TAP with id of ${this.taps[i].id}.`
-                        }
-                        console.log(`this.taps`, this.taps)
-                        this.clearCurrentTap()
+                        this.currentUser = response.data
+                        console.log(`User logged in: `, this.currentUser.username)
                     }).catch(error => {
-                        console.log(`error.response.data`, error.response.data)
+                        console.log(`error.response: `, error.response)
                     })
                 },
 
-                clearTaps: function() {
-                    this.taps = []
-                },
-
                 loadSingleTap: function(tap) {
-                    this.clearAllTaps()
-                    this.setEditFlagsFalse()
+                    this.hideBigList = true
+                    this.clearEditingCurrentTap()
                     console.log(`Attempting to load a single TAP: ${ tap.id }`)
                     axios({
                         method: 'get',
                         url: `/api/v1/taps/${ tap.id }/`,
                     }).then(response => {
-                        console.log(`response: `, response)
-                        console.log(`response.data: `, response.data)
+                        console.log(`Load Single TAP: `, response.data)
                         this.currentTap = response.data
-
-                        this.currentTap.localBrowsableApiUrl = `/api/v1/taps/${ this.currentTap.id }/`
-                        this.currentTap.localBrowsableApiUrlDescription = `Browsable API link to this TAP with id of ${ this.currentTap.id }.`
-
-                        console.log(`currentTap: `, this.currentTap)
-                        console.log(`currentTap.id: `, this.currentTap.id)
-                        console.log(`currentTap.title: `, this.currentTap.title)
                     }).catch(error => {
-                        // console.log(`error.response.data`, error.response.data)
                         console.log(`error`, error)
                         console.log(`error.response`, error.response)
                     })
@@ -167,32 +181,18 @@
                 },
 
                 editTap: function() {
-
-                    console.log(`Editing this.currentTap - #${this.currentTap}: `, this.currentTap)
-                    console.log(`Editing this.editingCurrentTap - #${this.editingCurrentTap}: `, this.editingCurrentTap)
-
+                    // Create an 'editingCurrentTap' object from 'currentTap' to edit.
                     this.editingCurrentTap = this.currentTap
                     this.temporaryTapTitle = this.currentTap.title
+                    // Clear the 'currentTap' view.
                     this.clearCurrentTap()
-
-                    console.log(`Cleared this.currentTap - #${this.currentTap}: `, this.currentTap)
-                    console.log(`Editing this.editingCurrentTap - #${this.editingCurrentTap}: `, this.editingCurrentTap)
-
                 },
-
-                // editTap: function(tap) {
-                //     this.editingCurrentTap = tap
-                //     this.temporaryTapTitle = tap.title
-                //     console.log(`Editing tap #${ tap.id }: `, tap)
-                //     this.clearCurrentTap()
-                // },
 
                 clearEditingCurrentTap: function() {
                     this.editingCurrentTap = {}
                 },
 
                 saveTap: function() {
-                    console.log(`Saving tap #${ this.editingCurrentTap.id}: `, this.editingCurrentTap)
                     axios({
                         method: 'patch',
                         url: `/api/v1/taps/${ this.editingCurrentTap.id }/`,
@@ -207,6 +207,7 @@
                     }).then(response => {
                         console.log(response)
                         this.loadSingleTap(this.editingCurrentTap)
+                        this.clearEditingCurrentTap()
                     }).catch(error => {
                         console.log(error.response)
                     })
@@ -216,25 +217,7 @@
                     console.log(`Entering Create TAP View!`)
                     this.clearAllTaps()
                     this.createBlockIsDisplayed = true
-                },
-
-                hideCreateNewTapInterface: function() {
-                    this.createBlockIsDisplayed = false
-                    this.loadTaps()
-                },
-
-                loadCurrentUser: function() {
-                    console.log(`Loading Current User!`)
-                    axios({
-                        method: 'get',
-                        url: `/api/v1/currentuser/`,
-                    }).then(response => {
-                        console.log(`response: `, response)
-                        this.currentUser = response.data
-                        console.log(`User logged in: `, this.currentUser.username)
-                    }).catch(error => {
-                        console.log(`error.response: `, error.response)
-                    })
+                    this.hideBigList = true
                 },
 
                 createNewTap: function() {
@@ -289,6 +272,8 @@
                     this.newUrlLabel = ''
                     this.newDescription = ''
 
+                    this.createBlockIsDisplayed = false
+
                     }).catch(error => {
                         console.log(error.response)
                     })
@@ -303,15 +288,15 @@
                             "X-CSRFToken": this.csrf_token
                         }
                     }).then(response => {
-                        console.log(`Did we delete something???`, response)
-                        this.loadTaps()
+                        console.log(`Did we delete something?`, response)
+                        this.loadCurrentUser()
+                        this.clearEditingCurrentTap()
                     }).catch(error => {
                         console.log(error.response)
                     })
                 },
 
                 clearAllTaps: function() {
-                    this.clearTaps()
                     this.clearCurrentTap()
                     this.clearEditingCurrentTap()
                 },
@@ -334,7 +319,6 @@
             mounted: function() {
                 this.csrf_token = document.querySelector("input[name=csrfmiddlewaretoken]").value
                 this.loadCurrentUser()
-                this.loadTaps()
             }
         })
     </script>
