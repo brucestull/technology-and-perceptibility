@@ -72,6 +72,8 @@
 
                 currentUser: {},
 
+                createBlockIsDisplayed: false,
+
                 newAuthor: 1,
                 newTitle: '',
                 newUrl: '',
@@ -83,13 +85,10 @@
                 },
 
                 taps: [],
-
-                currentTap: {},
-
-                createBlockIsDisplayed: false,
-
+                
                 hideBigList: false,
 
+                currentTap: {},
                 editingCurrentTap: {},
                 temporaryTapTitle: '',
 
@@ -107,12 +106,6 @@
                 // },
 
                 csrf_token: '',
-
-                editFlag: false,
-
-                editTitle: false,
-                editDescription: false,
-                editUrlLabel: false,
 
             },
 
@@ -241,12 +234,6 @@
 
                     this.newAuthor = this.currentUser.id
 
-                    console.log(`Creating the new TAP!`)
-                    console.log(`New TAP Author: `, this.newAuthor)
-                    console.log(`New TAP Title: `, this.newTitle)
-                    console.log(`New TAP URL: `, this.newUrl)
-                    console.log(`New TAP Descr: `, this.newDescription)
-
                     axios({
                         method: 'post',
                         url: `/api/v1/taps/`,
@@ -261,7 +248,6 @@
                             "description": this.newDescription,
                         }
                     }).then(response => {
-                        console.log(response)
                         console.log(`response.data.id: `, response.data.id)
                         this.tempTap.id = response.data.id
                         this.loadSingleTap(this.tempTap)
@@ -300,13 +286,6 @@
                     this.clearCurrentTap()
                     this.clearEditingCurrentTap()
                 },
-
-                setEditFlagsFalse: function() {
-                    this.editTitle = false
-                    this.editDescription = false
-                    this.editUrlLabel = false
-                },
-
             },
 
             // When Vue component is created and code is created, but before data get created.
