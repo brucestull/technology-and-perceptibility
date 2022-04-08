@@ -94,44 +94,26 @@
       <article class="an-editing-tap">
         <h3>[[ temporaryTapTitle ]] - [[ editingCurrentTap.author_detail.username ]]</h3>
 
+        <label for="url-being-edited">URL</label>
         <br>
-        <button @click="editTitle = !editTitle">[[ editTitle ? "Done editing Title" : "Edit Title" ]]</button>
-        <br>
-        <template v-if="editTitle">
-          <label for="title-being-edited">Title</label>
-          <input v-model="editingCurrentTap.title" id="title-being-edited" type="text" size="75">
-        </template>
-        <template v-else>
-          <span>Title: [[ editingCurrentTap.title ]]</span>
-        </template>
+        <input v-model="editingCurrentTap.url" disabled id="url-being-edited" type="text" size = "75">
         <br>
 
+        <label for="title-being-edited">Title</label>
         <br>
-        <button @click="editUrlLabel = !editUrlLabel">[[ editUrlLabel ? "Done editing URL Label" : "Edit URL Label" ]]</button>
-        <br>
-        <template v-if="editUrlLabel">
-          <label for="url-label-being-edited">URL Label</label>
-          <textarea v-model="editingCurrentTap.url_label" id="url-label-being-edited" rows="6" cols="75"></textarea>
-        </template>
-        <template v-else>
-          <span>URL Label: [[ editingCurrentTap.url_label ]]</span>
-        </template>
+        <input v-model="editingCurrentTap.title" id="title-being-edited" type="text" size="75">
         <br>
 
-
+        <label for="url-label-being-edited">URL Label</label>
         <br>
-        <button @click="editDescription = !editDescription">[[ editDescription ? "Done editing Description" : "Edit Description" ]]</button>
-        <br>
-        <template v-if="editDescription">
-          <label for="description-being-edited">Description</label>
-          <textarea v-model="editingCurrentTap.description" id="description-being-edited" rows="6" cols="75"></textarea>
-        </template>
-        <template v-else>
-          <span>Description: [[ editingCurrentTap.description ]]</span>
-        </template>
+        <textarea v-model="editingCurrentTap.url_label" id="url-label-being-edited" rows="6" cols="75"></textarea>
         <br>
 
+        <label for="description-being-edited">Description</label>
         <br>
+        <textarea v-model="editingCurrentTap.description" id="description-being-edited" rows="6" cols="75"></textarea>
+        <br>
+
         <button @click="saveTap()">Save Changes</button>
         <button @click="loadSingleTap(editingCurrentTap)">Exit without saving</button>
         <button @click="deleteTap(editingCurrentTap)">Delete the Link</button>
