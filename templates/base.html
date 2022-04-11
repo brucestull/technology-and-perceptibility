@@ -44,10 +44,10 @@
                     <!-- <p><a href="{% url 'home' %}">Show List of Records</a></p> -->
                     <p><a href="#" @click="loadCurrentUser()">Show My List of Records</a></p>
                     <p><a href="#" @click="showCreateNewTapInterface()">Create a New Record</a></p>
-                    <address>
+                    <!-- <address>
                         <a href="mailto:Bruce.Stull@gmail.com">Bruce.Stull@gmail.com</a><br>
                         <a href="https://brucestull.com/" target="_blank">brucestull.com</a>
-                    </address>
+                    </address> -->
                 </nav>
             </header>
         </div>
@@ -211,6 +211,7 @@
                     this.clearAllTaps()
                     this.createBlockIsDisplayed = true
                     this.hideBigList = true
+                    // console.log(document.getElementById("new-url-input"))
                 },
 
                 createNewTap: function() {

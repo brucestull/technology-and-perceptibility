@@ -25,13 +25,17 @@
     <div class="new-link-creation">
       <h2>Create a new Link</h2>
       <label for="new-title-input">Link Title</label><br>
-      <input v-model="newTitle" id="new-title-input" type="text" size="45"><span>[[ newTitle ]]</span><br>
+      <input v-model="newTitle" id="new-title-input" type="text" size="45">
+      <br>
       <label for="new-url-input">Link URL</label><br>
-      <input v-model="newUrl" id="new-url-input" type="text" size="45"><span>[[ newUrl ]]</span><br>
-      <label for="new-url-description-input">Link URL Description</label><br>
-      <input v-model="newUrlLabel" id="new-url-description-input" type="text" size="45"><span>[[ newUrlLabel ]]</span><br>
+      <input v-model="newUrl" id="new-url-input" type="text" size="45">
+      <br>
       <label for="new-description-input">Link Extended Description</label><br>
-      <input v-model="newDescription" id="new-description-input" type="text" size="45"><span>[[ newDescription ]]</span><br>
+      <input v-model="newDescription" id="new-description-input" type="text" size="45">
+      <br>
+      <label for="new-url-description-input">Link URL Description</label><br>
+      <input v-model="newUrlLabel" id="new-url-description-input" type="text" size="45">
+      <br>
       <button @click="createNewTap()">Submit new Link</button>
     </div>
   </template>
