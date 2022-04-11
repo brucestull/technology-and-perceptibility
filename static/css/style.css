@@ -1,38 +1,37 @@
 /* Color Theme Swatches in Hex */
-.guitar_splitComplimentary-1-hex { color: #628C7C; }
-.guitar_splitComplimentary-2-hex { color: #8DD9BC; }
-.guitar_splitComplimentary-3-hex { color: #D9AB82; }
-.guitar_splitComplimentary-4-hex { color: #465B8C; }
-.guitar_splitComplimentary-5-hex { color: #7794D9; }
+.Access-Inspiration-1-hex { color: #505248; }
+.Access-Inspiration-2-hex { color: #DDDDC0; }
+.Access-Inspiration-3-hex { color: #A11E17; }
+.Access-Inspiration-4-hex { color: #19303A; }
+.Access-Inspiration-5-hex { color: #CD9B3F; }
 
 /* Color Theme Swatches in RGBA */
-.guitar_splitComplimentary-1-rgba { color: rgba(98, 140, 124, 1); }
-.guitar_splitComplimentary-2-rgba { color: rgba(141, 217, 188, 1); }
-.guitar_splitComplimentary-3-rgba { color: rgba(217, 171, 130, 1); }
-.guitar_splitComplimentary-4-rgba { color: rgba(70, 91, 140, 1); }
-.guitar_splitComplimentary-5-rgba { color: rgba(119, 148, 217, 1); }
+.Access-Inspiration-1-rgba { color: rgba(80, 82, 72, 1); }
+.Access-Inspiration-2-rgba { color: rgba(221, 221, 192, 1); }
+.Access-Inspiration-3-rgba { color: rgba(161, 30, 23, 1); }
+.Access-Inspiration-4-rgba { color: rgba(25, 48, 58, 1); }
+.Access-Inspiration-5-rgba { color: rgba(205, 155, 63, 1); }
 
 /* Color Theme Swatches in HSLA */
-.guitar_splitComplimentary-1-hsla { color: hsla(157, 17, 46, 1); }
-.guitar_splitComplimentary-2-hsla { color: hsla(157, 50, 70, 1); }
-.guitar_splitComplimentary-3-hsla { color: hsla(28, 53, 68, 1); }
-.guitar_splitComplimentary-4-hsla { color: hsla(222, 33, 41, 1); }
-.guitar_splitComplimentary-5-hsla { color: hsla(222, 56, 65, 1); }
+.Access-Inspiration-1-hsla { color: hsla(72, 6, 30, 1); }
+.Access-Inspiration-2-hsla { color: hsla(60, 29, 80, 1); }
+.Access-Inspiration-3-hsla { color: hsla(3, 75, 36, 1); }
+.Access-Inspiration-4-hsla { color: hsla(198, 39, 16, 1); }
+.Access-Inspiration-5-hsla { color: hsla(38, 58, 52, 1); }
 
 /* Store variables here: */
-:root {
-    --header_border_brown: #944E4E;
-}
+/* :root {
+} */
 
 button:focus, input:focus, a:focus, textarea:focus {
     /* outline: 3px dashed orange; */
-    outline: 5px dashed #465B8C;
-    outline-offset: 1px;
+    outline: 5px dashed rgba(25, 48, 58, 1);
+    outline-offset: 2px;
 }
 
 header a:focus {
-    outline: 5px dashed #D9AB82;
-    outline-offset: 1px;
+    outline: 5px dashed rgba(25, 48, 58, 1);
+    outline-offset: 2px;
 }
 
 html {
@@ -65,8 +64,28 @@ header, .div-replacing-main, footer {
     padding: 0 0;
 }
 
-nav > p > a {
-    color: var(--header_border_brown);
+/* Colors */
+a {
+    color: rgba(161, 30, 23, 1);
+}
+
+body {
+    color: rgba(25, 48, 58, 1);
+    background-color: rgba(219, 219, 189, 0.7);
+    border-top: 25px solid rgba(25, 48, 58, 1);
+}
+
+header {
+    background-color: rgba(205, 155, 63, 1);
+}
+
+.full-width-header {
+    background-color: rgba(25, 48, 58, 1);
+    border-top: .25em solid rgba(161, 30, 23, 1);
+}
+
+nav > p > a, a.skip-to-main-content {
+    color: rgba(25, 48, 58, 1);
 }
 
 div.login-logout-block a {
@@ -75,17 +94,10 @@ div.login-logout-block a {
     margin: .5em;
 }
 
-nav > address > a {
-    color: var(--header_border_brown);
-}
-
 /* Now: Let's change the font for all text in 'body'. */
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color: hsla(222, 33%, 30%, 1);
-    background-color: hsla(28, 53%, 68%, .6);
-    border-top: 25px solid hsla(222, 33%, 41%, 1);
 }
 
 h1 {
@@ -100,24 +112,15 @@ input, textarea {
     font-size: 24px;
 }
 
-/* header {
-    width: 100%;
-} */
-
 /* Let's align the text of the header to 'center'. This will affect a <div> and a <nav>, which are in the <header>. */
 header {
     width: 100%;
     text-align: center;
     padding: 1em;
-    /* padding-top: 1em; */
-    /* padding-bottom: 1em; */
-    background-color: hsla(157, 17%, 46%, 1);
 }
 
 .full-width-header {
     width: 100%;
-    background-color: hsla(157, 17%, 46%, 1);
-    border-top: .25em solid var(--header_border_brown);
     padding-bottom: .5em;
 }
 
@@ -141,10 +144,6 @@ div.new-link-creation > button {
     margin-top: 1.5em;
 }
 
-/* .thing-at-top-of-main {
-    padding-top: 0em;
-} */
-
 div.where-the-taps-live h2, div.where-the-taps-live article.a-current-tap {
     margin: 1.5em;
 }
@@ -153,7 +152,6 @@ article.a-tap-in-the-list h3 {
     font-size: 1.3em;
     margin-top: 0;
     /* top | right | bottom | left */
-    /* margin: 30px 0 0 0; */
 }
 
 article.a-tap-in-the-list {
@@ -161,11 +159,7 @@ article.a-tap-in-the-list {
     margin: 1em;
     padding: 1.25em;
     /* top | right | bottom | left */
-    /* padding: 0 36px 24px 36px; */
     /* vertical | horizontal */
-    /* padding: 0 24px; */
-    /* vertical | horizontal */
-    /* margin: 18px; */
 }
 
 
@@ -211,14 +205,9 @@ div.new-link-creation {
     }
 
     article.a-tap-in-the-list {
-        /* width: 50%; */
         width: 45%;
         /* vertical | horizontal */
         margin-bottom: .25em ;
-        /* margin-bottom: 24px; */
-        /* margin: 12px; */
-        /* Some padding to separate items from each other */
-        /* padding: .5em; */
     }
 }
 
@@ -237,11 +226,6 @@ div.new-link-creation {
         /* We will align the text within those next. */
         justify-content: space-between;
     }
-
-    /* Align the page heading/title to the left. */
-    /* .page-title h1 {
-        text-align: left;
-    } */
 
     /* Align the page heading/title to the left. */
     h1 {
