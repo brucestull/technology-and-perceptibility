@@ -88,6 +88,18 @@ body {
     border-top: 25px solid hsla(222, 33%, 41%, 1);
 }
 
+h1 {
+    font-size: 36px;
+}
+
+button, a, p, h3, label, div.login-logout-block {
+    font-size: 24px !important;
+}
+
+input, textarea {
+    font-size: 24px;
+}
+
 /* header {
     width: 100%;
 } */
@@ -107,6 +119,10 @@ header {
     background-color: hsla(157, 17%, 46%, 1);
     border-top: .25em solid var(--header_border_brown);
     padding-bottom: .5em;
+}
+
+a.skip-to-main-content, nav {
+    padding: 1.5em;
 }
 
 div.new-link-creation > h2 {
@@ -229,7 +245,7 @@ div.new-link-creation {
 
     /* Align the page heading/title to the left. */
     h1 {
-        text-align: left;
+        text-align: center;
     }
 
     /* Align the page links to the right. */
