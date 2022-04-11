@@ -109,9 +109,9 @@ header {
     padding-bottom: .5em;
 }
 
-.thing-at-top-of-main {
-    /* padding-top: .5em; */
-}
+/* .thing-at-top-of-main {
+    padding-top: 0em;
+} */
 
 div.where-the-taps-live h2, div.where-the-taps-live article.a-current-tap {
     margin: 1.5em;
