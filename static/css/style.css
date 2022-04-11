@@ -130,6 +130,10 @@ header {
     padding-bottom: .5em;
 }
 
+div.login-logout-block span {
+    text-transform: capitalize;
+}
+
 div.new-link-creation > h2 {
     margin: 1em;
 }
@@ -163,7 +167,7 @@ article.a-tap-in-the-list a {
 article.a-tap-in-the-list {
     border: #465B8C solid 2px;
     margin: 1em;
-    padding: 1.25em;
+    padding: 1.5em;
     /* top | right | bottom | left */
     /* vertical | horizontal */
 }
@@ -181,6 +185,24 @@ footer {
 article.a-current-tap {
     border: #465B8C solid 2px;
     padding: 2em;
+}
+
+article.a-current-tap a {
+    font-size: 1.25em;
+}
+
+article.an-editing-tap > label{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+article.an-editing-tap input, article.an-editing-tap textarea{
+    display: inline-block;
+    margin-top: .35em;
+}
+
+article.an-editing-tap button {
+    margin: .4em;
 }
 
 div.thing-at-top-of-main {
