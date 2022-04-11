@@ -26,12 +26,12 @@
 
 button:focus, input:focus, a:focus, textarea:focus {
     /* outline: 3px dashed orange; */
-    outline: 4px dashed #465B8C;
+    outline: 5px dashed #465B8C;
     outline-offset: 1px;
 }
 
 header a:focus {
-    outline: 4px dashed #D9AB82;
+    outline: 5px dashed #D9AB82;
     outline-offset: 1px;
 }
 
@@ -62,11 +62,17 @@ header, .div-replacing-main, footer {
     /* vertical | horizontal */
     margin: 0 0;
     /* vertical | horizontal */
-    padding: 0 1.5em;
+    padding: 0 0;
 }
 
 nav > p > a {
     color: var(--header_border_brown);
+}
+
+div.login-logout-block a {
+    /* "display: inline-block;" will allow margins. Without it, there are no top or bottom margins since <a> are inline elements. */
+    display: inline-block;
+    margin: .5em;
 }
 
 nav > address > a {
@@ -82,13 +88,17 @@ body {
     border-top: 25px solid hsla(222, 33%, 41%, 1);
 }
 
-header {
+/* header {
     width: 100%;
-}
+} */
 
 /* Let's align the text of the header to 'center'. This will affect a <div> and a <nav>, which are in the <header>. */
 header {
+    width: 100%;
     text-align: center;
+    padding: 1em;
+    /* padding-top: 1em; */
+    /* padding-bottom: 1em; */
     background-color: hsla(157, 17%, 46%, 1);
 }
 
@@ -100,21 +110,36 @@ header {
 }
 
 .thing-at-top-of-main {
-    padding-top: .5em;
+    /* padding-top: .5em; */
 }
 
-.a-tap-in-the-list h3 {
+div.where-the-taps-live h2, div.where-the-taps-live article.a-current-tap {
+    margin: 1.5em;
+}
+
+article.a-tap-in-the-list h3 {
     font-size: 1.3em;
-    margin: 30px 0 0 0;
+    margin-top: 0;
+    /* top | right | bottom | left */
+    /* margin: 30px 0 0 0; */
 }
 
 article.a-tap-in-the-list {
     border: #465B8C solid 2px;
+    margin: 1em;
+    padding: 1.25em;
+    /* top | right | bottom | left */
+    /* padding: 0 36px 24px 36px; */
+    /* vertical | horizontal */
+    /* padding: 0 24px; */
+    /* vertical | horizontal */
+    /* margin: 18px; */
 }
 
 
 footer {
     text-align: right;
+    padding: 1em;
 }
 
 /* Some padding on top and bottom of stuff inside <address> */
@@ -126,6 +151,11 @@ address > a {
 .a-current-tap, .an-editing-tap {
     margin-left: auto;
     margin-right: auto;
+}
+
+article.a-current-tap {
+    border: #465B8C solid 2px;
+    padding: 2em;
 }
 
 div.thing-at-top-of-main {
@@ -145,19 +175,25 @@ div.new-link-creation {
     .all-the-taps {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
-    .a-tap-in-the-list {
-        width: 50%;
+    article.a-tap-in-the-list {
+        /* width: 50%; */
+        width: 45%;
+        /* vertical | horizontal */
+        margin-bottom: .25em ;
+        /* margin-bottom: 24px; */
+        /* margin: 12px; */
         /* Some padding to separate items from each other */
-        padding: .5em;
+        /* padding: .5em; */
     }
 }
 
 @media (min-width: 1100px) {
 
-    .a-tap-in-the-list {
-        width: 33.33%;
+    article.a-tap-in-the-list {
+        width: 30%;
     }
 
     /* For single TAPs. */

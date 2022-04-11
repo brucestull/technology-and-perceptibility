@@ -11,6 +11,7 @@
     <h2>User Login/Logout</h2>
     {% if user.is_authenticated %}
       Welcome, {{ user.username }}!
+      <br>
       <a href="{% url 'logout' %}"> Log Out</a>
     {% else %}
       <p>You are not logged in</p>
@@ -37,7 +38,7 @@
 </div>
 
 
-<div>
+<div class="where-the-taps-live">
   <h2 v-if="Object.keys(taps).length">The List of Links</h2>
   <h2 v-if="Object.keys(currentTap).length">Viewing a Single Link</h2>
   <h2 v-if="Object.keys(editingCurrentTap).length">Editing a Single Link</h2>
@@ -47,12 +48,6 @@
     <template v-if="Object.keys(currentUser).length && !hideBigList">
       <article v-for="tap in currentUser.taps_detail" class="a-tap-in-the-list">
         <h3>[[ tap.title ]] - [[ currentUser.username ]]</h3>
-        <button
-          @click="loadSingleTap(tap)"
-        >
-          View details for this Item
-        </button>
-        <br>
         <a
           :href="tap.url"
           v-bind:title="tap.url_label"
@@ -62,6 +57,11 @@
         </a>
         <br>
         <p>[[ tap.id ]] : [[ tap.description ]]</p>
+        <button
+          @click="loadSingleTap(tap)"
+        >
+          View details for this Item
+        </button>
 
       </article>
     </template>
