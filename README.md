@@ -184,6 +184,7 @@ Inspiration, examples, code snippets, etc.
 * [WabAIM - Skip Navigation Links](https://webaim.org/techniques/skipnav/)
 * [Windows 11 - Screen Reader](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1#WindowsVersion=Windows_11)
   * WindowsKey+Ctrl+Enter
+* [Screen Readers - MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility#screenreaders)
 * Frameworks and Libraries
   * [Vue.js 3](https://vuejs.org/guide/introduction.html)
   * [Vue.js 2](https://v2.vuejs.org/v2/guide/)
