@@ -35,7 +35,7 @@
         
         <div class="full-width-header">
             <header>
-                <a href="#all-the-taps" title="Skip to main content">Skip to main content</a>
+                <a href="#all-the-taps" title="Skip to main content" class="skip-to-main-content">Skip to main content</a>
                 <div class="page-title">
                     <h1>Library of Links with Descriptions</h1>
                     
@@ -58,8 +58,8 @@
             </div>
         </main>
         <footer class="page-footer">
+            <p><a href="#" @click="loadCurrentUser()">Home</a></p>
             <p>Flynnt Knapp 2022</p>
-            <p><a href="{% url 'home' %}">Home</a></p>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
