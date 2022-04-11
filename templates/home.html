@@ -55,9 +55,8 @@
         <a
           :href="tap.url"
           v-bind:title="tap.url_label"
-          target="_blank"
         >
-          [[ tap.url_label ]] (Opens in new tab)
+          [[ tap.url_label ]]
         </a>
         <br>
         <p>[[ tap.id ]] : [[ tap.description ]]</p>
@@ -76,20 +75,11 @@
         <a
           :href="currentTap.url"
           v-bind:title="currentTap.url_label"
-          target="_blank"
         >
           [[ currentTap.url_label ]]
         </a>
         <br>
         <p>[[ currentTap.id ]] : [[ currentTap.description ]]</p>
-        <a
-          :href="currentTap.localBrowsableApiUrl"
-          v-bind:title="currentTap.localBrowsableApiUrlDescription"
-          target="_blank"
-        >
-          [[ currentTap.localBrowsableApiUrlDescription ]]
-        </a>
-        <br>
         <button @click="editTap()">Edit this Item</button>
       </article>
     </template>
