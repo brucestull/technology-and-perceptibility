@@ -55,8 +55,9 @@
         <a
           :href="tap.url"
           v-bind:title="tap.url_label"
+          target="_blank"
         >
-          [[ tap.url_label ]]
+          [[ tap.url_label ]] (Opens in new tab)
         </a>
         <br>
         <p>[[ tap.id ]] : [[ tap.description ]]</p>
@@ -75,8 +76,9 @@
         <a
           :href="currentTap.url"
           v-bind:title="currentTap.url_label"
+          target="_blank"
         >
-          [[ currentTap.url_label ]]
+          [[ currentTap.url_label ]] (Opens in new tab)
         </a>
         <br>
         <p>[[ currentTap.id ]] : [[ currentTap.description ]]</p>
