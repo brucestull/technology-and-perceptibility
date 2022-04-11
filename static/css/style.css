@@ -109,6 +109,22 @@ header {
     padding-bottom: .5em;
 }
 
+div.new-link-creation > h2 {
+    margin: 1em;
+}
+
+div.new-link-creation > label {
+    display:inline-block;
+    /* top | right | bottom | left */
+    margin: 2em 1em .5em 0em;
+}
+
+div.new-link-creation > button {
+    display:inline-block;
+    /* top | right | bottom | left */
+    margin-top: 1.5em;
+}
+
 /* .thing-at-top-of-main {
     padding-top: 0em;
 } */
