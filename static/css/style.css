@@ -84,8 +84,13 @@ header {
     border-top: .25em solid rgba(161, 30, 23, 1);
 }
 
-nav > p > a, a.skip-to-main-content {
+nav > p > a {
     color: rgba(25, 48, 58, 1);
+    font-size: 1.25em;
+}
+
+div.login-logout-block {
+    padding: 1em;
 }
 
 div.login-logout-block a {
@@ -101,15 +106,16 @@ body {
 }
 
 h1 {
-    font-size: 36px;
+    vertical-align: middle;
+    font-size: 2.5em;
 }
 
-button, a, p, h3, label, div.login-logout-block {
-    font-size: 24px !important;
+button, p, h3, label, div.login-logout-block {
+    font-size: 1.35em;
 }
 
 input, textarea {
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 /* Let's align the text of the header to 'center'. This will affect a <div> and a <nav>, which are in the <header>. */
@@ -122,10 +128,6 @@ header {
 .full-width-header {
     width: 100%;
     padding-bottom: .5em;
-}
-
-a.skip-to-main-content, nav {
-    padding: 1.5em;
 }
 
 div.new-link-creation > h2 {
@@ -154,6 +156,10 @@ article.a-tap-in-the-list h3 {
     /* top | right | bottom | left */
 }
 
+article.a-tap-in-the-list a {
+    font-size: 1.25em;
+}
+
 article.a-tap-in-the-list {
     border: #465B8C solid 2px;
     margin: 1em;
@@ -162,16 +168,9 @@ article.a-tap-in-the-list {
     /* vertical | horizontal */
 }
 
-
 footer {
     text-align: right;
     padding: 1em;
-}
-
-/* Some padding on top and bottom of stuff inside <address> */
-address > a {
-    display: inline-block;
-    margin: .3em 0;
 }
 
 .a-current-tap, .an-editing-tap {
@@ -187,10 +186,6 @@ article.a-current-tap {
 div.thing-at-top-of-main {
     display: flex;
     flex-direction: row;
-}
-
-div.login-logout-block {
-    padding: 1em;
 }
 
 div.new-link-creation {
