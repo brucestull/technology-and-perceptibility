@@ -1,5 +1,7 @@
 ## Name
 ### TAP - Technology and Perceptibility
+[Link to deployment of TAP](https://technology-and-perceptibility.herokuapp.com/)
+
 #### Project Management Pages:
 * [Project: TAP - Technology and Perceptibility](https://github.com/brucestull/technology-and-perceptibility/projects/2)
 * [1. Minimum Viable Product](https://github.com/brucestull/technology-and-perceptibility/milestone/1)
