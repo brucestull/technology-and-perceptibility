@@ -7,20 +7,6 @@
 
 <div class="thing-at-top-of-main">
 
-  <div class="login-logout-block">
-    <h2>User Login/Logout</h2>
-    {% if user.is_authenticated %}
-      <span>Welcome, {{ user.username }}!</span>
-      <br>
-      <a href="{% url 'logout' %}"> Log Out</a>
-    {% else %}
-      <p>You are not logged in</p>
-      <a href="{% url 'login' %}">Log In</a><br>
-      <a href="{% url 'signup' %}">Sign Up</a>
-    {% endif %}
-
-  </div>
-
   <template v-if="createBlockIsDisplayed">
     <fieldset class="new-link-creation">
       <legend>Create a new Link</legend>

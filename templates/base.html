@@ -35,15 +35,31 @@
         
         <div class="full-width-header">
             <header>
+                
+                <div class="login-logout-block">
+                    <h2>User Login/Logout</h2>
+                    {% if user.is_authenticated %}
+                    <span>Welcome, {{ user.username }}!</span>
+                    <br>
+                    <a href="{% url 'logout' %}"> Log Out</a>
+                    {% else %}
+                    <p>You are not logged in</p>
+                    <a href="{% url 'login' %}">Log In</a><br>
+                    <a href="{% url 'signup' %}">Sign Up</a>
+                    {% endif %}
+                </div>
+                
                 <div class="page-title">
                     <h1>TAP Library</h1>
                 </div>
+
                 <nav>
                     <p><a href="#all-the-taps" title="Skip to main content" class="skip-to-main-content">Skip to main content</a></p>
                     <p><a href="{% url 'home' %}">Home</a></p>
                     <!-- <p><a href="#" @click="loadCurrentUser()">Show My List of Records</a></p> -->
                     <p><a href="#" @click="showCreateNewTapInterface()">Create a New Record</a></p>
                 </nav>
+                
             </header>
         </div>
         <main class="page-body">
