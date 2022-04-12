@@ -22,8 +22,8 @@
   </div>
 
   <template v-if="createBlockIsDisplayed">
-    <div class="new-link-creation">
-      <h2>Create a new Link</h2>
+    <fieldset class="new-link-creation">
+      <legend>Create a new Link</legend>
       <label for="new-title-input">Link Title</label><br>
       <input v-model="newTitle" id="new-title-input" type="text" size="45">
       <br>
@@ -37,7 +37,7 @@
       <input v-model="newUrlLabel" id="new-url-description-input" type="text" size="45">
       <br>
       <button @click="createNewTap()">Submit new Link</button>
-    </div>
+    </fieldset>
   </template>
 </div>
 
@@ -45,7 +45,6 @@
 <div class="where-the-taps-live">
   <h2 v-if="Object.keys(taps).length">The List of Links</h2>
   <h2 v-if="Object.keys(currentTap).length">Viewing a Single Link</h2>
-  <h2 v-if="Object.keys(editingCurrentTap).length">Editing a Single Link</h2>
 
   <div class="all-the-taps" id="all-the-taps">
     
@@ -72,7 +71,7 @@
 
     <template v-if="Object.keys(currentTap).length">
       <article :model="currentTap" class="a-current-tap">
-        <h3>[[ currentTap.title ]] - [[ currentTap.author_detail.username ]]</h3>
+        <h3>[[ currentTap.title ]]</h3>
         <a
           :href="currentTap.url"
           v-bind:title="currentTap.url_label"
@@ -87,12 +86,13 @@
     </template>
 
     <template v-if="Object.keys(editingCurrentTap).length">
-      <article class="an-editing-tap">
-        <h3>[[ temporaryTapTitle ]] - [[ editingCurrentTap.author_detail.username ]]</h3>
+      <fieldset class="an-editing-tap">
+
+        <legend>Editing Link Details of [[ temporaryTapTitle ]]</legend>
 
         <label for="url-being-edited">URL</label>
         <br>
-        <input v-model="editingCurrentTap.url" id="url-being-edited" type="text" size = "75">
+        <input v-model="editingCurrentTap.url" autofocus id="url-being-edited" type="text" size = "75">
         <br>
 
         <label for="title-being-edited">Title</label>
@@ -113,12 +113,24 @@
         <button @click="saveTap()">Save Changes</button>
         <button @click="loadSingleTap(editingCurrentTap)">Exit without saving</button>
         <button @click="deleteTap(editingCurrentTap)">Delete the Link</button>
-      </article>
+      </fieldset>
     </template>
 
   </div>
 </div>
 
+<!-- <fieldset>
+  <legend>Choose your favorite monster</legend>
+
+  <input type="radio" id="kraken" name="monster">
+  <label for="kraken">Kraken</label><br/>
+
+  <input type="radio" id="sasquatch" name="monster">
+  <label for="sasquatch">Sasquatch</label><br/>
+
+  <input type="radio" id="mothman" name="monster">
+  <label for="mothman">Mothman</label>
+</fieldset> -->
 
 
 {% endblock %}

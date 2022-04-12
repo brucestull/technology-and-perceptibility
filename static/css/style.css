@@ -134,17 +134,17 @@ div.login-logout-block span {
     text-transform: capitalize;
 }
 
-div.new-link-creation > h2 {
+fieldset.new-link-creation > h2 {
     margin: 1em;
 }
 
-div.new-link-creation > label {
+fieldset.new-link-creation > label {
     display:inline-block;
     /* top | right | bottom | left */
     margin: 2em 1em .5em 0em;
 }
 
-div.new-link-creation > button {
+fieldset.new-link-creation > button {
     display:inline-block;
     /* top | right | bottom | left */
     margin-top: 1.5em;
@@ -191,17 +191,24 @@ article.a-current-tap a {
     font-size: 1.25em;
 }
 
-article.an-editing-tap > label{
+fieldset.an-editing-tap > label{
     display: inline-block;
-    margin-top: 1em;
+    /* top | right | bottom | left */
+    margin: 1em .75em 0em .75em;
 }
 
-article.an-editing-tap input, article.an-editing-tap textarea{
-    display: inline-block;
-    margin-top: .35em;
+fieldset.an-editing-tap > legend{
+    font-size: 1.25em;
+    /* vertical | horizontal */
+    margin: 0em .75em;
 }
 
-article.an-editing-tap button {
+fieldset.an-editing-tap input, fieldset.an-editing-tap textarea{
+    display: inline-block;
+    margin: .35em .75em 0em .75em;
+}
+
+fieldset.an-editing-tap button {
     margin: .4em;
 }
 
@@ -210,8 +217,9 @@ div.thing-at-top-of-main {
     flex-direction: row;
 }
 
-div.new-link-creation {
+fieldset.new-link-creation {
     padding: 1em;
+    margin-top: 3em;
 }
 
 @media (min-width: 700px) {
