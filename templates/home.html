@@ -30,11 +30,11 @@
       <label for="new-url-input">Link URL</label><br>
       <input v-model="newUrl" id="new-url-input" type="text" size="45">
       <br>
+      <label for="new-url-description-input">Link Label</label><br>
+      <input v-model="newUrlLabel" id="new-url-description-input" type="text" size="45">
+      <br>
       <label for="new-description-input">Link Extended Description</label><br>
       <input v-model="newDescription" id="new-description-input" type="text" size="45">
-      <br>
-      <label for="new-url-description-input">Link URL Description</label><br>
-      <input v-model="newUrlLabel" id="new-url-description-input" type="text" size="45">
       <br>
       <button @click="createNewTap()">Submit new Link</button>
     </fieldset>
@@ -90,22 +90,22 @@
 
         <legend>Editing Link Details of [[ temporaryTapTitle ]]</legend>
 
-        <label for="url-being-edited">URL</label>
+        <label for="title-being-edited">Link Title</label>
         <br>
-        <input v-model="editingCurrentTap.url" autofocus id="url-being-edited" type="text" size = "75">
-        <br>
-
-        <label for="title-being-edited">Title</label>
-        <br>
-        <input v-model="editingCurrentTap.title" id="title-being-edited" type="text" size="75">
+        <input v-model="editingCurrentTap.title" autofocus id="title-being-edited" type="text" size="75">
         <br>
 
-        <label for="url-label-being-edited">URL Label</label>
+        <label for="url-being-edited">Link URL</label>
+        <br>
+        <input v-model="editingCurrentTap.url" id="url-being-edited" type="text" size = "75">
+        <br>
+
+        <label for="url-label-being-edited">Link Label</label>
         <br>
         <textarea v-model="editingCurrentTap.url_label" id="url-label-being-edited" rows="6" cols="75"></textarea>
         <br>
 
-        <label for="description-being-edited">Description</label>
+        <label for="description-being-edited">Link Extended Description</label>
         <br>
         <textarea v-model="editingCurrentTap.description" id="description-being-edited" rows="6" cols="75"></textarea>
         <br>
