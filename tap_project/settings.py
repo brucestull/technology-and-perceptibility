@@ -144,4 +144,7 @@ REST_FRAMEWORK = {
     'TEST_REQUEST_DEFAULT_FORMAT': 'json'
 }
 
+import django_on_heroku
+django_on_heroku.settings(locals())
+
 # LOGIN_URL = 'login'
