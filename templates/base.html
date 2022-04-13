@@ -35,7 +35,18 @@
         
         <div class="full-width-header">
             <header>
-                
+
+                <nav>
+                    <p><a href="#all-the-taps" title="Skip to main content" class="skip-to-main-content">Skip to main content</a></p>
+                    <p><a href="{% url 'home' %}">Home</a></p>
+                    <!-- <p><a href="#" @click="loadCurrentUser()">Show My List of Records</a></p> -->
+                    <p><a href="#" @click="showCreateNewTapInterface()">Create a New Record</a></p>
+                </nav>
+
+                <div class="page-title">
+                    <h1>Link Library</h1>
+                </div>
+                                
                 <div class="login-logout-block">
                     <h2>User Login/Logout</h2>
                     {% if user.is_authenticated %}
@@ -49,24 +60,11 @@
                     {% endif %}
                 </div>
                 
-                <div class="page-title">
-                    <h1>TAP Library</h1>
-                </div>
-
-                <nav>
-                    <p><a href="#all-the-taps" title="Skip to main content" class="skip-to-main-content">Skip to main content</a></p>
-                    <p><a href="{% url 'home' %}">Home</a></p>
-                    <!-- <p><a href="#" @click="loadCurrentUser()">Show My List of Records</a></p> -->
-                    <p><a href="#" @click="showCreateNewTapInterface()">Create a New Record</a></p>
-                </nav>
-                
             </header>
         </div>
-        <main class="page-body">
-            <div class="div-replacing-main">
+        <main class="page-body div-replacing-main">
             {% block content %}
             {% endblock %}
-            </div>
         </main>
         <footer class="page-footer">
             <p><a href="{% url 'home' %}">Home</a></p>
