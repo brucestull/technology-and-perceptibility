@@ -128,7 +128,7 @@ div.login-block input {
     display: block;
 }
 
-nav > p > a {
+nav a {
     color: rgba(25, 48, 58, 1);
     font-size: 1.25em;
 }
@@ -317,11 +317,9 @@ div.thing-at-top-of-main {
 
     /* Align the page links to the right. */
     nav {
-        text-align: right;
+        text-align: left;
     }
 }
-
-
 
 /* We should set a max width. If user uses a really large display width, we want the site to stay within reason. If the site had a design where the items could keep accumulating and the header would look good, we could still allow display width to grow. */
 @media (min-width: 1400px) {

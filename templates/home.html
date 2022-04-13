@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Link Library{% endblock %}
 
 
 {% block content %}
@@ -36,7 +36,7 @@
     
     <template v-if="Object.keys(currentUser).length && !hideBigList">
       <article v-for="tap in currentUser.taps_detail" class="a-tap-in-the-list">
-        <h3>[[ tap.title ]] - [[ currentUser.username ]]</h3>
+        <h3>[[ tap.title ]]</h3>
         <a
           :href="tap.url"
           v-bind:title="tap.url_label"
