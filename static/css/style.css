@@ -84,6 +84,30 @@ header {
     border-top: .25em solid rgba(161, 30, 23, 1);
 }
 
+div.sign-up-block {
+    /* top | right | bottom | left */
+    /* vertical | horizontal */
+    margin: 2em 5% auto 5%;
+    padding: 1.5em;
+    border: 2px solid rgba(25, 48, 58, 1);
+}
+
+div.sign-up-block li {
+    font-size: 1.5em;
+}
+
+div.sign-up-block label {
+    display: block;
+}
+
+div.sign-up-block input {
+    display: block;
+}
+
+div.sign-up-block h2 {
+    font-size: 2.5em;
+}
+
 nav > p > a {
     color: rgba(25, 48, 58, 1);
     font-size: 1.25em;
