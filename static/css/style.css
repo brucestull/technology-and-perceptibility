@@ -97,6 +97,7 @@ div.login-logout-block a {
     /* "display: inline-block;" will allow margins. Without it, there are no top or bottom margins since <a> are inline elements. */
     display: inline-block;
     margin: .5em;
+    color: rgba(25, 48, 58, 1);
 }
 
 /* Now: Let's change the font for all text in 'body'. */
