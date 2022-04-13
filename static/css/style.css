@@ -147,7 +147,12 @@ div.login-logout-block a {
 /* Now: Let's change the font for all text in 'body'. */
 body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 h1 {
