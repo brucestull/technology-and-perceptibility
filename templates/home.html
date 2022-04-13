@@ -19,7 +19,7 @@
       <label for="new-url-description-input">Link Label</label><br>
       <input v-model="newUrlLabel" id="new-url-description-input" type="text" size="45">
       <br>
-      <label for="new-description-input">Link Extended Description</label><br>
+      <label for="new-description-input">Link Notes</label><br>
       <input v-model="newDescription" id="new-description-input" type="text" size="45">
       <br>
       <button @click="createNewTap()">Submit new Link</button>
@@ -45,7 +45,7 @@
           [[ tap.url_label ]] (Opens in new tab)
         </a>
         <br>
-        <p>[[ tap.id ]] : [[ tap.description ]]</p>
+        <p>[[ tap.description ]]</p>
         <button
           @click="loadSingleTap(tap)"
         >
@@ -66,7 +66,7 @@
           [[ currentTap.url_label ]] (Opens in new tab)
         </a>
         <br>
-        <p>[[ currentTap.id ]] : [[ currentTap.description ]]</p>
+        <p>[[ currentTap.description ]]</p>
         <button @click="editTap()">Edit this Item</button>
       </article>
     </template>
@@ -91,7 +91,7 @@
         <textarea v-model="editingCurrentTap.url_label" id="url-label-being-edited" rows="6" cols="75"></textarea>
         <br>
 
-        <label for="description-being-edited">Link Extended Description</label>
+        <label for="description-being-edited">Link Notes</label>
         <br>
         <textarea v-model="editingCurrentTap.description" id="description-being-edited" rows="6" cols="75"></textarea>
         <br>
