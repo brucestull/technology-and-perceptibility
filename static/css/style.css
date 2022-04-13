@@ -329,7 +329,7 @@ div.thing-at-top-of-main {
 /* We should set a max width. If user uses a really large display width, we want the site to stay within reason. If the site had a design where the items could keep accumulating and the header would look good, we could still allow display width to grow. */
 @media (min-width: 1400px) {
     header, .div-replacing-main {
-        max-width: 1350px;
+        width: 1350px;
         margin-left: auto;
         margin-right: auto;
     }
