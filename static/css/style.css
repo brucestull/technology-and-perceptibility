@@ -134,6 +134,17 @@ div.login-logout-block span {
     text-transform: capitalize;
 }
 
+fieldset.new-link-creation {
+    padding: 1em;
+    /* "margin: auto" will center the block element in container. */
+    margin: auto;
+    margin-top: 3em;
+}
+
+fieldset.new-link-creation legend {
+    font-size: 1.5em;
+}
+
 fieldset.new-link-creation > h2 {
     margin: 1em;
 }
@@ -215,11 +226,6 @@ fieldset.an-editing-tap button {
 div.thing-at-top-of-main {
     display: flex;
     flex-direction: row;
-}
-
-fieldset.new-link-creation {
-    padding: 1em;
-    margin-top: 3em;
 }
 
 @media (min-width: 700px) {
