@@ -59,7 +59,7 @@
           v-bind:title="currentTap.url_label"
           target="_blank"
         >
-          [[ currentTap.url_label ]] (Opens in new tab)
+          [[ currentTap.url_label ]]
         </a>
         <br>
         <p>[[ currentTap.description ]]</p>
@@ -72,9 +72,9 @@
 
         <legend>Editing Link Details of [[ temporaryTapTitle ]]</legend>
 
-        <label for="title-being-edited">Link Title</label>
+        <label for="url-label-being-edited">Link Label</label>
         <br>
-        <input v-model="editingCurrentTap.title" autofocus id="title-being-edited" type="text" size="75">
+        <input v-model="editingCurrentTap.url_label" id="url-label-being-edited" type="text" size = "75"></input>
         <br>
 
         <label for="url-being-edited">Link URL</label>
@@ -82,14 +82,9 @@
         <input v-model="editingCurrentTap.url" id="url-being-edited" type="text" size = "75">
         <br>
 
-        <label for="url-label-being-edited">Link Label</label>
-        <br>
-        <textarea v-model="editingCurrentTap.url_label" id="url-label-being-edited" rows="6" cols="75"></textarea>
-        <br>
-
         <label for="description-being-edited">Link Notes</label>
         <br>
-        <textarea v-model="editingCurrentTap.description" id="description-being-edited" rows="6" cols="75"></textarea>
+        <input v-model="editingCurrentTap.description" id="description-being-edited" type="text" size = "75"></input>
         <br>
 
         <button @click="saveTap()">Save Changes</button>
