@@ -37,10 +37,9 @@
             <header>
 
                 <nav>
-                    <p><a href="#all-the-taps" title="Skip to main content" class="skip-to-main-content">Skip to main content</a></p>
-                    <p><a href="{% url 'home' %}">Home</a></p>
-                    <!-- <p><a href="#" @click="loadCurrentUser()">Show My List of Records</a></p> -->
-                    <p><a href="#" @click="showCreateNewTapInterface()">Create a New Record</a></p>
+                    <a href="#all-the-taps" title="Skip to main content" class="skip-to-main-content">Skip to main content</a><br>
+                    <a href="{% url 'home' %}">Home</a><br>
+                    <a href="#" @click="showCreateNewTapInterface()">Create a New Record</a><br>
                 </nav>
 
                 <div class="page-title">
@@ -67,8 +66,8 @@
             {% endblock %}
         </main>
         <footer class="page-footer">
-            <p><a href="{% url 'home' %}">Home</a></p>
-            <p>Flynnt Knapp 2022</p>
+            <a href="{% url 'home' %}">Home</a><br>
+            <p>Bruce Stull 2022</p>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
