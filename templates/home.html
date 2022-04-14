@@ -10,14 +10,11 @@
   <template v-if="createBlockIsDisplayed">
     <fieldset class="new-link-creation">
       <legend>Create a new Link</legend>
-      <label for="new-title-input">Link Title</label><br>
-      <input v-model="newTitle" id="new-title-input" type="text" size="45">
+      <label for="new-url-description-input">Link Label</label><br>
+      <input v-model="newUrlLabel" id="new-url-description-input" type="text" size="45">
       <br>
       <label for="new-url-input">Link URL (optional)</label><br>
       <input v-model="newUrl" id="new-url-input" type="text" size="45">
-      <br>
-      <label for="new-url-description-input">Link Label</label><br>
-      <input v-model="newUrlLabel" id="new-url-description-input" type="text" size="45">
       <br>
       <label for="new-description-input">Link Notes</label><br>
       <input v-model="newDescription" id="new-description-input" type="text" size="45">
@@ -36,7 +33,6 @@
     
     <template v-if="Object.keys(currentUser).length && !hideBigList">
       <article v-for="tap in currentUser.taps_detail" class="a-tap-in-the-list">
-        <h3>[[ tap.title ]]</h3>
         <a
           :href="tap.url"
           v-bind:title="tap.url_label"
