@@ -237,7 +237,11 @@ article.a-tap-in-the-list h3 {
 }
 
 article.a-tap-in-the-list a {
-    font-size: 1.25em;
+    font-size: 1.6em;
+}
+
+article.a-tap-in-the-list p {
+    font-size: 1.4em;
 }
 
 article.a-tap-in-the-list {
@@ -266,7 +270,11 @@ article.a-current-tap {
 }
 
 article.a-current-tap a {
-    font-size: 1.25em;
+    font-size: 1.6em;
+}
+
+article.a-current-tap p {
+    font-size: 1.4em;
 }
 
 fieldset.an-editing-tap > label{
