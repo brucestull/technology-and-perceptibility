@@ -53,7 +53,6 @@
 
     <template v-if="Object.keys(currentTap).length">
       <article :model="currentTap" class="a-current-tap">
-        <h3>[[ currentTap.title ]]</h3>
         <a
           :href="currentTap.url"
           v-bind:title="currentTap.url_label"
