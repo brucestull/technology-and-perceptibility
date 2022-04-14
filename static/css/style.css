@@ -57,7 +57,7 @@ html {
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/padding#syntax */
 /* Set margin to 0 */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/margin#syntax */
-header, .div-replacing-main, footer {
+header, main, footer {
     /* vertical | horizontal */
     margin: 0 0;
     /* vertical | horizontal */
@@ -75,13 +75,51 @@ body {
     border-top: 25px solid rgba(25, 48, 58, 1);
 }
 
+.full-width-header {
+    background-color: rgba(205, 155, 63, 1);
+    border-top: .25em solid rgba(161, 30, 23, 1);
+    border-bottom: .5em solid rgba(25, 48, 58, 1);
+}
+
 header {
     background-color: rgba(205, 155, 63, 1);
 }
 
-.full-width-header {
-    background-color: rgba(25, 48, 58, 1);
-    border-top: .25em solid rgba(161, 30, 23, 1);
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+div.nav-and-status-logout-block {
+    display: flex;
+    justify-content: space-between;
+    /* top | right | bottom | left */
+    /* padding: 0 1em 0 1em; */
+    /* vertical | horizontal */
+    padding: 0 1em;
+}
+
+nav {
+    text-align: left;    
+}
+
+nav > a {
+    display: inline-block;
+    margin: 0.5em 0em;
+    font-size: 1.75em;
+    color: rgba(25, 48, 58, 1);
+}
+
+div.status-logout-block {
+    text-align: right;
+}
+
+div.status-logout-block * {
+    /* "display: inline-block;" will allow margins. Without it, there are no top or bottom margins since <a> are inline elements. */
+    display: inline-block;
+    margin: 0.5em 0em;
+    font-size: 1.75em;
+    color: rgba(25, 48, 58, 1);
 }
 
 div.sign-up-block {
@@ -128,22 +166,6 @@ div.login-block input {
     display: block;
 }
 
-nav a {
-    color: rgba(25, 48, 58, 1);
-    font-size: 1.25em;
-}
-
-div.login-logout-block {
-    padding: 1em;
-}
-
-div.login-logout-block a {
-    /* "display: inline-block;" will allow margins. Without it, there are no top or bottom margins since <a> are inline elements. */
-    display: inline-block;
-    margin: .5em;
-    color: rgba(25, 48, 58, 1);
-}
-
 /* Now: Let's change the font for all text in 'body'. */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -155,12 +177,7 @@ button {
     font-weight: 600;
 }
 
-h1 {
-    vertical-align: middle;
-    font-size: 2.5em;
-}
-
-button, p, h3, label, div.login-logout-block {
+button, h3, label {
     font-size: 1.35em;
 }
 
@@ -168,19 +185,17 @@ input, textarea {
     font-size: 1.5em;
 }
 
-/* Let's align the text of the header to 'center'. This will affect a <div> and a <nav>, which are in the <header>. */
 header {
     width: 100%;
     text-align: center;
-    padding: 1em;
+    padding: 0 2em;
 }
 
 .full-width-header {
     width: 100%;
-    padding-bottom: .5em;
 }
 
-div.login-logout-block span {
+div.status-logout-block span {
     text-transform: capitalize;
 }
 
@@ -309,26 +324,13 @@ div.thing-at-top-of-main {
     /* 100% or 100vw */
 
     header {
-        display: flex;
-        /* Put title/subtitle to left and links to right. */
-        /* We will align the text within those next. */
-        justify-content: space-between;
     }
 
-    /* Align the page heading/title to the left. */
-    h1 {
-        text-align: center;
-    }
-
-    /* Align the page links to the right. */
-    nav {
-        text-align: left;
-    }
 }
 
 /* We should set a max width. If user uses a really large display width, we want the site to stay within reason. If the site had a design where the items could keep accumulating and the header would look good, we could still allow display width to grow. */
 @media (min-width: 1400px) {
-    header, .div-replacing-main {
+    header, main {
         width: 1350px;
         margin-left: auto;
         margin-right: auto;
