@@ -87,7 +87,7 @@ header {
 
 footer {
     text-align: right;
-    padding: 1em;
+    padding: 2em;
 }
 
 footer * {
@@ -206,10 +206,15 @@ div.status-logout-block span {
 }
 
 fieldset.new-link-creation {
+    width: 95%;
     padding: 1em;
     /* "margin: auto" will center the block element in container. */
     margin: auto;
     margin-top: 3em;
+}
+
+fieldset.new-link-creation input {
+    width: 100%;
 }
 
 fieldset.new-link-creation legend {
