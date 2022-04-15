@@ -237,7 +237,7 @@ fieldset.new-link-creation > button {
     margin-top: 1.5em;
 }
 
-div.where-the-taps-live h2, div.where-the-taps-live article.a-current-tap {
+div.where-the-taps-live h2 {
     margin: 1.5em;
 }
 
@@ -263,12 +263,8 @@ article.a-tap-in-the-list {
     /* vertical | horizontal */
 }
 
-.a-current-tap {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 article.a-current-tap {
+    margin: auto 1em;
     border: #465B8C solid 2px;
     padding: 2em;
 }
@@ -285,7 +281,6 @@ fieldset.an-editing-tap {
     width: 95%;
     padding-right: 3em;
     /* vertical | horizontal */
-    /* margin: 0 auto; */
     /* top | right | bottom | left */
     margin: 3em auto auto auto;
 }
