@@ -268,13 +268,6 @@ article.a-tap-in-the-list {
     margin-right: auto;
 }
 
-.an-editing-tap {
-    /* vertical | horizontal */
-    /* margin: 0 auto; */
-    /* top | right | bottom | left */
-    margin: 3em auto auto auto;
-}
-
 article.a-current-tap {
     border: #465B8C solid 2px;
     padding: 2em;
@@ -286,6 +279,15 @@ article.a-current-tap a {
 
 article.a-current-tap p {
     font-size: 1.4em;
+}
+
+fieldset.an-editing-tap {
+    width: 95%;
+    padding-right: 3em;
+    /* vertical | horizontal */
+    /* margin: 0 auto; */
+    /* top | right | bottom | left */
+    margin: 3em auto auto auto;
 }
 
 fieldset.an-editing-tap > label{
@@ -300,9 +302,10 @@ fieldset.an-editing-tap > legend{
     margin: 0em .75em;
 }
 
-fieldset.an-editing-tap input, fieldset.an-editing-tap textarea{
+fieldset.an-editing-tap input {
+    width: 100%;
     display: inline-block;
-    margin: .35em .75em 0em .75em;
+    margin: .35em .75em .75em .75em;
 }
 
 fieldset.an-editing-tap button {
