@@ -312,6 +312,10 @@ div.thing-at-top-of-main {
     flex-direction: row;
 }
 
+span.helptext {
+    font-size: 1.25em;
+}
+
 @media (min-width: 700px) {
     .all-the-taps {
         display: flex;
