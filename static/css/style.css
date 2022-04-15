@@ -145,7 +145,9 @@ div.sign-up-block label {
 }
 
 div.sign-up-block input {
+    width: 95%;
     display: block;
+    margin: .3em;
 }
 
 div.sign-up-block h2 {
@@ -169,7 +171,9 @@ div.login-block label {
 }
 
 div.login-block input {
+    width: 95%;
     display: block;
+    margin: .3em;
 }
 
 /* Now: Let's change the font for all text in 'body'. */

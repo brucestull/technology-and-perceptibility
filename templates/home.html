@@ -11,7 +11,7 @@
     <fieldset class="new-link-creation">
       <legend>Create a new Link</legend>
       <label for="new-url-description-input">Link Label</label><br>
-      <input v-model="newUrlLabel" id="new-url-description-input" type="text">
+      <input v-model="newUrlLabel" id="new-url-description-input" autofocus type="text">
       <br>
       <label for="new-url-input">Link URL (optional)</label><br>
       <input v-model="newUrl" id="new-url-input" type="text">
@@ -29,7 +29,7 @@
   <h2 v-if="Object.keys(taps).length">The List of Links</h2>
   <h2 v-if="Object.keys(currentTap).length">Viewing a Single Link</h2>
 
-  <div class="all-the-taps" id="all-the-taps">
+  <div class="all-the-taps" id="the-pages-main-content">
     
     <template v-if="Object.keys(currentUser).length && !hideBigList">
       <article v-for="tap in currentUser.taps_detail" class="a-tap-in-the-list">
