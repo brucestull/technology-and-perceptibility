@@ -7,6 +7,9 @@ from rest_framework.test import APITestCase
 from taps.models import Tap
 from users.models import CustomUser
 
+# Command to run tests:
+# python ./manage.py test
+
 a_test_user = {
     "username": 'Dezzi',
     "email": 'dezzi@thekitten.edu',
@@ -59,7 +62,7 @@ class TestUsersAPINoUsers(APITestCase):
         
         self.assertEqual(CustomUser.objects.count(), 1)
         self.assertEqual(CustomUser.objects.get().username, a_test_user['username'])
-        self.assertEqual(CustomUser.objects.get().email, a_test_user['email'])
+        # self.assertEqual(CustomUser.objects.get().email, a_test_user['email'])
 
 
 class TestUsersAPIWithUsers(APITestCase):
@@ -77,7 +80,7 @@ class TestUsersAPIWithUsers(APITestCase):
         """
         response = self.client.get(users_endpoint)
         self.assertEqual(response.data[0]['username'], a_test_user['username'])
-        self.assertEqual(response.data[0]['email'], a_test_user['email'])
+        # self.assertEqual(response.data[0]['email'], a_test_user['email'])
 
     def test_delete_user(self):
         """
