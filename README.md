@@ -40,11 +40,11 @@
 
 ### User Stories
 1. As an Alternative Navigation user, I want to navigate the application using keyboard only, because this is how I access internet content.
-    - [ ] Learn how to make important content waypoints navigable.
+    - [x] Learn how to make important content waypoints navigable.
 2. As an Alternative Navigation user, I want to navigate the application using screen-reader and keyboard only, because this is how I access internet content.
-    - [ ] Learn how to make important content waypoints navigable.
+    - [x] Learn how to make important content waypoints navigable.
 3. As a Color Blind user, I want to the application to have adequate contrast, because adequate contrast is important for reading and understanding application content.
-    - [ ] Use Color Contrast Analyser as project is built.
+    - [x] Use Color Contrast Analyser as project is built.
 4. As a User, I want to be able to create a login account, because I want to use the app in the future to view and edit TAPs.
     - [X] Create User Model.
       - [X] Create CustomUser model in case additional User model fields might be needed in future.
@@ -82,7 +82,7 @@
 6. As a User, I want to access my previously saved field sets, because I want to review and have access to the saved links' url and information.
     NOTE: These features may be completed in User story above.
 7. As A mobile phone user, I need to be able to view the field sets.
-    - [ ] Ensure site displays appropriately on small screens.
+    - [x] Ensure site displays appropriately on small screens.
 
 ### Miscellaneous Tasks:
 - [X] Apply CSS:
@@ -136,7 +136,7 @@
 ### Apr 06 - Apr 07:
 - [X] 1.5 Days - TAP Model - API and Front End
 ### Apr 07 - Apr 10:
-- [ ] 1.5 Days - Finish [1. Minimum Viable Product](https://github.com/brucestull/technology-and-perceptibility/milestone/1)
+- [x] 1.5 Days - Finish [1. Minimum Viable Product](https://github.com/brucestull/technology-and-perceptibility/milestone/1)
 <!-- Not needed, Django provides all the user fuctionality we need. -->
 <!-- - [ ] 1.5 Days - User Model - API and Front End -->
 ### Apr 11 - Apr 12:
@@ -160,12 +160,12 @@
 
 ## Extras and Reminders
 - [ ] Favicon.
-- [ ] Normalize the css.
+- [x] Normalize the css.
   * [index.html with normalize](https://github.com/PdxCodeGuild/class_otter/blob/main/code/bruce/Module_02/lab03_Blog/templates/index.html)
   * \<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
 - [ ] Check order of \<script\> tags to ensure proper script execution.
-- [ ] Check some of the links in Vue console when there are errors/warnings. Sometimes the link will show the actual location of bug even though line numbers may be different than in IDE.
-- [ ] CSS is almost done. Add card for CSS finishing touches to the backlog. Finish it some other day.
+- [x] Check some of the links in Vue console when there are errors/warnings. Sometimes the link will show the actual location of bug even though line numbers may be different than in IDE.
+- [x] CSS is almost done. Add card for CSS finishing touches to the backlog. Finish it some other day.
 
 ## License
 

@@ -26,18 +26,18 @@
 - [ ] Which element is better for accessiblity, for calling a Vue method: 'button' or 'anchor'
 
 #### ARIA concepts I've learned:
-- [ ] [WAI-ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
-- [ ] [Are your Anchor Links Accessible? - amberwilson.co.uk](https://amberwilson.co.uk/blog/are-your-anchor-links-accessible/)
-  - [ ] [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
-  - [ ] [aria-describedby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby)
+- [x] [WAI-ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
+- [x] [Are your Anchor Links Accessible? - amberwilson.co.uk](https://amberwilson.co.uk/blog/are-your-anchor-links-accessible/)
+  - [x] [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
+  - [x] [aria-describedby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby)
 
 ### Django
 - [ ] [APITestCase](https://www.django-rest-framework.org/api-guide/testing/#example)
 
 ### Vue
-- [ ] 'textarea' binding:
+- [x] 'textarea' binding:
   \<textarea v-model="editingCurrentTap.url_label" rows="6" cols="75">\</textarea>
-- [ ] 'name' attribute isn't needed on 'input's with Vue since we're not sending it as an HTTPRequest.
+- [x] 'name' attribute isn't needed on 'input's with Vue since we're not sending it as an HTTPRequest.
 
 ### JavaScript
 - [ ] AXIOS - [Error handling](https://axios-http.com/docs/handling_errors)
@@ -47,7 +47,7 @@
 ### CSS
 
 ### HTML
-- [ ] Requirements to link label element to input element.
+- [x] Requirements to link label element to input element.
   * [label - Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
   * [input - Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
   * [label - w3schools](https://www.w3schools.com/tags/tag_label.asp)
