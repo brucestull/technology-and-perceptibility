@@ -86,12 +86,18 @@ header {
 }
 
 footer {
+    color: rgba(25, 48, 58, 1);
     text-align: right;
     padding: 2em;
 }
 
 footer * {
     font-size: 1.5em;
+}
+
+footer > a {
+    display: inline-block;
+    margin: .25em;
 }
 
 h1 {
