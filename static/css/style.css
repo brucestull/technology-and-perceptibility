@@ -262,6 +262,7 @@ article.a-tap-in-the-list a {
 }
 
 article.a-tap-in-the-list p {
+    word-break: break-word;
     font-size: 1.4em;
 }
 
