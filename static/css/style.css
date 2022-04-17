@@ -258,6 +258,7 @@ article.a-tap-in-the-list h3 {
 }
 
 article.a-tap-in-the-list a {
+    word-break: break-word;
     font-size: 1.6em;
 }
 
