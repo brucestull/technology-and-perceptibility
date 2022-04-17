@@ -19,9 +19,8 @@ class Tap(models.Model):
         max_length=200,
         help_text='text for displaying in link label'
         )
-    description = models.CharField(
+    description = models.TextField(
         'extended description',
-        max_length=400,
         help_text='''
             extended description of what the link is about or,what kinds
             of information is found at url, or what is the importance of
