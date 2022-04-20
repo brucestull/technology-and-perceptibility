@@ -63,11 +63,11 @@
 
 ## Commands, keybindings, and dev server info
 * Show markdown preview: `ctrl-shift-v`
-* Run server: `python manage.py runserver`
-* App address: [http://localhost:8000/](http://localhost:8000/)
-* Admin address: [http://localhost:8000/admin/](http://localhost:8000/admin/)
-* API address: [http://localhost:8000/api/v1/](http://localhost:8000/api/v1/)
-* API - TAPs Address: [http://localhost:8000/api/v1/taps/](http://localhost:8000/api/v1/taps/)
+* Run server: `python manage.py runserver 8010`
+* App address: [http://localhost:8010/](http://localhost:8010/)
+* Admin address: [http://localhost:8010/admin/](http://localhost:8010/admin/)
+* API address: [http://localhost:8010/api/v1/](http://localhost:8010/api/v1/)
+* API - TAPs Address: [http://localhost:8010/api/v1/taps/](http://localhost:8010/api/v1/taps/)
 * Virtual Environment activation:
   * Powershell: `C:\Users\Bruce\.virtualenvs\technology-and-perceptibility-MoNxetid\Scripts\activate.ps1`
   * BASH: `source C:/Users/Bruce/.virtualenvs/technology-and-perceptibility-MoNxetid/Scripts/activate`
@@ -276,8 +276,8 @@
   ```
 * Test login and admin page:
 `python manage.py runserver`
-`http://localhost:8000/`
-`http://localhost:8000/admin`
+`http://localhost:8010/`
+`http://localhost:8010/admin`
 
 * Add to `tap_project.settings.py`:
   ```

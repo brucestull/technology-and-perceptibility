@@ -19,5 +19,4 @@ class UserViewSet(viewsets.ModelViewSet):
 class CurrentUserView(generics.RetrieveAPIView):
     serializer_class = UserSerializer
     def get_object(self):
-        # return super().get_object()
         return self.request.user

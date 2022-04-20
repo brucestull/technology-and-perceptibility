@@ -15,14 +15,12 @@ class NestedUserSerializer(serializers.ModelSerializer):
 
 class TapSerializer(serializers.ModelSerializer):
     author_detail = NestedUserSerializer(read_only=True, source='author')
-    # author_detail = NestedUserSerializer(source='author')
     class Meta:
         model = Tap
         fields = ('id', 'title', 'author', 'author_detail', 'url', 'url_label', 'description')
 
 class UserSerializer(serializers.ModelSerializer):
     taps_detail = NestedTapSerializer(many=True, read_only=True, source='taps')
-    # taps_detail = NestedTapSerializer(many=True, source='taps')
     class Meta: 
         model = get_user_model()
         fields = ('id', 'username', 'taps_detail')
