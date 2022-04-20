@@ -47,7 +47,7 @@ INSTALLED_APPS = [
 
     'users.apps.UsersConfig',
     'taps.apps.TapsConfig',
-    # 'api.apps.ApiConfig',
+    'api.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [
