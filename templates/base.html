@@ -61,6 +61,18 @@
                             Create a New Link
                         </a>
                         <br>
+                        <a
+                            href="#"
+                            @click="loadCurrentUser()">
+                            View my Links
+                        </a>
+                        <br>
+                        <a
+                            href="#"
+                            @click="loadPublicTaps()">
+                            View Public Links
+                        </a>
+                        <br>                         
                     </nav>
                                 
                     <div class="status-logout-block">
@@ -124,6 +136,8 @@
                 },
 
                 taps: [],
+
+                publicTaps: [],
                 
                 hideBigList: false,
 
@@ -136,11 +150,32 @@
             },
 
             methods: {
+                loadPublicTaps: function() {
+                    // Temporarily clear out currentUser while working on 'public' TAP functionality. 
+                    this.currentUser = {}
+                    console.log('Attempting to load public TAPs!')
+                    axios({
+                        method: 'get',
+                        url: `/api/v1/public/`,
+                    }).then(response => {
+                        console.log(`response: `, response)
+                        console.log(`response.data: `, response.data)
+                        this.publicTaps = response.data
+                    }).catch(error => {
+                        console.log(`error.response: `, error.response)
+                    })                    
+                },
+
+                clearPublicTaps: function() {
+                    this.publicTaps = []
+                },
+
                 loadCurrentUser: function() {
                     this.hideBigList = false
                     this.createBlockIsDisplayed = false
                     this.clearEditingCurrentTap()
                     this.clearCurrentTap()
+                    this.clearPublicTaps()
                     console.log(`Loading Current User!`)
                     axios({
                         method: 'get',
@@ -262,6 +297,7 @@
                 },
 
                 clearAllTaps: function() {
+                    this.clearPublicTaps()
                     this.clearCurrentTap()
                     this.clearEditingCurrentTap()
                 },
@@ -276,7 +312,8 @@
             // Wait until all HTML elements loaded.
             mounted: function() {
                 this.csrf_token = document.querySelector("input[name=csrfmiddlewaretoken]").value
-                this.loadCurrentUser()
+                // this.loadCurrentUser()
+                this.loadPublicTaps()
             }
         })
     </script>

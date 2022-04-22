@@ -28,8 +28,29 @@
 <div class="where-the-taps-live">
   <h2 v-if="Object.keys(taps).length">The List of Links</h2>
   <h2 v-if="Object.keys(currentTap).length">Viewing a Single Link</h2>
+  <h2 v-if="Object.keys(publicTaps).length">Viewing Public Links</h2>
 
   <div class="all-the-taps" id="the-pages-main-content">
+    
+    <template v-if="Object.keys(publicTaps).length && !hideBigList">
+      <article v-for="tap in publicTaps" class="a-tap-in-the-list">
+        <a
+          :href="tap.url"
+          v-bind:title="tap.url_label"
+          target="_blank"
+        >
+          [[ tap.url_label ]]
+        </a>
+        <br>
+        <p>[[ tap.description ]]</p>
+        <button
+          @click="loadSingleTap(tap)"
+        >
+          View details for this Item
+        </button>
+
+      </article>
+    </template>
     
     <template v-if="Object.keys(currentUser).length && !hideBigList">
       <article v-for="tap in currentUser.taps_detail" class="a-tap-in-the-list">
