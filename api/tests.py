@@ -23,7 +23,6 @@ a_second_test_user = {
 }
 
 a_test_tap = {
-    "title": "A new Title",
     "author": 1,
     "url": "",
     "url_label": "URL Label",
@@ -110,7 +109,6 @@ class TestTapsAPI(APITestCase):
         response = self.client.post(taps_endpoint, a_test_tap, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(Tap.objects.count(), 1)
-        self.assertEqual(Tap.objects.get().title, a_test_tap['title'])
         self.assertEqual(Tap.objects.get().url, a_test_tap['url'])
         self.assertEqual(Tap.objects.get().url_label, a_test_tap['url_label'])
         self.assertEqual(Tap.objects.get().description, a_test_tap['description'])
@@ -122,7 +120,6 @@ class TestTapsAPI(APITestCase):
         response = self.client.post(taps_endpoint, a_test_tap, format='json')
         
         response = self.client.get(taps_endpoint)
-        self.assertEqual(response.data[0]['title'], a_test_tap['title'])
         self.assertEqual(response.data[0]['author'], a_test_tap['author'])        
         self.assertEqual(response.data[0]['url'], a_test_tap['url'])        
         self.assertEqual(response.data[0]['url_label'], a_test_tap['url_label'])        

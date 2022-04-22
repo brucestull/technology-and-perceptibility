@@ -5,15 +5,11 @@ from tap_project.settings import AUTH_USER_MODEL
 class Tap(models.Model):
     """
     Python class for TAPs, the objects which will hold the url,
-    url title, and url description.
+    url label, and url description.
     """
     url = models.URLField(
         help_text='url of page which has content of interest for accessiblity',
         blank=True
-        )
-    title = models.CharField(
-        max_length=200,
-        help_text='short title for the url item'
         )
     url_label = models.CharField(
         max_length=200,
@@ -34,25 +30,13 @@ class Tap(models.Model):
         related_name='taps',
         on_delete=models.CASCADE
         )
+    created_date = models.DateTimeField('date created', auto_now_add=True, help_text='date the Link was created')
+
 
     class Meta:
         ordering = ['-id']
 
-    # created_date = models.DateTimeField('date created', auto_now_add=True, help_text='date the TAP was created')
-    # deleted = models.BooleanField(default=False, help_text='designates whether the TAP should be shown in list view')
 
     def __str__(self):
-        # return f'{self.id}: {self.title} - Deleted[{self.deleted}]'
-        return f'{self.id}: {self.title}'
+        return f'{self.id}: {self.url_label}'
     
-    # def is_deleted(self):
-    #     """
-    #     Returns whether TAP is in deleted status or not.
-    #     """
-    #     return self.deleted
-
-    # def delete(self):
-    #     """
-    #     Set the deleted status of a TAP to True.
-    #     """
-    #     self.deleted = True
