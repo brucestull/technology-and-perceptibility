@@ -129,7 +129,7 @@
 
                 currentTap: {},
                 editingCurrentTap: {},
-                temporaryTapTitle: '',
+                temporaryTapUrlLabel: '',
 
                 csrf_token: '',
 
@@ -176,7 +176,7 @@
 
                 editTap: function() {
                     this.editingCurrentTap = this.currentTap
-                    this.temporaryTapTitle = this.currentTap.url_label
+                    this.temporaryTapUrlLabel = this.currentTap.url_label
                     this.clearCurrentTap()
                 },
 
