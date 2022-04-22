@@ -5,16 +5,11 @@ from tap_project.settings import AUTH_USER_MODEL
 class Tap(models.Model):
     """
     Python class for TAPs, the objects which will hold the url,
-    url title, and url description.
+    url label, and url description.
     """
     url = models.URLField(
         help_text='url of page which has content of interest for accessiblity',
         blank=True
-        )
-    title = models.CharField(
-        max_length=200,
-        help_text='short title for the url item',
-        default='The Default Title'
         )
     url_label = models.CharField(
         max_length=200,
