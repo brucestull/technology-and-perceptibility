@@ -133,7 +133,6 @@
 
                 // tapFromApi: {
                 //     "id": 10,
-                //     "title": "A new Title",
                 //     "author": 1,
                 //     "author_detail": {
                 //         "id": 1,
@@ -232,7 +231,6 @@
                             "X-CSRFToken": this.csrf_token
                         },
                         data: {
-                            "title": this.editingCurrentTap.title,
                             "url_label" : this.editingCurrentTap.url_label,
                             "description": this.editingCurrentTap.description,
                         }
@@ -282,7 +280,6 @@
                         },
                         data: {
                             "author": this.newAuthor,
-                            "title": this.newTitle,
                             "url": this.newUrl,
                             "url_label" : this.newUrlLabel,
                             "description": this.newDescription,
