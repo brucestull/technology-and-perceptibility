@@ -43,6 +43,5 @@ class Tap(models.Model):
 
 
     def __str__(self):
-        # return f'{self.id}: {self.title} - Deleted[{self.deleted}]'
         return f'{self.id}: {self.url_label}'
     
