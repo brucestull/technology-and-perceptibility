@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "009d9f13342f6bf45bc4b134a8f67a7446a326230c9fdaace87b8660149012cf"
+            "sha256": "5578c29ffd79dee212feb5f1754347a394e2f24cd5fafd6966bd98697f369e1c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -33,11 +33,11 @@
         },
         "django": {
             "hashes": [
-                "sha256:6d93497a0a9bf6ba0e0b1a29cccdc40efbfc76297255b1309b3a884a688ec4b6",
-                "sha256:b896ca61edc079eb6bbaa15cf6071eb69d6aac08cce5211583cfb41515644fdf"
+                "sha256:59304646ebc6a77b9b6a59adc67d51ecb03c5e3d63ed1f14c909cdfda84e8010",
+                "sha256:d5a8a14da819a8b9237ee4d8c78dfe056ff6e8a7511987be627192225113ee75"
             ],
             "index": "pypi",
-            "version": "==3.2.13"
+            "version": "==4.0"
         },
         "django-on-heroku": {
             "hashes": [
@@ -155,6 +155,14 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==0.4.2"
+        },
+        "tzdata": {
+            "hashes": [
+                "sha256:238e70234214138ed7b4e8a0fab0e5e13872edab3be586ab8198c407620e2ab9",
+                "sha256:8b536a8ec63dc0751342b3984193a3118f8fca2afe25752bb9b7fffd398552d3"
+            ],
+            "markers": "sys_platform == 'win32'",
+            "version": "==2022.1"
         },
         "whitenoise": {
             "hashes": [
