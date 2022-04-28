@@ -20,3 +20,4 @@ class CurrentUserView(generics.RetrieveAPIView):
     serializer_class = UserSerializer
     def get_object(self):
         return self.request.user
+    permission_classes = [IsAuthenticated]
