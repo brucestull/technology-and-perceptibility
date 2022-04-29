@@ -30,7 +30,15 @@ class Tap(models.Model):
         related_name='taps',
         on_delete=models.CASCADE
         )
-    created_date = models.DateTimeField('date created', auto_now_add=True, help_text='date the Link was created')
+    created_date = models.DateTimeField(
+        'date created',
+        auto_now_add=True,
+        help_text='date the Link was created'
+        )
+    public = models.BooleanField(
+        'link is public',
+        default=False
+        )
 
 
     class Meta:

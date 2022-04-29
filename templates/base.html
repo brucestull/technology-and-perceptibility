@@ -61,6 +61,18 @@
                             Create a New Link
                         </a>
                         <br>
+                        <a
+                            href="#"
+                            @click="loadCurrentUser()">
+                            View my Links
+                        </a>
+                        <br>
+                        <a
+                            href="#"
+                            @click="loadPublicTaps()">
+                            View Public Links
+                        </a>
+                        <br>                         
                     </nav>
                                 
                     <div class="status-logout-block">
@@ -124,60 +136,46 @@
                 },
 
                 taps: [],
+
+                publicTaps: [],
                 
                 hideBigList: false,
 
                 currentTap: {},
                 editingCurrentTap: {},
-                temporaryTapTitle: '',
-
-                // tapFromApi: {
-                //     "id": 10,
-                //     "author": 1,
-                //     "author_detail": {
-                //         "id": 1,
-                //         "username": "admin"
-                //     },
-                //     "url": "",
-                //     "url_label": "URL Label",
-                //     "description": "The extended description"
-                // },
+                temporaryTapUrlLabel: '',
 
                 csrf_token: '',
 
             },
 
             methods: {
-                // loadTaps: function() {
-                //     this.hideCreateNewTapInterface()
-                //     console.log("Attempting to load TAPs")
-                //     axios({
-                //         method: 'get',
-                //         url: `/api/v1/taps/`,
-                //     }).then(response => {
-                //         console.log(`response: `, response)
-                //         console.log(`response.data: `, response.data)
-                //         for (let i = 0; i < response.data.length; i++) {
-                //             this.taps.push(response.data[i])
-                //             this.taps[i].localBrowsableApiUrl = `/api/v1/taps/${this.taps[i].id}/`
-                //             this.taps[i].localBrowsableApiUrlDescription = `Browsable API link to this TAP with id of ${this.taps[i].id}.`
-                //         }
-                //         console.log(`this.taps`, this.taps)
-                //         this.clearCurrentTap()
-                //     }).catch(error => {
-                //         console.log(`error.response.data`, error.response.data)
-                //     })
-                // },
+                loadPublicTaps: function() {
+                    // Temporarily clear out currentUser while working on 'public' TAP functionality. 
+                    this.currentUser = {}
+                    console.log('Attempting to load public TAPs!')
+                    axios({
+                        method: 'get',
+                        url: `/api/v1/public/`,
+                    }).then(response => {
+                        console.log(`response: `, response)
+                        console.log(`response.data: `, response.data)
+                        this.publicTaps = response.data
+                    }).catch(error => {
+                        console.log(`error.response: `, error.response)
+                    })                    
+                },
 
-                // clearTaps: function() {
-                //     this.taps = []
-                // },
+                clearPublicTaps: function() {
+                    this.publicTaps = []
+                },
 
                 loadCurrentUser: function() {
                     this.hideBigList = false
                     this.createBlockIsDisplayed = false
                     this.clearEditingCurrentTap()
                     this.clearCurrentTap()
+                    this.clearPublicTaps()
                     console.log(`Loading Current User!`)
                     axios({
                         method: 'get',
@@ -212,10 +210,8 @@
                 },
 
                 editTap: function() {
-                    // Create an 'editingCurrentTap' object from 'currentTap' to edit.
                     this.editingCurrentTap = this.currentTap
-                    this.temporaryTapTitle = this.currentTap.url_label
-                    // Clear the 'currentTap' view.
+                    this.temporaryTapUrlLabel = this.currentTap.url_label
                     this.clearCurrentTap()
                 },
 
@@ -249,28 +245,9 @@
                     this.clearAllTaps()
                     this.createBlockIsDisplayed = true
                     this.hideBigList = true
-                    // console.log(document.getElementById("new-url-input"))
                 },
 
                 createNewTap: function() {
-                    
-                    // /////////////////////////////////////////////////////////
-                    // // This part here for testing only, using it to quickly create TAPs. Will remove in production.
-                    // // this.newAuthor = 1
-                    if (this.newTitle === '') {
-                        this.newTitle = this.newUrl
-                    }
-                    // if (this.newUrl === '') {
-                    //     this.newUrl = 'https://brucestull.com/'
-                    // }
-                    // if (this.newUrlLabel === '') {
-                    //     this.newUrlLabel = 'Well, Why not another URL Label, TOO!'
-                    // }
-                    // if (this.newDescription === '') {
-                    //     this.newDescription = "And we can't forget the description"
-                    // }
-                    // /////////////////////////////////////////////////////////
-
                     this.newAuthor = this.currentUser.id
 
                     axios({
@@ -321,6 +298,7 @@
                 },
 
                 clearAllTaps: function() {
+                    this.clearPublicTaps()
                     this.clearCurrentTap()
                     this.clearEditingCurrentTap()
                 },
@@ -335,7 +313,8 @@
             // Wait until all HTML elements loaded.
             mounted: function() {
                 this.csrf_token = document.querySelector("input[name=csrfmiddlewaretoken]").value
-                this.loadCurrentUser()
+                // this.loadCurrentUser()
+                this.loadPublicTaps()
             }
         })
     </script>
