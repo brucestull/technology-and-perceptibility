@@ -10,13 +10,13 @@
   <template v-if="createBlockIsDisplayed">
     <fieldset class="new-link-creation">
       <legend>Create a new Link</legend>
-      <label for="new-url-description-input">Link Label</label><br>
+      <label for="new-url-description-input">Link Label (optional)</label><br>
       <input v-model="newUrlLabel" id="new-url-description-input" autofocus type="text">
       <br>
       <label for="new-url-input">Link URL (optional)</label><br>
       <input v-model="newUrl" id="new-url-input" type="text">
       <br>
-      <label for="new-description-input">Link Notes</label><br>
+      <label for="new-description-input">Link Notes (Required)</label><br>
       <input v-model="newDescription" id="new-description-input" type="text">
       <br>
       <button @click="createNewTap()">Save Link</button>
@@ -92,17 +92,17 @@
 
         <legend>Editing Link Details of [[ temporaryTapUrlLabel ]]</legend>
 
-        <label for="url-label-being-edited">Link Label</label>
+        <label for="url-label-being-edited">Link Label (optional)</label>
         <br>
         <input v-model="editingCurrentTap.url_label" id="url-label-being-edited" autofocus type="text">
         <br>
 
-        <label for="url-being-edited">Link URL</label>
+        <label for="url-being-edited">Link URL (optional)</label>
         <br>
         <input v-model="editingCurrentTap.url" id="url-being-edited" type="text">
         <br>
 
-        <label for="description-being-edited">Link Notes</label>
+        <label for="description-being-edited">Link Notes (Required)</label>
         <br>
         <input v-model="editingCurrentTap.description" id="description-being-edited" type="text">
         <br>

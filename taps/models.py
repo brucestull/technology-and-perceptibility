@@ -13,7 +13,9 @@ class Tap(models.Model):
         )
     url_label = models.CharField(
         max_length=200,
-        help_text='text for displaying in link label'
+        help_text='text for displaying in link label',
+        default='',
+        blank=True,
         )
     description = models.TextField(
         'extended description',
