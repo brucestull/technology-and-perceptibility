@@ -37,13 +37,13 @@ class TapSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tap
         fields = (
+            'url_label',
+            'url',
+            'description',
             'id',
+            'public',
             'author',
             'author_detail',
-            'url',
-            'url_label',
-            'description',
-            'public'
         )
 
 
