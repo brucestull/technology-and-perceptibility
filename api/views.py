@@ -4,8 +4,12 @@ from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth import get_user_model
 
 from taps.models import Tap
-from api.serializers import TapSerializer, UserSerializer
-from api.permissions import IsAuthorOrReadOnly
+from api.serializers import TapSerializer, UserSerializer, UserUpdateSerializer
+
+
+class PublicViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = Tap.objects.filter(public=True)
+    serializer_class = TapSerializer
 
 
 class TapViewSet(viewsets.ModelViewSet):
@@ -20,9 +24,11 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
     permission_classes = [IsAuthenticated]
 
 
-class PublicViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Tap.objects.filter(public=True)
-    serializer_class = TapSerializer
+class UserUpdateView(generics.RetrieveUpdateAPIView):
+    serializer_class = UserUpdateSerializer
+    def get_object(self):
+        return self.request.user
+    permission_classes = [IsAuthenticated]
 
 
 class CurrentUserView(generics.RetrieveAPIView):
