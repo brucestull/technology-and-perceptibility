@@ -11,13 +11,13 @@ from api.permissions import IsAuthorOrReadOnly
 class TapViewSet(viewsets.ModelViewSet):
     queryset = Tap.objects.all()
     serializer_class = TapSerializer
-    permission_classes = [IsAuthorOrReadOnly]
+    permission_classes = [IsAuthenticated]
 
 
 class UserViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = get_user_model().objects.all()
     serializer_class = UserSerializer
-    permission_classes = [IsAuthorOrReadOnly]
+    permission_classes = [IsAuthenticated]
 
 
 class PublicViewSet(viewsets.ReadOnlyModelViewSet):
