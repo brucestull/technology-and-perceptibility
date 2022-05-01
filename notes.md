@@ -66,9 +66,12 @@
 * Run server: `python manage.py runserver 8010`
 * App address: [http://localhost:8010/](http://localhost:8010/)
 * Admin address: [http://localhost:8010/admin/](http://localhost:8010/admin/)
+* Admin address (Production): [https://technology-and-perceptibility.herokuapp.com/admin/](https://technology-and-perceptibility.herokuapp.com/admin/)
 * API address: [http://localhost:8010/api/v1/](http://localhost:8010/api/v1/)
 * API Current User: [http://localhost:8010/api/v1/currentuser/](http://localhost:8010/api/v1/currentuser/)
-* API Current User: [http://localhost:8010/api/v1/user-update/](http://localhost:8010/api/v1/user-update/)
+* API Current User (Production): [https://technology-and-perceptibility.herokuapp.com/api/v1/currentuser/](https://technology-and-perceptibility.herokuapp.com/api/v1/currentuser/)
+* API Update User: [http://localhost:8010/api/v1/user-update/](http://localhost:8010/api/v1/user-update/)
+* API Update User (Production): [https://technology-and-perceptibility.herokuapp.com/api/v1/user-update/](https://technology-and-perceptibility.herokuapp.com/api/v1/user-update/)
 * API - TAPs Address: [http://localhost:8010/api/v1/taps/](http://localhost:8010/api/v1/taps/)
 * Virtual Environment activation:
   * Powershell: `C:\Users\Bruce\.virtualenvs\technology-and-perceptibility-MoNxetid\Scripts\activate.ps1`
