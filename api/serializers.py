@@ -67,3 +67,14 @@ class UserSerializer(serializers.ModelSerializer):
 
     def get_taps_count(self, obj):
         return Tap.objects.all().filter(author=obj.id).count()
+
+
+class UserUpdateSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = get_user_model()
+        fields = (
+            'id',
+            'username',
+            'email',
+        )
