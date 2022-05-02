@@ -6,7 +6,7 @@ from api import views
 app_name = 'api'
 router = DefaultRouter()
 router.register('taps', views.TapViewSet, basename='taps')
-router.register('users', views.UserViewSet, basename='users')
+# router.register('users', views.UserViewSet, basename='users')
 router.register('public', views.PublicViewSet, basename='public')
 
 
