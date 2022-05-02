@@ -29,20 +29,12 @@ class UserUpdateView(generics.RetrieveUpdateAPIView):
     permission_classes = [IsAuthenticated]
 
 
-# We use this view to get a User's TAPs.
+# We can use this view to get a User's TAPs. This is not implemented in front end.
 class TapViewSet(viewsets.ModelViewSet):
-    # queryset = Tap.objects.all()
     def get_queryset(self):
         return Tap.objects.filter(author=self.request.user.id)
     serializer_class = TapSerializer
     # This permission requires user to be authenticated in order to add new TAP.
     permission_classes = [IsAuthenticated]
-
-
-# We don't currently use this view. May use this in future for some admin purposes?
-# class UserViewSet(viewsets.ReadOnlyModelViewSet):
-#     queryset = get_user_model().objects.all()
-#     serializer_class = UserSerializer
-#     permission_classes = [IsAuthenticated]
 
 
