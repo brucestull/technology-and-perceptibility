@@ -74,7 +74,7 @@
   * API address: [http://localhost:8010/api/v1/](http://localhost:8010/api/v1/)
   * API Current User: [http://localhost:8010/api/v1/currentuser/](http://localhost:8010/api/v1/currentuser/)
   * API Update User: [http://localhost:8010/api/v1/user-update/](http://localhost:8010/api/v1/user-update/)
-  * API - TAPs Address: [http://localhost:8010/api/v1/taps/](http://localhost:8010/api/v1/taps/)
+  * API - TAP: [http://localhost:8010/api/v1/taps/](http://localhost:8010/api/v1/taps/)
 * Virtual Environment activation:
   * Powershell: `C:\Users\Bruce\.virtualenvs\technology-and-perceptibility-MoNxetid\Scripts\activate.ps1`
   * BASH: `source C:/Users/Bruce/.virtualenvs/technology-and-perceptibility-MoNxetid/Scripts/activate`
