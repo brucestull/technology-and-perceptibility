@@ -2,6 +2,7 @@ secrets.*
 .vscode
 *.code-workspace
 
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -115,5 +116,3 @@ token.txt
 #django uploaded files
 uploaded_files/
 node_modules
-/code/jeremy_b/to_do/
-*.code-workspace
