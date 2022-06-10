@@ -2,6 +2,8 @@
 ### TAP - Technology and Perceptibility
 [Link to deployment of TAP](https://technology-and-perceptibility.herokuapp.com/)
 
+* NOTE: This project is being archived and development is being ceased. Will post a link to a new and improved project when it is available. This repo will remain as an example of the author's previous work.
+
 #### Project Management Pages:
 * [Project: TAP - Technology and Perceptibility](https://github.com/brucestull/technology-and-perceptibility/projects/2)
 * [1. Minimum Viable Product](https://github.com/brucestull/technology-and-perceptibility/milestone/1)
