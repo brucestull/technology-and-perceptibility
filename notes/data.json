@@ -1,0 +1,483 @@
+{
+    "id": 11,
+    "username": "FlynntKnapp",
+    "taps_count": 68,
+    "taps_detail": [
+        {
+        "id": 174,
+        "url": "https://thinkster.io/tutorials/configuring-django-settings-for-production",
+        "url_label": "settings.py",
+        "description": "dev prod",
+        "public": false
+        },
+        {
+        "id": 172,
+        "url": "https://docs.djangoproject.com/en/4.0/ref/settings/#allowed-hosts",
+        "url_label": "ALLOWED_HOSTS",
+        "description": "Django",
+        "public": false
+        },
+        {
+        "id": 171,
+        "url": "https://docs.djangoproject.com/en/4.0/topics/settings/#designating-the-settings",
+        "url_label": "settings.py specification",
+        "description": "Determine which settings to use.",
+        "public": false
+        },
+        {
+        "id": 170,
+        "url": "https://docs.djangoproject.com/en/4.0/topics/pagination/",
+        "url_label": "pagination",
+        "description": "Django",
+        "public": false
+        },
+        {
+        "id": 169,
+        "url": "https://reactjs.org/tutorial/tutorial.html",
+        "url_label": "React JS",
+        "description": "React JavaScript",
+        "public": false
+        },
+        {
+        "id": 166,
+        "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+        "url_label": "FlexBox",
+        "description": "CSS",
+        "public": false
+        },
+        {
+        "id": 165,
+        "url": "https://www.youtube.com/watch?v=oOjXTPqkK5Y&t=108s",
+        "url_label": "Cura manual supports",
+        "description": "Cura",
+        "public": false
+        },
+        {
+        "id": 132,
+        "url": "https://docs.djangoproject.com/en/3.2/ref/templates/builtins/#truncatechars",
+        "url_label": "truncatechars",
+        "description": "Django - Limit number of characters displayed in template.",
+        "public": false
+        },
+        {
+        "id": 130,
+        "url": "https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes",
+        "url_label": "git remote show origin",
+        "description": "Git Basics - Working with Remotes",
+        "public": false
+        },
+        {
+        "id": 129,
+        "url": "https://yuji.wordpress.com/2008/05/14/django-list-all-fields-in-an-object/",
+        "url_label": "dir(<object>)",
+        "description": "List the attributes of an object: dir(<object>).",
+        "public": true
+        },
+        {
+        "id": 128,
+        "url": "https://www.django-rest-framework.org/api-guide/fields/#serializermethodfield",
+        "url_label": "SerializerMethodField(method_name=None)",
+        "description": "Custom field for serializers.",
+        "public": false
+        },
+        {
+        "id": 127,
+        "url": "https://docs.djangoproject.com/en/3.2/ref/class-based-views/generic-display/",
+        "url_label": "generic display views",
+        "description": "Django - generic display views",
+        "public": false
+        },
+        {
+        "id": 113,
+        "url": "https://git-scm.com/docs/git-merge",
+        "url_label": "Git Merge",
+        "description": "git merge - https://git-scm.com/",
+        "public": false
+        },
+        {
+        "id": 112,
+        "url": "https://docs.djangoproject.com/en/4.0/ref/templates/builtins/#url",
+        "url_label": "Django Template BuiltIns - {% url '<app>:<view>' <model.attribute> %}",
+        "description": "Pass parameter from template through url.",
+        "public": false
+        },
+        {
+        "id": 109,
+        "url": "https://docs.djangoproject.com/en/4.0/topics/forms/#form-rendering-options",
+        "url_label": "{{ form.as_p }}",
+        "description": "Use Django to make our forms for us.",
+        "public": false
+        },
+        {
+        "id": 106,
+        "url": "https://docs.djangoproject.com/en/4.0/ref/request-response/#django.http.HttpRequest.POST",
+        "url_label": "request.POST",
+        "description": "django.http.HttpRequest.POST",
+        "public": false
+        },
+        {
+        "id": 105,
+        "url": "https://docs.djangoproject.com/en/4.0/ref/urlresolvers/",
+        "url_label": "django.urls",
+        "description": "Utility functions like reverse, reverse lazy, etc.",
+        "public": false
+        },
+        {
+        "id": 104,
+        "url": "https://docs.djangoproject.com/en/4.0/ref/models/querysets/",
+        "url_label": "Django - QuerySet API Reference",
+        "description": "Additional methods you can do with querysets.",
+        "public": false
+        },
+        {
+        "id": 103,
+        "url": "https://docs.djangoproject.com/en/4.0/ref/models/querysets/#values",
+        "url_label": "Django - queryset - values",
+        "description": "Get the keys and values of an object retrieved via filter.",
+        "public": false
+        },
+        {
+        "id": 101,
+        "url": "https://github.com/django/django",
+        "url_label": "Django",
+        "description": "Repo on GitHub",
+        "public": false
+        },
+        {
+        "id": 98,
+        "url": "https://cssgridgarden.com/",
+        "url_label": "https://cssgridgarden.com/",
+        "description": "https://cssgridgarden.com/",
+        "public": false
+        },
+        {
+        "id": 97,
+        "url": "https://flexboxfroggy.com/",
+        "url_label": "https://flexboxfroggy.com/",
+        "description": "https://flexboxfroggy.com/",
+        "public": false
+        },
+        {
+        "id": 96,
+        "url": "https://mystery.knightlab.com/walkthrough.html",
+        "url_label": "https://mystery.knightlab.com/walkthrough.html",
+        "description": "https://mystery.knightlab.com/walkthrough.html",
+        "public": false
+        },
+        {
+        "id": 95,
+        "url": "https://css-tricks.com/couple-takes-sticky-footer/",
+        "url_label": "CSS - sticky footer",
+        "description": "CSS - sticky footer",
+        "public": false
+        },
+        {
+        "id": 92,
+        "url": "https://git-scm.com/docs/git-update-index",
+        "url_label": "git update-index",
+        "description": "This is where I finally started to understand notation for code documentation. `[` and `]` are used to wrap the options or commands. We type the literal contents within the `[]`.",
+        "public": false
+        },
+        {
+        "id": 91,
+        "url": "https://wordcounter.net/character-count",
+        "url_label": "Character Counter",
+        "description": "Character and word count web application.",
+        "public": false
+        },
+        {
+        "id": 83,
+        "url": "https://stackoverflow.com/a/42363882",
+        "url_label": "git | skip-worktree",
+        "description": "How to find which files have --skip-worktree.",
+        "public": false
+        },
+        {
+        "id": 82,
+        "url": "https://www.atlassian.com/git/tutorials/saving-changes/gitignore",
+        "url_label": ".gitignore",
+        "description": "Git settings file for untracked file patterns.",
+        "public": false
+        },
+        {
+        "id": 81,
+        "url": "https://www.django-rest-framework.org/api-guide/permissions/#isauthenticated",
+        "url_label": "Django - IsAuthenticated",
+        "description": "The IsAuthenticated permission class will deny permission to any unauthenticated user, and allow permission otherwise.  This permission is suitable if you want your API to only be accessible to registered users.",
+        "public": false
+        },
+        {
+        "id": 80,
+        "url": "https://docs.djangoproject.com/en/4.0/topics/http/shortcuts/#get-object-or-404",
+        "url_label": "Django - get_object_or_404",
+        "description": "Gets the database object, if it exists.",
+        "public": false
+        },
+        {
+        "id": 79,
+        "url": "https://docs.djangoproject.com/en/4.0/ref/class-based-views/generic-display/",
+        "url_label": "Django - generic - DetailView",
+        "description": "Need to figure out how to pass the models 'id' through url. I think I remember:  Something like '/tasks/<int:pk>/'.",
+        "public": false
+        },
+        {
+        "id": 78,
+        "url": "https://support.ultimaker.com/hc/en-us/articles/360012607079-Infill-settings",
+        "url_label": "Ultimaker Infill Settings",
+        "description": "Do some accessibility analysis of this site.",
+        "public": false
+        },
+        {
+        "id": 76,
+        "url": "https://tutorial.djangogirls.org/en/django_start_project/",
+        "url_label": "Django Girls - Django Project",
+        "description": "Your first Django project!",
+        "public": false
+        },
+        {
+        "id": 75,
+        "url": "https://docs.djangoproject.com/en/3.2/ref/models/querysets/",
+        "url_label": "Django - QuerySet API reference",
+        "description": "filter, lte, count, last, first, earliest, exists, contains, in, startswith, endswith, max, min",
+        "public": false
+        },
+        {
+        "id": 73,
+        "url": "https://www.atlassian.com/git/tutorials/syncing",
+        "url_label": "git syncing",
+        "description": "git : remote - fetch - push -pull",
+        "public": false
+        },
+        {
+        "id": 72,
+        "url": "https://docs.djangoproject.com/en/3.2/ref/templates/builtins/#json-script",
+        "url_label": "Django - json_script",
+        "description": "Makes a json object wrapped in script tags.",
+        "public": false
+        },
+        {
+        "id": 71,
+        "url": "https://docs.djangoproject.com/en/3.2/topics/templates/#filters",
+        "url_label": "Django - Templating",
+        "description": "Convert string to title-case.",
+        "public": false
+        },
+        {
+        "id": 70,
+        "url": "https://docs.djangoproject.com/en/3.2/ref/class-based-views/generic-display/#django.views.generic.detail.DetailView",
+        "url_label": "django.views.generic.detail.DetailView",
+        "description": "While this view is executing, self.object will contain the object that the view is operating upon.",
+        "public": false
+        },
+        {
+        "id": 69,
+        "url": "https://docs.djangoproject.com/en/3.2/ref/class-based-views/generic-display/#django.views.generic.list.ListView",
+        "url_label": "django.views.generic.list.ListView",
+        "description": "A page representing a list of objects.",
+        "public": false
+        },
+        {
+        "id": 68,
+        "url": "https://docs.djangoproject.com/en/3.2/ref/urlresolvers/#django.urls.reverse",
+        "url_label": "django.urls - reverse()",
+        "description": "reverse()",
+        "public": false
+        },
+        {
+        "id": 66,
+        "url": "https://docs.djangoproject.com/en/3.2/intro/tutorial03/#namespacing-url-names",
+        "url_label": "Django - Namespacing URL names and apps",
+        "description": "In `polls/urls.py`, `app_name='polls'` just above urlpatterns.",
+        "public": false
+        },
+        {
+        "id": 64,
+        "url": "https://docs.djangoproject.com/en/3.2/topics/http/shortcuts/",
+        "url_label": "django.shortcuts",
+        "description": "The package django.shortcuts collects helper functions and classes that “span” multiple levels of MVC. In other words, these functions/classes introduce controlled coupling for convenience’s sake.",
+        "public": false
+        },
+        {
+        "id": 63,
+        "url": "https://docs.djangoproject.com/en/3.2/intro/tutorial03/#a-shortcut-get-object-or-404",
+        "url_label": "Django - get_object_or_404()",
+        "description": "The get_object_or_404() function takes a Django model as its first argument and an arbitrary number of keyword arguments, which it passes to the get() function of the model’s manager. It raises Http404 if the object doesn’t exist.",
+        "public": false
+        },
+        {
+        "id": 62,
+        "url": "https://docs.djangoproject.com/en/3.2/intro/tutorial03/#a-shortcut-render",
+        "url_label": "Django - render - request",
+        "description": "It’s a very common idiom to load a template, fill a context and return an HttpResponse object with the result of the rendered template.",
+        "public": false
+        },
+        {
+        "id": 61,
+        "url": "https://docs.djangoproject.com/en/3.2/topics/http/urls/",
+        "url_label": "Django - URL dispatcher",
+        "description": "To design URLs for an app, you create a Python module informally called a URLconf (URL configuration). This module is pure Python code and is a mapping between URL path expressions to Python functions (your views).  This mapping can be as short or as long as needed. It can reference other mappings. And, because it’s pure Python code, it can be constructed dynamically.",
+        "public": false
+        },
+        {
+        "id": 60,
+        "url": "https://www.atlassian.com/git/tutorials/undoing-changes",
+        "url_label": "git - Undoing Commits & Changes",
+        "description": "In this section, we will discuss the available 'undo' Git strategies and commands. It is first important to note that Git does not have a traditional 'undo' system like those found in a word processing application. It will be beneficial to refrain from mapping Git operations to any traditional 'undo' mental model. Additionally, Git has its own nomenclature for 'undo' operations that it is best to leverage in a discussion. This nomenclature includes terms like reset, revert, checkout, clean, and more.",
+        "public": false
+        },
+        {
+        "id": 59,
+        "url": "https://pypi.org/project/docutils/",
+        "url_label": "docutils - pypi.org",
+        "description": "Used for documentation generator in Django Admin.",
+        "public": false
+        },
+        {
+        "id": 57,
+        "url": "https://docs.djangoproject.com/en/3.2/topics/db/queries/#retrieving-specific-objects-with-filters",
+        "url_label": "Django Database Query API Filter",
+        "description": ">>> Choice.objects.filter(choice_text__contains=\"she\")  <QuerySet [<Choice: She's PURRFECT!>, <Choice: She's PURRFECTO!>]>",
+        "public": false
+        },
+        {
+        "id": 54,
+        "url": "https://learndjango.com/tutorials/django-custom-user-model",
+        "url_label": "Django Best Practices: Custom User Model",
+        "description": "However, for a real-world project, the official Django documentation highly recommends using a custom user model instead. This provides far more flexibility down the line so, as a general rule, always use a custom user model for all new Django projects.",
+        "public": false
+        },
+        {
+        "id": 52,
+        "url": "https://docs.djangoproject.com/en/4.0/ref/contrib/admin/admindocs/#module-django.contrib.admindocs",
+        "url_label": "django.contrib.admindocs",
+        "description": "Django’s admindocs app pulls documentation from the docstrings of models, views, template tags, and template filters for any app in INSTALLED_APPS and makes that documentation available from the Django admin.",
+        "public": false
+        },
+        {
+        "id": 51,
+        "url": "https://docs.google.com/spreadsheets/d/1pfTeF5pSw5UYOLpe3hQG5sIigdNr1xb5D4fhRljI02w/edit#gid=0",
+        "url_label": "See3D Kit Items",
+        "description": "Always a need for these.",
+        "public": false
+        },
+        {
+        "id": 50,
+        "url": "https://stackoverflow.com/a/10260389",
+        "url_label": "Git prevent push to remote",
+        "description": "`git remote set-url --push origin no_push`",
+        "public": false
+        },
+        {
+        "id": 49,
+        "url": "https://stackoverflow.com/a/20241145",
+        "url_label": "`git update-index --skip-worktree <file>`",
+        "description": "Skip a file in git - To skip: `git update-index --skip-worktree <file>`. To Undo:`git update-index --no-skip-worktree <file>`.",
+        "public": false
+        },
+        {
+        "id": 48,
+        "url": "https://www.atlassian.com/git/tutorials/saving-changes/gitignore#:~:text=If%20you%20want%20to%20ignore,directory%20as%20an%20ignored%20file.",
+        "url_label": ".git/info/exclude",
+        "description": "Personal Git ignore rules You can also define personal ignore patterns for a particular repository in a special file at .git/info/exclude.",
+        "public": false
+        },
+        {
+        "id": 47,
+        "url": "https://www.atlassian.com/git/tutorials/saving-changes/gitignore#:~:text=If%20you%20want%20to%20ignore,directory%20as%20an%20ignored%20file.",
+        "url_label": "Ignoring a previously committed file",
+        "description": "If you want to ignore a file that you've committed in the past, you'll need to delete the file from your repository and then add a .gitignore rule for it. Using the --cached option with git rm means that the file will be deleted from your repository, but will remain in your working directory as an ignored file.",
+        "public": false
+        },
+        {
+        "id": 40,
+        "url": "https://docs.djangoproject.com/en/4.0/topics/testing/overview/#running-tests-1",
+        "url_label": "Run Django Tests",
+        "description": "python manage.py test",
+        "public": false
+        },
+        {
+        "id": 38,
+        "url": "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript",
+        "url_label": "CSS and JavaScript Accessibility",
+        "description": "Still need to read this again.",
+        "public": false
+        },
+        {
+        "id": 35,
+        "url": "https://www.cssfontstack.com/",
+        "url_label": "Web safe font stacks",
+        "description": "Individual links provide the css code needed to add these fonts to my project.",
+        "public": false
+        },
+        {
+        "id": 34,
+        "url": "https://www.w3.org/TR/core-aam-1.1/#dfn-accessibility-tree",
+        "url_label": "Accessibility Tree",
+        "description": "Accessibility tree nodes and API.",
+        "public": false
+        },
+        {
+        "id": 33,
+        "url": "https://www.w3.org/TR/core-aam-1.1/#dfn-accessibility-api",
+        "url_label": "Accessibility API",
+        "description": "w3.org - Accessibility API. Page has lots of links and documentation. I'm saving this link to show what an Accessibility API is to Capstone presentation audience.",
+        "public": false
+        },
+        {
+        "id": 31,
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/word-break",
+        "url_label": "CSS - word-break",
+        "description": "Can use word-break options to wrap or keep from wrapping the element words or string of words.",
+        "public": false
+        },
+        {
+        "id": 29,
+        "url": "https://www.w3schools.com/cssref/css_websafe_fonts.asp",
+        "url_label": "w3schools - Web Safe Fonts",
+        "description": "Web safe fonts list at w3schools.",
+        "public": false
+        },
+        {
+        "id": 27,
+        "url": "https://webaim.org/articles/pour/",
+        "url_label": "Constructing a POUR Website",
+        "description": "Addresses the question: Why Create Accessible Web Content?",
+        "public": false
+        },
+        {
+        "id": 26,
+        "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG#the_four_principles",
+        "url_label": "POUR - The Four WCAG Principles",
+        "description": "The Four Principles section of MDN article on WCAG.",
+        "public": false
+        },
+        {
+        "id": 25,
+        "url": "https://www.w3.org/WAI/fundamentals/accessibility-usability-inclusion/",
+        "url_label": "Accessibility, Usability, and Inclusion",
+        "description": "w3.org accessibility, usabilility, and inclusion.",
+        "public": false
+        },
+        {
+        "id": 24,
+        "url": "https://www.w3.org/WAI/fundamentals/",
+        "url_label": "Accessibility Fundamentals Overview",
+        "description": "w3.org accessibility fundamentals overview. Has great links to the pertinent information.",
+        "public": false
+        },
+        {
+        "id": 22,
+        "url": "https://www.tpgi.com/rough-guide-browsers-operating-systems-and-screen-reader-support-updated/",
+        "url_label": "Screen reader support",
+        "description": "Rough Guide: browsers, operating systems and screen reader support – Updated 23/06/2017",
+        "public": false
+        },
+        {
+        "id": 18,
+        "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+        "url_label": "Web Content Accessibility Guidelines (WCAG)",
+        "description": "WCAG 2.0 on w3.org.",
+        "public": false
+        }
+    ]
+}
