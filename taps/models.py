@@ -1,5 +1,5 @@
 from django.db import models
-from tap_project.settings.common import AUTH_USER_MODEL
+from tap_project.settings import AUTH_USER_MODEL
 
 
 class Tap(models.Model):
@@ -27,7 +27,7 @@ class Tap(models.Model):
         )
     author = models.ForeignKey(
         AUTH_USER_MODEL,
-        # 'tap_project.settings.common.AUTH_USER_MODEL',   # This didn't work
+        # 'tap_project.settings.AUTH_USER_MODEL',   # This didn't work
         # 'users.CustomUser',                       # This didn't work
         related_name='taps',
         on_delete=models.CASCADE
